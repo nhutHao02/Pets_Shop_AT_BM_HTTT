@@ -1,0 +1,222 @@
+[33mcommit 819c2f265761a0d567504061ce8270e6f439be5d[m[33m ([m[1;36mHEAD -> [m[1;32mNguyenHuyHoang[m[33m, [m[1;31morigin/NguyenHuyHoang[m[33m)[m
+Merge: df678e9 2b508d9
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Fri Jun 16 15:54:27 2023 +0700
+
+    sửa cái phân trang có ... cho đẹp ở product với blog
+
+[33mcommit df678e9841e0f6b7981bbd102785fd14fb620242[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Fri Jun 16 15:53:13 2023 +0700
+
+    sửa cái phân trang có ... cho đẹp ở product với blog
+
+[33mcommit 2b508d9486aef023d1334ac82a57b7daba9949a6[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 18589ad 0357208
+Author: Nguyễn Sĩ Hoàng <115403400+hoang20130267@users.noreply.github.com>
+Date:   Fri Jun 16 12:08:43 2023 +0700
+
+    Merge pull request #166 from hoang20130267/NguyenNgocHuy
+    
+    Nguyen ngoc huy
+
+[33mcommit 0357208ad578644b90d220abeda189172e056915[m
+Merge: 840c337 18589ad
+Author: nnhuy20130281 <20130281@st.hcmuaf.edu.vn>
+Date:   Fri Jun 16 12:06:39 2023 +0700
+
+    update orderdetail giá giảm
+
+[33mcommit bd601cb9c02baf05ff6ee3b2339a245c39ce1e04[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Fri Jun 16 00:24:07 2023 +0700
+
+    sửa cái phân trang có ... cho đẹp ở product với blog
+
+[33mcommit 840c3374fcbc4b4afe99f89657f255a1b2ebd631[m
+Author: nnhuy20130281 <20130281@st.hcmuaf.edu.vn>
+Date:   Thu Jun 15 14:02:42 2023 +0700
+
+    fix
+
+[33mcommit 18589ad1783671c089b6fc65f2c6da8ca73c93b1[m
+Merge: 5bfc7ea 0071458
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed Jun 14 18:22:57 2023 +0700
+
+    Merge pull request #164 from hoang20130267/NguyenHuyHoang
+    
+    api 90% tính fee, time, tổng tiền. Sửa bug load phụ kiện, bug sản phẩ…
+
+[33mcommit 0071458c29844f5599ae8cfe37c23e56a93da710[m
+Merge: 8071903 5bfc7ea
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed Jun 14 18:22:30 2023 +0700
+
+    api 100% tính fee, time, tổng tiền, chi tiết đơn hàng. Sửa bug load phụ kiện, bug sản phẩm vừa xem, lỗi phân trang không addcart được, bug đặt hàng dù chưa điền đủ thông tin
+
+[33mcommit 5bfc7eae0bd7db4892c025312e75e93814aac000[m
+Merge: 5284791 e39e4aa
+Author: Nguyễn Sĩ Hoàng <115403400+hoang20130267@users.noreply.github.com>
+Date:   Wed Jun 14 14:48:37 2023 +0700
+
+    Merge pull request #165 from hoang20130267/NguyenSiHoang
+    
+    chuyen danh sach blog ve datatable
+
+[33mcommit e39e4aa2c977cb5534b287f83d3ef905e5c71d56[m
+Merge: d69dc91 5284791
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Wed Jun 14 14:48:14 2023 +0700
+
+    conflict
+
+[33mcommit d69dc91922023ec7f1b043fd578480c7aacba235[m
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Wed Jun 14 14:37:13 2023 +0700
+
+    chuyen danh sach blog ve datatable
+
+[33mcommit 80719031b49382bc6dd5fa3988def5d89fb58611[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Tue Jun 13 01:49:04 2023 +0700
+
+    api 90% tính fee, time, tổng tiền. Sửa bug load phụ kiện, bug sản phẩm vừa xem, lỗi phân trang không addcart được, bug đặt hàng dù chưa điền đủ thông tin
+
+[33mcommit 528479123a6bfd1fb94eda7433d98b4c9a1dccde[m
+Merge: be219a4 87a5878
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed May 31 14:51:47 2023 +0700
+
+    Merge pull request #163 from hoang20130267/NguyenHuyHoang
+    
+    load, chinh sua dia chi = api, 60%
+
+[33mcommit 87a5878ff556a6e431ccbc29e08ed0ef92188ba4[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed May 31 14:51:18 2023 +0700
+
+    fix crolling ben index cua admin, fix gio hang va yeu thich khi phan trang
+
+[33mcommit 7eb9f35accd01236b034e4318fe6d1dffb96051a[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Mon May 29 09:12:49 2023 +0700
+
+    load, chinh sua dia chi = api, 60%
+
+[33mcommit be219a4bdbd67c6d3822a835c82a472ba627afcc[m
+Merge: 02f51d9 fa7e087
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Sun May 28 00:53:32 2023 +0700
+
+    Merge pull request #162 from hoang20130267/NguyenHuyHoang
+    
+    sua cai bang dia chi, api tinh,huyen,xa 30%
+
+[33mcommit fa7e08711a1e3eb33712c1a7906fcc97af653afe[m
+Merge: 20cc3ab 02f51d9
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed May 24 02:36:42 2023 +0700
+
+    sua cai bang dia chi, api tinh,huyen,xa 30%
+
+[33mcommit 20cc3ab6324e62343d6d412774bda1090dc2e22e[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Wed May 24 02:35:50 2023 +0700
+
+    sua cai bang dia chi, api tinh,huyen,xa 30%
+
+[33mcommit 02f51d9c47fb6cf2436639931e03b64d7b73a930[m
+Merge: 0698ba6 8df4a32
+Author: Nguyễn Sĩ Hoàng <115403400+hoang20130267@users.noreply.github.com>
+Date:   Tue May 23 18:26:05 2023 +0700
+
+    Merge pull request #161 from hoang20130267/NguyenSiHoang
+    
+    Nguyen si hoang
+
+[33mcommit 8df4a32faf0f44ce0a8c4402c3330b81ed470bec[m[33m ([m[1;31morigin/NguyenSiHoang[m[33m)[m
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Tue May 23 18:16:58 2023 +0700
+
+    fix css
+
+[33mcommit 03a7a947b66cc004082fbaee5486ba765a55c72a[m
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Tue May 23 18:14:46 2023 +0700
+
+    chinh sua lenh update san pham thu cung va phu kien
+
+[33mcommit 39edbc3050bac8abb2bfb84e4b075522649f436a[m
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Tue May 23 18:09:50 2023 +0700
+
+    chuyen danh sach thu cung va phu kien sang datatable
+
+[33mcommit 0698ba6eecd70b965f38dd626b7cc619beeca312[m
+Merge: 16cc8ab f8683a1
+Author: Nguyễn Sĩ Hoàng <115403400+hoang20130267@users.noreply.github.com>
+Date:   Tue May 23 16:07:02 2023 +0700
+
+    Merge pull request #158 from hoang20130267/NguyenSiHoang
+    
+    them va update nhieu anh cho san pham phu kien o trang admin
+
+[33mcommit f8683a1d8a06f7de38c266b28a2be6c4dd2b29cf[m
+Merge: 4506141 16cc8ab
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Tue May 23 16:08:04 2023 +0700
+
+    fix
+
+[33mcommit 16cc8ab7fdeae5dfb478be4c2c16f15f32956323[m
+Merge: 4276a4e 1b8c22f
+Author: Nguyễn Ngọc Huy <90453864+nnhuy20130281@users.noreply.github.com>
+Date:   Tue May 23 16:02:14 2023 +0700
+
+    Merge pull request #160 from hoang20130267/NguyenNgocHuy
+    
+    Nguyen ngoc huy
+
+[33mcommit 1b8c22f20d1c8d575c43017d9665fd7805ed7dea[m[33m ([m[1;31morigin/NguyenNgocHuy[m[33m)[m
+Merge: 28796ea 4276a4e
+Author: nnhuy20130281 <20130281@st.hcmuaf.edu.vn>
+Date:   Tue May 23 15:10:46 2023 +0700
+
+    fix thanh toán: thông báo khi sản phẩm không đủ tồn kho
+
+[33mcommit 28796eab3a1f6c9eab8bfd945cd4113f9a7b1592[m
+Author: nnhuy20130281 <20130281@st.hcmuaf.edu.vn>
+Date:   Mon May 22 15:17:40 2023 +0700
+
+    fix lỗi hiện tạm hết hàng ở trang product_detail
+
+[33mcommit 4276a4ee7aefbd66c9afbbff8598c339cbd948a8[m
+Merge: 2b24e56 c833bbb
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Sun May 14 17:59:47 2023 +0700
+
+    Merge pull request #159 from hoang20130267/NguyenHuyHoang
+    
+    sua lai cai them dia chi khach hang de lam cái api
+
+[33mcommit c833bbb28ef8228ed381c208f018f6c1693eb97a[m
+Author: Nguyễn Huy Hoàng <110890529+HuyHoang-20130266@users.noreply.github.com>
+Date:   Sat May 13 21:20:16 2023 +0700
+
+    sua lai cai them dia chi khach hang de lam cái api
+
+[33mcommit 45061418e8c38dbadb4809ca7cc367ecb72e0d7e[m
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Sat May 13 20:51:51 2023 +0700
+
+    them va update nhieu anh cho san pham phu kien o trang admin
+
+[33mcommit 4ebd76218468a010b3fcba90e52625633396f5d4[m
+Merge: 1350006 f59ffac
+Author: hoang20130267 <20130267@st.hcmuaf.edu.vn>
+Date:   Fri May 12 21:00:27 2023 +0700
+
+    fix conflict
+
+[33mcommit 2b24e56efe485f2

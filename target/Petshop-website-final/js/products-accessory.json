@@ -1,0 +1,293 @@
+{
+  "phukien":[
+    {
+     "Id": "pk_01",
+     "ten": "Đồ Chơi Cho Chó – Banh Có Dây",
+     "gia": "90.000",
+     "size": "Lớn - Nhỏ",
+     "mota": "Bóng được bện cùng dây thừng là đồ chơi đồng thời là đồ huấn luyện lý tưởng cho cún cưng của bạn.",
+     "anh": "img\/products\/phukien\/sp1.jpg"
+    },
+    {
+     "Id": "pk_02",
+     "ten": "Đồ Chơi Cho Chó – Dạng Dây Thừng",
+     "gia": "50.000",
+     "mota": "Đồ chơi cho chó được thiết kế có tay cầm, dễ điều khiển.",
+     "anh": "img\/products\/phukien\/sp2.jpg"
+    },
+    {
+     "Id": "pk_03",
+     "ten": "Bàn Chải & Kem Vệ Sinh Răng Cho Chó Mèo",
+     "gia": "100.000",
+     "mota": "Vệ sinh mãng bám cho chó và mèo, bàn chải & kem vệ sinh răng được làm từ chất liệu cao cấp, an toàn cho răng chó và mèo",
+     "anh": "img\/products\/phukien\/sp3.jpg"
+    },
+    {
+     "Id": "pk_04",
+     "ten": "Bộ Lược Tắm – Chải Lông Cho Chó Mèo",
+     "gia": "220.000",
+     "mota": "Sản Phẩm được làm từ chất liệu cao cấp, an toàn cho răng chó và rất bền.",
+     "anh": "img\/products\/phukien\/sp4.jpg"
+    },
+    {
+     "Id": "pk_05",
+     "ten": "Nệm Lông Tròn",
+     "gia": "180.000",
+     "mota": "làm từ sợi PP và bông gòn, dễ dàng giặt rửa khi cần, sợi bông êm, mềm mại.",
+     "anh": "img\/products\/phukien\/sp5.jpg"
+    },
+    {
+     "Id": "pk_06",
+     "ten": "Bát Ăn Đôi Tròn Round Dog",
+     "gia": "45.000",
+     "mota": "Bát ăn đôi tròn cho chó mèo được làm từ chất liệu nhựa cao cấp không gây hại, không làmanh hưởng đến chất lượng thức ăn, màu sắc bất mắt giúp thú cưng ăn ngon miệng hơn.",
+     "anh": "img\/products\/phukien\/sp6.jpg"
+    },
+    {
+     "Id": "pk_07",
+     "ten": "Dụng Dịch SOS – Vệ Sinh Bàn Chân Cho Chó Mèo",
+     "gia": "135.000",
+     "mota": "Dung dịch SOS không làm khô đệm chân của các bé, giúp giữ vệ sinh lòng bàn chân và không gây viêm da cho các bé",
+     "anh": "img\/products\/phukien\/sp7.jpg"
+    },
+    {
+     "Id": "pk_08",
+     "ten": "Xẻng dọn vệ sinh cho chó mèo",
+     "gia": "30.000",
+     "mota": "Xẻng dọn vệ sinh được thiết kế độc đáo với những rãnh thưa dễ dàng loại bỏ cát đã vón cục, những hạt khô chưa sử dụng trong khay cát sẽ rơi lại",
+     "anh": "img\/products\/phukien\/sp8.jpg"
+    },
+    {
+     "Id": "pk_09",
+     "ten": "Tã lót miếng cho thú cưng",
+     "gia": "160.000",
+     "size": "60x60cm - 60x90cm",
+     "mota": "Miếng tã sẽ thấm hút nhanh chóng nước tiểu của vật nuôi khi các bé tè, đồng thời có tác dụng khử mùi, chống vi khuẩn, giữ cho bề mặt luôn khô ráo.",
+     "anh": "img\/products\/phukien\/sp9.jpg"
+    },
+    {
+     "Id": "pk_10",
+     "ten": "Tã mặc cho chó đực",
+     "gia": "90.000",
+     "size": "size M - S",
+     "mota": "Miếng tã sẽ thấm hút nhanh chóng nước tiểu của vật nuôi khi các bé tè, đồng thời có tác dụng khử mùi, chống vi khuẩn, giữ cho bề mặt luôn khô ráo.",
+     "anh": "img\/products\/phukien\/sp10.jpg"
+    },
+    {
+     "Id": "pk_11",
+     "ten": "Phấn tắm khô đu đủ",
+     "gia": "100.000",
+     "mota": "Phấn tắm khô đu đủ là một loại phấn giúp giảm thiểu lượng rận, bọ chét trên cơ thể thú cưng. Với nguyên liệu chính từ đu đủ, phấn tắm mang đến hương thơm dịu nhẹ khi sử dụng cho thú cưng.",
+     "anh": "img\/products\/phukien\/sp11.jpg"
+    },
+    {
+     "Id": "pk_12",
+     "ten": "Sữa Tắm SOS cho thú cưng",
+     "gia": "170.000",
+     "mota": "Sữa tắm SOS là một trong những thương hiệu vệ sinh cho cún được phần lớn người nuôi thú cưng ưa chuộng. Đây cũng là một trong những dòng sữa tắm thú cưng có lượng tiêu thụ lớn nhất tại Việt Nam",
+     "anh": "img\/products\/phukien\/sp12.jpg"
+    },
+    {
+     "Id": "pk_13",
+     "ten": "Tã mặc cho chó nhỏ",
+     "gia": "100.000",
+     "mota": "Việc cún cưng hay đi bậy là điều khiến cho không ít con sen đau đầu. Chính vì thế, tã mặc cho cún chính là cứu cánh đắc lực giúp giảm bớt tình trạng này. Với sản phẩm tã mặc cho chó nhỏ này sẽ giúp thấm hút nước tiểu một cách nhanh chóng và kết lại thành một khối.",
+     "anh": "img\/products\/phukien\/sp13.jpg"
+    },
+    {
+     "Id": "pk_14",
+     "ten": "Royal Canin Poodle Junior 1,5KG",
+     "gia": "420.000",
+     "mota": "Thức ăn cho chó Poodle – Royal Canin Poodle Junior là một sự lựa chọn dinh dưỡng quen thuộc của các bạn sen. Được chế biến dưới dạng khô, quen thuộc dành cho các bé Poodle <10 tháng tuổi.",
+     "anh": "img\/products\/phukien\/sp14.jpg"
+    },
+    {
+     "Id": "pk_15",
+     "ten": "Bát ăn đôi nhựa nhỏ",
+     "gia": "30.000",
+     "mota": "Bát ăn đôi nhựa nhỏ cho chó mèo được làm từ chất liệu nhựa cứng cao cấp với bề mặt bóng trơn láng. Sản phẩm không có chất gây độc hại, không làmanh hưởng đến chất lượng trong quá trình sử dụng, bền màu và có màu sắc đa dạng bắt mắt.",
+     "anh": "img\/products\/phukien\/sp15.jpg"
+    },
+    {
+     "Id": "pk_16",
+     "ten": "Bát ăn xương nhựa",
+     "gia": "30.000",
+     "mota": "Bát ăn xương nhựa chó mèo được làm từ chất liệu nhựa cứng cao cấp với bề mặt bóng trơn láng. Sản phẩm không có chất gây độc hại, không làmanh hưởng đến chất lượng trong quá trình sử dụng, bền màu và có màu sắc đa dạng bắt mắt.",
+     "anh": "img\/products\/phukien\/sp16.jpg"
+    },
+    {
+     "Id": "pk_17",
+     "ten": "Bát ăn inox gắn chuồng cho chó mèo",
+     "gia": "150.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Bát ăn inox gắn chuồng cho chó mèo là sản phẩm dành cho tất cả giống chó và mèo. Với thiết kế đế đáy sơn tĩnh điện giúp bát không bị trượt mỗi khi bé cún ăn.",
+     "anh": "img\/products\/phukien\/sp17.jpg"
+    },
+    {
+     "Id": "pk_18",
+     "ten": "Dây dắt chó cưng kèm đai ngực Demin\n",
+     "gia": "90.000",
+     "mota": "Dây dắt cho chó cưng đi kèm đai ngực Demin là sản phẩm dành cho tất cả giống chó. Với chiếc dây này, bạn có thể đưa chú cún cưng đi dạo một cách thuận tiện",
+     "anh": "img\/products\/phukien\/sp18.jpg"
+    },
+    {
+     "Id": "pk_19",
+     "ten": "Dây Dắt Chó Đi Kèm Đai Ngực Họa Tiết",
+     "gia": "140.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Dây dắt cho chó đi kèm đai ngực Họa Tiết là sản phẩm dành cho tất cả giống chó. Là vật dụng không thể thiếu mỗi khi bạn muốn đưa cún cưng đi dạo.",
+     "anh": "img\/products\/phukien\/sp19.jpg"
+    },
+    {
+     "Id": "pk_20",
+     "ten": "Dây Dắt Cho Chó Đi Kèm Đai Ngực Jean",
+     "gia": "120.000",
+     "mota": "Dây dắt cho chó đi kèm đai ngực Jean là sản phẩm dành cho tất cả giống chó.",
+     "anh": "img\/products\/phukien\/sp20.jpg"
+    },
+    {
+     "Id": "pk_21",
+     "ten": "Bóng Đồ Chơi Cho Chó Mèo Có Chuông Nhựa MOLAR",
+     "gia": "90.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Bóng Đồ Chơi Cho Chó Mèo Có Chuông Nhựa MOLAR là sản phẩm phù hợp dành cho thú cưng. Giúp các bé vừa giảm khả năng cắn phá đồ đạc trong nhà, vừa là một món đồ chơi giúp bé",
+     "anh": "img\/products\/phukien\/sp21.jpg"
+    },
+    {
+     "Id": "pk_22",
+     "ten": "Bóng đồ chơi cho chó – Dây thừng 3 đầu KITTEN",
+     "gia": "100.000",
+     "mota": "Bóng đồ chơi cho chó – Dây thừng 3 đầu KITTEN là sản phẩm dành cho tất cả giống chó mèo. Với món đồ chơi này, bạn sẽ hạn chế được việc thú cưng cắn đồ đạc trong nhà. Đây còn là món đồ chơi giúp bé cún linh hoạt hơn",
+     "anh": "img\/products\/phukien\/sp22.jpg"
+    },
+    {
+     "Id": "pk_23",
+     "ten": "Đồ gặm cho chó mèo – Bóng Thừng 2 Đầu KITTEN",
+     "gia": "80.000",
+     "mota": "Đồ gặm cho chó mèo – Bóng Thừng 2 Đầu KITTEN là sản phẩm dành cho tất cả giống chó và mèo. Với dây bóng thừng, bạn có thể hạn chế được việc bé gặm đồ đạc trong nhà.",
+     "anh": "img\/products\/phukien\/sp23.jpg"
+    },
+    {
+     "Id": "pk_24",
+     "ten": "Đồ Chơi Cho Chó Mèo Dạng Bóng Thừng KITTEN",
+     "gia": "60.000",
+     "mota": "Đồ chơi cho chó mèo dạng bóng thừng Kitten là sản phẩm dành cho tất cả giống chó và mèo.",
+     "anh": "img\/products\/phukien\/sp24.jpg"
+    },
+    {
+     "Id": "pk_25",
+     "ten": "Dây Dẫn 7 Màu Cho Chó Mèo",
+     "gia": "80.000",
+     "mota": "Dây Dẫn Đai Ngực 7 Màu cho chó là sản phẩm dành cho tất cả giống chó cỡ nhỏ.",
+     "anh": "img\/products\/phukien\/sp25.jpg"
+    },
+    {
+     "Id": "pk_26",
+     "ten": "Khay Vệ Sinh Teddy Cho Chó",
+     "gia": "280.000",
+     "mota": "Khay vệ sinh cho chó bằng nhựa cao cấp TEDDY với thiết kế thông minh được làm từ 100% nhựa tổng hợp cao cấp. Mang lại tính đàn hồi, bền bỉ, mềm, chống ăn mòn cho sản phẩm",
+     "anh": "img\/products\/phukien\/sp26.jpg"
+    },
+    {
+     "Id": "pk_27",
+     "ten": "Khay Vệ Sinh Haver Cho Chó",
+     "gia": "360.000",
+     "mota": "Khay vệ sinh cho chó đi đúng chỗ Haver sử dụng chất liệu nhựa tổng hợp chất lượng cao. Có tính đàn hồi giúp chó mèo dẫm lên cảm thấy thoải mái. Khay hướng dẫn chó đi vệ sinh đúng chỗ trong nhà với màu sắc đa dạng, bền và chịu lực tốt, tuổi thọ dài.",
+     "anh": "img\/products\/phukien\/sp27.jpg"
+    },
+    {
+     "Id": "pk_28",
+     "ten": "Nệm Tai Thỏ Cho Chó Mèo",
+     "gia": "450.000",
+     "mota": "Nệm Tai Thỏ Cho Chó Mèo được thiết kế dành riêng cho vật nuôi. Phù hợp với tất cả các giống chó mèo.",
+     "anh": "img\/products\/phukien\/sp28.jpg"
+    },
+    {
+     "Id": "pk_29",
+     "ten": "Nệm Chấm Bi Cho Chó Mèo",
+     "gia": "440.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Nệm cho chó mèo hình vuông Zenji với hình dáng và mẫu mã độc đáo. Được thiết kế dành riêng cho vật nuôi. Phù hợp với tất cả các giống chó mèo.",
+     "anh": "img\/products\/phukien\/sp29.jpg"
+    },
+    {
+     "Id": "pk_30",
+     "ten": "Nệm Giường 3D CHO CHÓ MÈO",
+     "gia": "350.000",
+     "mota": "Ổ nằm cho chó mèo sẽ là lựa chọn sáng suốt dành cho các Boss nhà mình, và tạo được thói quen đi ngủ tốt cho chó mèo.",
+     "anh": "img\/products\/phukien\/sp30.jpg"
+    },
+    {
+     "Id": "pk_31",
+     "ten": "Chuồng Nhựa Láp Ráp Cho Chó Mèo",
+     "gia": "1.800.000",
+     "mota": "Chuồng Nhựa Láp Ráp cho chó mèo phù hợp với tất cả các giống chó nhỏ và mèo.",
+     "anh": "img\/products\/phukien\/sp31.jpg"
+    },
+    {
+     "Id": "pk_32",
+     "ten": "Cũi gỗ cho chó mèo",
+     "gia": "3.500.000",
+     "mota": "Cũi gỗ cho chó mèo là sản phẩm chuồng phù hợp với những giống chó mèo cỡ nhỏ đến trung bình. Nếu bạn đang tìm kiếm một “căn phòng mini” cho thú cưng nhà mình, chắc chắn không nên bỏ qua em chuồng gỗ này.",
+     "anh": "img\/products\/phukien\/sp32.jpg"
+    },
+    {
+     "Id": "pk_33",
+     "ten": "Chuồng Sắt Cho Chó Mèo",
+     "gia": "1.350.000",
+     "size": "size L-M-S-XL",
+     "mota": "Chuồng sắt cho chó mèo chống gỉ gấp gọn được thiết kế với chiều cao và dài rộng hợp lý tùy theo kích thước của mỗi thú cưng. Đi kèm theo sản phẩm là khay nhựa lót sàn thoáng giúp việc đi vệ sinh của thú cưng sạch sẽ hơn cùng khay đựng bát ăn uống tiện lợi.",
+     "anh": "img\/products\/phukien\/sp33.jpg"
+    },
+    {
+     "Id": "pk_34",
+     "ten": "Vòng Cổ Thổ Cẩm Cho Chó & Mèo",
+     "gia": "80.000",
+     "mota": "Vòng cổ thổ cẩm cho chó mèo là một phụ kiện không thể thiếu trong BST của các bé thú cưng. Chiếc vòng không những giúp cho bé thú cưng trở nên thời trang hơn mà còn giúp bạn dễ dàng tìm thấy bé nhờ tiếng lục lạc trên vòng cổ.",
+     "anh": "img\/products\/phukien\/sp34.jpg"
+    },
+    {
+     "Id": "pk_35",
+     "ten": "Thức ăn khô Royal Canin Puppy Mini",
+     "gia": "380.000",
+     "mota": "Đây là loại thức ăn cho chó kích cỡ Mini (cân nặng tối đa 10kg) và đang trong lứa tuổi Puppy từ 2 đến 10 tháng tuổi.",
+     "anh": "img\/products\/phukien\/sp35.jpg"
+    },
+    {
+     "Id": "pk_36",
+     "ten": "Khăn Vệ Sinh Siêu Thấm",
+     "gia": "80.000",
+     "mota": "Khả năng hút nước có thể tương đương với 10 khăn bông thông thường, do vậy tiết kiệm rất nhiều thời gian trong quá trình lau khô cho vật nuôi",
+     "anh": "img\/products\/phukien\/sp36.jpg"
+    },
+    {
+     "Id": "pk_37",
+     "ten": "Lược Chải Ve & Rận",
+     "gia": "30.000",
+     "mota": "Nuôi chó mèo, ai cũng phải gặp những con ác mộng về ve rận trên lông của thú cưng. Những con vật ký sinh khiến thú cưng cảm thấy ngứa ngáy và không cảm thấy thoải mái. Vậy đâu là giải pháp? Chiếc lược chải ve & rận chính là cứu tinh hữu hiệu nhất.",
+     "anh": "img\/products\/phukien\/sp37.jpg"
+    },
+    {
+     "Id": "pk_38",
+     "ten": "Vòng Cổ Hình Dấu Chân",
+     "gia": "30.000",
+     "mota": "Vòng cổ in hình dấu chân là sản phẩm không thể thiếu của các bé thú cưng. Bên cạnh việc khẳng định là “cún đã có chủ”, chiếc vòng cổ còn giúp người chủ dễ dàng tìm thấy các bé nhờ tiếng lục lạc trên vòng.",
+     "anh": "img\/products\/phukien\/sp38.jpg"
+    },
+    {
+     "Id": "pk_39",
+     "ten": "Bình Nước Gắn Chuồng",
+     "gia": "80.000",
+     "mota": "Bình nước gắn chuồng là một phụ kiện không thể thiếu trong lồng thú cưng. Với chất liệu từ nhựa PP chống nhờn, không bám bẩn, đầu vòi inox không rỉ sét cho sự an toàn của thú cưng.",
+     "anh": "img\/products\/phukien\/sp39.jpg"
+    },
+    {
+     "Id": "pk_40",
+     "ten": "Túi Xách Chó Mèo Hình Dấu Chân",
+     "gia": "500.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Túi xách dấu chân là phụ kiện thân thuộc giúp Sen mang Boss đi mọi nơi.",
+     "anh": "img\/products\/phukien\/sp40.jpg"
+    }
+   ]
+}

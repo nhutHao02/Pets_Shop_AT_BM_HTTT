@@ -1,0 +1,1047 @@
+{
+  "Dog":[
+    {
+     "Id": "dog_01",
+     "ten": "ALASKA Hồng Phấn",
+     "gia": "18.000.000",
+     "mota": "Chó Alaska hay còn gọi là chó Alaska Malamute là tổ tiên giống chó sói tuyết hoang, được thuần hoá bởi tộc Malamute để trở thành vật nuôi. Tuy nhiên, trước khi trở thành thú nuôi phổ biến trong nhà, chó Alaska cũng đã phải trải qua một quá trình đầy gian nan, thử thách.",
+     "giong": "ALASKA",
+     "mausac": "Hồng Phấn",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp1.jpg"
+    },
+    {
+     "Id": "dog_02",
+     "ten": "ALASKA Nâu Đực Đẹp Trai",
+     "gia": "20.000.000",
+     "mota": "Chó Alaska hay còn gọi là chó Alaska Malamute là tổ tiên giống chó sói tuyết hoang, được thuần hoá bởi tộc Malamute để trở thành vật nuôi. Tuy nhiên, trước khi trở thành thú nuôi phổ biến trong nhà, chó Alaska cũng đã phải trải qua một quá trình đầy gian nan, thử thách.",
+     "giong": "ALASKA",
+     "mausac": "Nâu",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp2.jpg"
+    },
+    {
+     "Id": "dog_03",
+     "ten": "Chó Corgi Pembroke",
+     "gia": "18.000.000",
+     "mota": "Không khác gì các chú chó khác, Corgi khỏe mạnh luôn là mong muốn của các bạn chủ. Nhưng để nuôi dưỡng một chú chó Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi",
+     "mausac": "Trắng Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp3.png"
+    },
+    {
+     "Id": "dog_04",
+     "ten": "Chó Corgi Pembroke",
+     "gia": "15.000.000",
+     "mota": "Không khác gì các chú chó khác, Corgi khỏe mạnh luôn là mong muốn của các bạn chủ. Nhưng để nuôi dưỡng một chú chó Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi",
+     "mausac": "Trắng Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp4.png"
+    },
+    {
+     "Id": "dog_05",
+     "ten": "Chó Corgi Fluffy",
+     "gia": "10.000.000",
+     "mota": "Chó Corgi Fluffy có ngoại hình nhỏ bé và ngộ nghĩnh, đáng yêu. Chúng cũng rất năng động và thông minh nên được nhiều người ưa thích và mong muốn sở hữu.",
+     "giong": "Corgi Fluffy",
+     "mausac": "Tricolor",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp5.png"
+    },
+    {
+     "Id": "dog_06",
+     "ten": "Chó Corgi Fluffy",
+     "gia": "10.000.000",
+     "mota": "Chó Corgi Fluffy có ngoại hình nhỏ bé và ngộ nghĩnh, đáng yêu. Chúng cũng rất năng động và thông minh nên được nhiều người ưa thích và mong muốn sở hữu.",
+     "giong": "Corgi Fluffy",
+     "mausac": "Vàng & Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp6.png"
+    },
+    {
+     "Id": "dog_07",
+     "ten": "Chó Corgi Cardigan Welsh",
+     "gia": "12.000.000",
+     "mota": "Trong họ Corgi, dựa vào màu sắc màu lông có thể chia thành nhiều tên khác nhau Cardigan Corgi là giống chó đẹp được ưa chuộng hiện nay. Để nuôi dưỡng một chú chó Cardigan Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi Cardigan Welsh",
+     "mausac": "Vện",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp7.png"
+    },
+    {
+     "Id": "dog_08",
+     "ten": "Chó Corgi Cardigan Welsh",
+     "gia": "12.000.000",
+     "mota": "Trong họ Corgi, dựa vào màu sắc màu lông có thể chia thành nhiều tên khác nhau Cardigan Corgi là giống chó đẹp được ưa chuộng hiện nay. Để nuôi dưỡng một chú chó Cardigan Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi Cardigan Welsh",
+     "mausac": "Meler",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/dog\/sp8.png"
+    },
+    {
+     "Id": "dog_09",
+     "ten": "Chó Pomeranian Parti",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Parti",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp9.png"
+    },
+    {
+     "Id": "dog_10",
+     "ten": "Chó Pomeranian Trắng",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp10.png"
+    },
+    {
+     "Id": "dog_11",
+     "ten": "Chó Pomeranian Vàng",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Vàng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp11.png"
+    },
+    {
+     "Id": "dog_12",
+     "ten": "Chó Pomeranian Black",
+     "gia": "18.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Đen ",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp12.png"
+    },
+    {
+     "Id": "dog_13",
+     "ten": "Chó Pomeranian Panda",
+     "gia": "18.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Trắng-Đen",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp13.png"
+    },
+    {
+     "Id": "dog_14",
+     "ten": "Chó Poodle Trắng",
+     "gia": "10.000.000",
+     "mota": "Poodle Trắng với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle Trắng, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp14.png"
+    },
+    {
+     "Id": "dog_15",
+     "ten": "Chó Poodle Socola",
+     "gia": "7.000.000",
+     "mota": "Poodle Chocolate với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle Chocolate, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Socola",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp15.png"
+    },
+    {
+     "Id": "dog_16",
+     "ten": "Chó Poodle Vàng Mơ",
+     "gia": "7.000.000",
+     "mota": "Poodle vàng mơ với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle vàng mơ, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Vàng Mơ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp16.png"
+    },
+    {
+     "Id": "dog_17",
+     "ten": "Chó Poodle Bò Mơ",
+     "gia": "7.000.000",
+     "mota": "Poodle Bò Sữa là một giống Poodle với màu lông đặc biệt được săn đón và ưa chuộng nhất hiện nay. Với những đặc điểm về ngoại hình, chúng được mệnh danh là siêu phẩm với độ cute vô đối.",
+     "giong": "Poodle",
+     "mausac": "Bò Mơ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp17.png"
+    },
+    {
+     "Id": "dog_18",
+     "ten": "Chó Poodle Nâu Đỏ",
+     "gia": "7.000.000",
+     "mota": "Poodle được cho là có nguồn gốc từ Đức. Tại đó, chúng được gọi là Pudel, có nghĩa là “một kẻ đáng chú ý trong nước“. Điều này chứng tỏ Poodle là một tay bơi cừ khôi dưới nước.",
+     "giong": "Poodle",
+     "mausac": "Nâu Đỏ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp18.png"
+    },
+    {
+     "Id": "dog_19",
+     "ten": "Chó Poodle Trắng Kem",
+     "gia": "7.000.000",
+     "mota": "Poodle trắng kem với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle kem, chúng ta rất dễ phối đồ cho chún. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Trắng Kem",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp19.png"
+    },
+    {
+     "Id": "dog_20",
+     "ten": "Chó Poodle Phantom",
+     "gia": "12.000.000",
+     "mota": "Những bé Poodle hai màu này đang nhận được sự quan tâm từ nhiều khách hàng khác nhau. Màu bò sữa vốn là màu không có trong bảng thuần chủng của chúng.Đây thực chất là màu được lai tạo từ Poodle đen và Poodle trắng. Sự lai phối này tạo ra một giống chó màu lông đẹp hoàn hảo, đặc biệt được nhiều người yêu thích. Sự kết hợp hài hòa giữa hai màu đen trắng tạo nên ngoại hình hoàn chỉnh cho Poodle.",
+     "giong": "Poodle",
+     "mausac": "Phantom",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp20.png"
+    },
+    {
+     "Id": "dog_21",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp21.png"
+    },
+    {
+     "Id": "dog_22",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp22.png"
+    },
+    {
+     "Id": "dog_23",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp23.png"
+    },
+    {
+     "Id": "dog_24",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Kem",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp24.png"
+    },
+    {
+     "Id": "dog_25",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Bò Sữa",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp25.png"
+    },
+    {
+     "Id": "dog_26",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Bò Sữa",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp26.png"
+    },
+    {
+     "Id": "dog_27",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp27.png"
+    },
+    {
+     "Id": "dog_28",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Vàng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp28.png"
+    },
+    {
+     "Id": "dog_29",
+     "ten": "BEAGLE ĐỰC SIÊU XINH",
+     "gia": "9.500.000",
+     "mota": "Chó săn thỏ là một giống chó nhỏ trong các chó săn và chuyên dùng để săn thỏ, chúng dễ nhận biết bởi bộ lông tam thể mềm mượt đặc trưng. Chúng rất dễ nuôi, thân thiện và đáng yêu với con người, có thể vừa trông nhà, vừa chơi đùa cùng trẻ con trong nhà.",
+     "giong": "Beagle",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp29.jpg"
+    },
+    {
+     "Id": "dog_30",
+     "ten": "BEAGLE – CHÓ SĂN THỎ",
+     "gia": "9.500.000",
+     "mota": "Chó săn thỏ là một giống chó nhỏ trong các chó săn và chuyên dùng để săn thỏ, chúng dễ nhận biết bởi bộ lông tam thể mềm mượt đặc trưng. Chúng rất dễ nuôi, thân thiện và đáng yêu với con người, có thể vừa trông nhà, vừa chơi đùa cùng trẻ con trong nhà.",
+     "giong": "Beagle",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp30.jpg"
+    },
+    {
+     "Id": "dog_31",
+     "ten": "PUG MẶT THỘN",
+     "gia": "10.000.000",
+     "mota": "Pug, hay thường được gọi là chó mặt xệ, là giống chó thuộc nhóm chó cảnh có nguồn gốc từ Trung Quốc, chúng có một khuôn mặt nhăn, mõm ngắn, và đuôi xoăn. Giống chó này có bộ lông mịn, bóng, có nhiều màu sắc nhưng phổ biến nhất là màu đen và nâu vàng. Cơ thể của Pug nhỏ gọn hình vuông với các cơ bắp rất phát triển.",
+     "giong": "Pug",
+     "mausac": "Vàng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/dog\/sp31.jpg"
+    },
+    {
+     "Id": "dog_32",
+     "ten": "EM PUG BÉO Ú NU",
+     "gia": "8.500.000",
+     "mota": "Pug, hay thường được gọi là chó mặt xệ, là giống chó thuộc nhóm chó cảnh có nguồn gốc từ Trung Quốc, chúng có một khuôn mặt nhăn, mõm ngắn, và đuôi xoăn. Giống chó này có bộ lông mịn, bóng, có nhiều màu sắc nhưng phổ biến nhất là màu đen và nâu vàng. Cơ thể của Pug nhỏ gọn hình vuông với các cơ bắp rất phát triển.",
+     "giong": "Pug",
+     "mausac": "Vàng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/dog\/sp32.jpg"
+    },
+    {
+     "Id": "dog_33",
+     "ten": "SAMOYED SIÊU CUTE",
+     "gia": "12.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp33.jpg"
+    },
+    {
+     "Id": "dog_34",
+     "ten": "SAM SAM ĐÁNG YÊU",
+     "gia": "13.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp34.jpg"
+    },
+    {
+     "Id": "dog_35",
+     "ten": "SAMOYED SIÊU CƯNG",
+     "gia": "14.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "4kg",
+     "anh": "img\/products\/dog\/sp35.jpeg"
+    },
+    {
+     "Id": "dog_36",
+     "ten": "SAMOYED TRẮNG",
+     "gia": "15.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "4kg",
+     "anh": "img\/products\/dog\/sp36.jpg"
+    },
+    {
+     "Id": "dog_37",
+     "ten": "BICHON TRẮNG ĐỰC YÊU YÊU",
+     "gia": "35.000.000",
+     "mota": "Bichon Frise là là một loại chó nhỏ thuộc giống chó Bichon. The Bichon Frise là một thành viên của giống chó trong nhóm phi thể thao tại Mỹ, và thành viên thuộc nhóm chó cảnh tại Anh.",
+     "giong": "BICHON",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp37.jpg"
+    },
+    {
+     "Id": "dog_38",
+     "ten": "EM BICHON TRẮNG SIÊU YÊU",
+     "gia": "90.000.000",
+     "mota": "Bichon Frise là là một loại chó nhỏ thuộc giống chó Bichon. The Bichon Frise là một thành viên của giống chó trong nhóm phi thể thao tại Mỹ, và thành viên thuộc nhóm chó cảnh tại Anh.",
+     "giong": "BICHON",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp38.jpg"
+    },
+    {
+     "Id": "dog_39",
+     "ten": "GOLDEN BÉO Ú NU",
+     "gia": "13.000.000",
+     "mota": "Golden Retriever, còn gọi là chó săn lông vàng hoặc chó tha mồi, là giống chó có kích thước trung bình. Thuộc họ nhà chó ưa hoạt động, chơi đùa, chúng rất trung thành và thông minh.",
+     "giong": "GOLDEN RETRIEVER",
+     "mausac": "Vàng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp39.jpeg"
+    },
+    {
+     "Id": "dog_40",
+     "ten": "GOLDEN DỄ THƯƠNG",
+     "gia": "16.000.000",
+     "mota": "Golden Retriever, còn gọi là chó săn lông vàng hoặc chó tha mồi, là giống chó có kích thước trung bình. Thuộc họ nhà chó ưa hoạt động, chơi đùa, chúng rất trung thành và thông minh.",
+     "giong": "GOLDEN RETRIEVER",
+     "mausac": "Vàng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp40.jpg"
+    }
+   ],
+   "Cat":[
+    {
+     "ID": "cat_01",
+     "ten": "Mèo Anh lông ngắn Bicolor Lilac",
+     "gia": "7.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Bicolor Lilac",
+     "cannang": "2kg",
+     "anh": "img\/products\/cat\/sp01.jpg"
+    },
+    {
+     "ID": "cat_02",
+     "ten": "Mèo Anh lông ngắn nâu trắng",
+     "gia": "8.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Nâu trắng",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp02.jpg"
+    },
+    {
+     "ID": "cat_03",
+     "ten": "Mèo Anh lông ngắn nâu xám",
+     "gia": "7.500.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng đen",
+     "cannang": "2kg",
+     "anh": "img\/products\/cat\/sp03.jpg"
+    },
+    {
+     "ID": "cat_04",
+     "ten": "Mèo Anh lông ngắn trắng nâu",
+     "gia": "8.500.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng nâu",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp04.jpg"
+    },
+    {
+     "ID": "cat_05",
+     "ten": "Mèo Anh lông ngắn xám trắng",
+     "gia": "9.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Xám trắng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/cat\/sp05.jpg"
+    },
+    {
+     "ID": "cat_06",
+     "ten": "Mèo Anh lông ngắn trắng mật ong",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng mật ong",
+     "cannang": "2.2kg",
+     "anh": "img\/products\/cat\/sp06.jpg"
+    },
+    {
+     "ID": "cat_07",
+     "ten": "Mèo Anh lông ngắn xám đen",
+     "gia": "7.700.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "xám đen",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp07.jpg"
+    },
+    {
+     "ID": "cat_08",
+     "ten": "Mèo Anh lông ngắn bông tuyết",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "trắng tuyết",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp08.jpg"
+    },
+    {
+     "ID": "cat_09",
+     "ten": "Mèo Anh lông ngắn đen huyền",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "đen tuyền",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp09.jpg"
+    },
+    {
+     "ID": "cat_10",
+     "ten": "Mèo Scottish silver",
+     "gia": "13.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/cat\/sp10.jpg"
+    },
+    {
+     "ID": "cat_11",
+     "ten": "Mèo tai cụp mắt xanh tuyền",
+     "gia": "14.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "bạch ",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp11.jpg"
+    },
+    {
+     "ID": "cat_12",
+     "ten": "Mèo tai cụp vàng nhạt",
+     "gia": "13.500.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "vàng nhạt",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp12.jpg"
+    },
+    {
+     "ID": "cat_13",
+     "ten": "Mèo tai cụp golden",
+     "gia": "15.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "golden",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp13.jpg"
+    },
+    {
+     "ID": "cat_14",
+     "ten": "Mèo Bicolor tai cụp",
+     "gia": "14.700.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng nâu ",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp14.jpg"
+    },
+    {
+     "ID": "cat_15",
+     "ten": "Mèo tai cụp trắng ngà ",
+     "gia": "12.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng ngà",
+     "cannang": "1.4kg",
+     "anh": "img\/products\/cat\/sp15.jpg"
+    },
+    {
+     "ID": "cat_16",
+     "ten": "Mèo tai cụp xám trắng ngà mắt xanh navi",
+     "gia": "13.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "xám trắng",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp16.jpg"
+    },
+    {
+     "ID": "cat_17",
+     "ten": "Mèo tai cụp xám mắt xám trắng",
+     "gia": "15.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "xám trắng",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp17.jpg"
+    },
+    {
+     "ID": "cat_18",
+     "ten": "Mèo chân ngắn xám trắng",
+     "gia": "25.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "xám trắng",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp18.jpg"
+    },
+    {
+     "ID": "cat_19",
+     "ten": "Mèo chân ngắn trắng tinh",
+     "gia": "30.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng ",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp19.jpg"
+    },
+    {
+     "ID": "cat_20",
+     "ten": "Mèo chân ngắn trắng đuôi đen",
+     "gia": "35.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp20.jpg"
+    },
+    {
+     "ID": "cat_21",
+     "ten": "Mèo chân ngắn ngựa vằn",
+     "gia": "32.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng đen",
+     "cannang": "1.7kg",
+     "anh": "img\/products\/cat\/sp21.jpg"
+    },
+    {
+     "ID": "cat_22",
+     "ten": "Mèo Anh lông ngắn đen xám",
+     "gia": "45.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "đen xám",
+     "cannang": "3.5kg",
+     "anh": "img\/products\/cat\/sp22.jpg"
+    },
+    {
+     "ID": "cat_23",
+     "ten": "Mèo Anh lông dài Robinhood",
+     "gia": "34.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng đen",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp23.jpg"
+    },
+    {
+     "ID": "cat_24",
+     "ten": "Mèo Anh lông dài đen nâu",
+     "gia": "32.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "đen nâu",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp24.jpg"
+    },
+    {
+     "ID": "cat_25",
+     "ten": "Mèo Anh lông dài xám trắng mắt cam",
+     "gia": "30.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "xám trắng",
+     "cannang": "3.5kg",
+     "anh": "img\/products\/cat\/sp25.jpg"
+    },
+    {
+     "ID": "cat_26",
+     "ten": "Mèo Anh lông dài tam thể",
+     "gia": "17.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "đen nâu",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp26.jpg"
+    },
+    {
+     "ID": "cat_27",
+     "ten": "Mèo Anh lông dài xám",
+     "gia": "20.200.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "xám",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp27.jpg"
+    },
+    {
+     "ID": "cat_28",
+     "ten": "Mèo Anh lông dài vàng trắng",
+     "gia": "18.800.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "vàng trắng",
+     "cannang": "2.8kg",
+     "anh": "img\/products\/cat\/sp28.jpg"
+    },
+    {
+     "ID": "cat_29",
+     "ten": "Mèo Anh lông dài đen nâu",
+     "gia": "15.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "đen nâu",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp29.jpg"
+    },
+    {
+     "ID": "cat_30",
+     "ten": "Mèo Anh lông dài cam nhạt",
+     "gia": "17.800.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "cam nhạt",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp30.jpg"
+    },
+    {
+     "ID": "cat_31",
+     "ten": "Mèo Anh lông dài nâu đỏ",
+     "gia": "20.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "nâu đỏ",
+     "cannang": "2.2kg",
+     "anh": "img\/products\/cat\/sp31.jpg"
+    },
+    {
+     "ID": "cat_32",
+     "ten": "Mèo Sphinx mun",
+     "gia": "55.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "đen",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/cat\/sp32.jpg"
+    },
+    {
+     "ID": "cat_33",
+     "ten": "Mèo Sphinx mắt xanh",
+     "gia": "45.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "1.7kg",
+     "anh": "img\/products\/cat\/sp33.jpg"
+    },
+    {
+     "ID": "cat_34",
+     "ten": "Mèo Sphinx trắng đốm",
+     "gia": "60.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp34.jpg"
+    },
+    {
+     "ID": "cat_35",
+     "ten": "Mèo Sphinx mắt hai màu",
+     "gia": "145.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "3.0kg",
+     "anh": "img\/products\/cat\/sp35.jpg"
+    }
+   ],
+   "phukien":[
+    {
+     "Id": "pk_01",
+     "ten": "Đồ Chơi Cho Chó – Banh Có Dây",
+     "gia": "90.000",
+     "size": "Lớn - Nhỏ",
+     "mota": "Bóng được bện cùng dây thừng là đồ chơi đồng thời là đồ huấn luyện lý tưởng cho cún cưng của bạn.",
+     "anh": "img\/products\/phukien\/sp1.jpg"
+    },
+    {
+     "Id": "pk_02",
+     "ten": "Đồ Chơi Cho Chó – Dạng Dây Thừng",
+     "gia": "50.000",
+     "mota": "Đồ chơi cho chó được thiết kế có tay cầm, dễ điều khiển.",
+     "anh": "img\/products\/phukien\/sp2.jpg"
+    },
+    {
+     "Id": "pk_03",
+     "ten": "Bàn Chải & Kem Vệ Sinh Răng Cho Chó Mèo",
+     "gia": "100.000",
+     "mota": "Vệ sinh mãng bám cho chó và mèo, bàn chải & kem vệ sinh răng được làm từ chất liệu cao cấp, an toàn cho răng chó và mèo",
+     "anh": "img\/products\/phukien\/sp3.jpg"
+    },
+    {
+     "Id": "pk_04",
+     "ten": "Bộ Lược Tắm – Chải Lông Cho Chó Mèo",
+     "gia": "220.000",
+     "mota": "Sản Phẩm được làm từ chất liệu cao cấp, an toàn cho răng chó và rất bền.",
+     "anh": "img\/products\/phukien\/sp4.jpg"
+    },
+    {
+     "Id": "pk_05",
+     "ten": "Nệm Lông Tròn",
+     "gia": "180.000",
+     "mota": "làm từ sợi PP và bông gòn, dễ dàng giặt rửa khi cần, sợi bông êm, mềm mại.",
+     "anh": "img\/products\/phukien\/sp5.jpg"
+    },
+    {
+     "Id": "pk_06",
+     "ten": "Bát Ăn Đôi Tròn Round Dog",
+     "gia": "45.000",
+     "mota": "Bát ăn đôi tròn cho chó mèo được làm từ chất liệu nhựa cao cấp không gây hại, không làmanh hưởng đến chất lượng thức ăn, màu sắc bất mắt giúp thú cưng ăn ngon miệng hơn.",
+     "anh": "img\/products\/phukien\/sp6.jpg"
+    },
+    {
+     "Id": "pk_07",
+     "ten": "Dụng Dịch SOS – Vệ Sinh Bàn Chân Cho Chó Mèo",
+     "gia": "135.000",
+     "mota": "Dung dịch SOS không làm khô đệm chân của các bé, giúp giữ vệ sinh lòng bàn chân và không gây viêm da cho các bé",
+     "anh": "img\/products\/phukien\/sp7.jpg"
+    },
+    {
+     "Id": "pk_08",
+     "ten": "Xẻng dọn vệ sinh cho chó mèo",
+     "gia": "30.000",
+     "mota": "Xẻng dọn vệ sinh được thiết kế độc đáo với những rãnh thưa dễ dàng loại bỏ cát đã vón cục, những hạt khô chưa sử dụng trong khay cát sẽ rơi lại",
+     "anh": "img\/products\/phukien\/sp8.jpg"
+    },
+    {
+     "Id": "pk_09",
+     "ten": "Tã lót miếng cho thú cưng",
+     "gia": "160.000",
+     "size": "60x60cm - 60x90cm",
+     "mota": "Miếng tã sẽ thấm hút nhanh chóng nước tiểu của vật nuôi khi các bé tè, đồng thời có tác dụng khử mùi, chống vi khuẩn, giữ cho bề mặt luôn khô ráo.",
+     "anh": "img\/products\/phukien\/sp9.jpg"
+    },
+    {
+     "Id": "pk_10",
+     "ten": "Tã mặc cho chó đực",
+     "gia": "90.000",
+     "size": "size M - S",
+     "mota": "Miếng tã sẽ thấm hút nhanh chóng nước tiểu của vật nuôi khi các bé tè, đồng thời có tác dụng khử mùi, chống vi khuẩn, giữ cho bề mặt luôn khô ráo.",
+     "anh": "img\/products\/phukien\/sp10.jpg"
+    },
+    {
+     "Id": "pk_11",
+     "ten": "Phấn tắm khô đu đủ",
+     "gia": "100.000",
+     "mota": "Phấn tắm khô đu đủ là một loại phấn giúp giảm thiểu lượng rận, bọ chét trên cơ thể thú cưng. Với nguyên liệu chính từ đu đủ, phấn tắm mang đến hương thơm dịu nhẹ khi sử dụng cho thú cưng.",
+     "anh": "img\/products\/phukien\/sp11.jpg"
+    },
+    {
+     "Id": "pk_12",
+     "ten": "Sữa Tắm SOS cho thú cưng",
+     "gia": "170.000",
+     "mota": "Sữa tắm SOS là một trong những thương hiệu vệ sinh cho cún được phần lớn người nuôi thú cưng ưa chuộng. Đây cũng là một trong những dòng sữa tắm thú cưng có lượng tiêu thụ lớn nhất tại Việt Nam",
+     "anh": "img\/products\/phukien\/sp12.jpg"
+    },
+    {
+     "Id": "pk_13",
+     "ten": "Tã mặc cho chó nhỏ",
+     "gia": "100.000",
+     "mota": "Việc cún cưng hay đi bậy là điều khiến cho không ít con sen đau đầu. Chính vì thế, tã mặc cho cún chính là cứu cánh đắc lực giúp giảm bớt tình trạng này. Với sản phẩm tã mặc cho chó nhỏ này sẽ giúp thấm hút nước tiểu một cách nhanh chóng và kết lại thành một khối.",
+     "anh": "img\/products\/phukien\/sp13.jpg"
+    },
+    {
+     "Id": "pk_14",
+     "ten": "Royal Canin Poodle Junior 1,5KG",
+     "gia": "420.000",
+     "mota": "Thức ăn cho chó Poodle – Royal Canin Poodle Junior là một sự lựa chọn dinh dưỡng quen thuộc của các bạn sen. Được chế biến dưới dạng khô, quen thuộc dành cho các bé Poodle <10 tháng tuổi.",
+     "anh": "img\/products\/phukien\/sp14.jpg"
+    },
+    {
+     "Id": "pk_15",
+     "ten": "Bát ăn đôi nhựa nhỏ",
+     "gia": "30.000",
+     "mota": "Bát ăn đôi nhựa nhỏ cho chó mèo được làm từ chất liệu nhựa cứng cao cấp với bề mặt bóng trơn láng. Sản phẩm không có chất gây độc hại, không làmanh hưởng đến chất lượng trong quá trình sử dụng, bền màu và có màu sắc đa dạng bắt mắt.",
+     "anh": "img\/products\/phukien\/sp15.jpg"
+    },
+    {
+     "Id": "pk_16",
+     "ten": "Bát ăn xương nhựa",
+     "gia": "30.000",
+     "mota": "Bát ăn xương nhựa chó mèo được làm từ chất liệu nhựa cứng cao cấp với bề mặt bóng trơn láng. Sản phẩm không có chất gây độc hại, không làmanh hưởng đến chất lượng trong quá trình sử dụng, bền màu và có màu sắc đa dạng bắt mắt.",
+     "anh": "img\/products\/phukien\/sp16.jpg"
+    },
+    {
+     "Id": "pk_17",
+     "ten": "Bát ăn inox gắn chuồng cho chó mèo",
+     "gia": "150.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Bát ăn inox gắn chuồng cho chó mèo là sản phẩm dành cho tất cả giống chó và mèo. Với thiết kế đế đáy sơn tĩnh điện giúp bát không bị trượt mỗi khi bé cún ăn.",
+     "anh": "img\/products\/phukien\/sp17.jpg"
+    },
+    {
+     "Id": "pk_18",
+     "ten": "Dây dắt chó cưng kèm đai ngực Demin\n",
+     "gia": "90.000",
+     "mota": "Dây dắt cho chó cưng đi kèm đai ngực Demin là sản phẩm dành cho tất cả giống chó. Với chiếc dây này, bạn có thể đưa chú cún cưng đi dạo một cách thuận tiện",
+     "anh": "img\/products\/phukien\/sp18.jpg"
+    },
+    {
+     "Id": "pk_19",
+     "ten": "Dây Dắt Chó Đi Kèm Đai Ngực Họa Tiết",
+     "gia": "140.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Dây dắt cho chó đi kèm đai ngực Họa Tiết là sản phẩm dành cho tất cả giống chó. Là vật dụng không thể thiếu mỗi khi bạn muốn đưa cún cưng đi dạo.",
+     "anh": "img\/products\/phukien\/sp19.jpg"
+    },
+    {
+     "Id": "pk_20",
+     "ten": "Dây Dắt Cho Chó Đi Kèm Đai Ngực Jean",
+     "gia": "120.000",
+     "mota": "Dây dắt cho chó đi kèm đai ngực Jean là sản phẩm dành cho tất cả giống chó.",
+     "anh": "img\/products\/phukien\/sp20.jpg"
+    },
+    {
+     "Id": "pk_21",
+     "ten": "Bóng Đồ Chơi Cho Chó Mèo Có Chuông Nhựa MOLAR",
+     "gia": "90.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Bóng Đồ Chơi Cho Chó Mèo Có Chuông Nhựa MOLAR là sản phẩm phù hợp dành cho thú cưng. Giúp các bé vừa giảm khả năng cắn phá đồ đạc trong nhà, vừa là một món đồ chơi giúp bé",
+     "anh": "img\/products\/phukien\/sp21.jpg"
+    },
+    {
+     "Id": "pk_22",
+     "ten": "Bóng đồ chơi cho chó – Dây thừng 3 đầu KITTEN",
+     "gia": "100.000",
+     "mota": "Bóng đồ chơi cho chó – Dây thừng 3 đầu KITTEN là sản phẩm dành cho tất cả giống chó mèo. Với món đồ chơi này, bạn sẽ hạn chế được việc thú cưng cắn đồ đạc trong nhà. Đây còn là món đồ chơi giúp bé cún linh hoạt hơn",
+     "anh": "img\/products\/phukien\/sp22.jpg"
+    },
+    {
+     "Id": "pk_23",
+     "ten": "Đồ gặm cho chó mèo – Bóng Thừng 2 Đầu KITTEN",
+     "gia": "80.000",
+     "mota": "Đồ gặm cho chó mèo – Bóng Thừng 2 Đầu KITTEN là sản phẩm dành cho tất cả giống chó và mèo. Với dây bóng thừng, bạn có thể hạn chế được việc bé gặm đồ đạc trong nhà.",
+     "anh": "img\/products\/phukien\/sp23.jpg"
+    },
+    {
+     "Id": "pk_24",
+     "ten": "Đồ Chơi Cho Chó Mèo Dạng Bóng Thừng KITTEN",
+     "gia": "60.000",
+     "mota": "Đồ chơi cho chó mèo dạng bóng thừng Kitten là sản phẩm dành cho tất cả giống chó và mèo.",
+     "anh": "img\/products\/phukien\/sp24.jpg"
+    },
+    {
+     "Id": "pk_25",
+     "ten": "Dây Dẫn 7 Màu Cho Chó Mèo",
+     "gia": "80.000",
+     "mota": "Dây Dẫn Đai Ngực 7 Màu cho chó là sản phẩm dành cho tất cả giống chó cỡ nhỏ.",
+     "anh": "img\/products\/phukien\/sp25.jpg"
+    },
+    {
+     "Id": "pk_26",
+     "ten": "Khay Vệ Sinh Teddy Cho Chó",
+     "gia": "280.000",
+     "mota": "Khay vệ sinh cho chó bằng nhựa cao cấp TEDDY với thiết kế thông minh được làm từ 100% nhựa tổng hợp cao cấp. Mang lại tính đàn hồi, bền bỉ, mềm, chống ăn mòn cho sản phẩm",
+     "anh": "img\/products\/phukien\/sp26.jpg"
+    },
+    {
+     "Id": "pk_27",
+     "ten": "Khay Vệ Sinh Haver Cho Chó",
+     "gia": "360.000",
+     "mota": "Khay vệ sinh cho chó đi đúng chỗ Haver sử dụng chất liệu nhựa tổng hợp chất lượng cao. Có tính đàn hồi giúp chó mèo dẫm lên cảm thấy thoải mái. Khay hướng dẫn chó đi vệ sinh đúng chỗ trong nhà với màu sắc đa dạng, bền và chịu lực tốt, tuổi thọ dài.",
+     "anh": "img\/products\/phukien\/sp27.jpg"
+    },
+    {
+     "Id": "pk_28",
+     "ten": "Nệm Tai Thỏ Cho Chó Mèo",
+     "gia": "450.000",
+     "mota": "Nệm Tai Thỏ Cho Chó Mèo được thiết kế dành riêng cho vật nuôi. Phù hợp với tất cả các giống chó mèo.",
+     "anh": "img\/products\/phukien\/sp28.jpg"
+    },
+    {
+     "Id": "pk_29",
+     "ten": "Nệm Chấm Bi Cho Chó Mèo",
+     "gia": "440.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Nệm cho chó mèo hình vuông Zenji với hình dáng và mẫu mã độc đáo. Được thiết kế dành riêng cho vật nuôi. Phù hợp với tất cả các giống chó mèo.",
+     "anh": "img\/products\/phukien\/sp29.jpg"
+    },
+    {
+     "Id": "pk_30",
+     "ten": "Nệm Giường 3D CHO CHÓ MÈO",
+     "gia": "350.000",
+     "mota": "Ổ nằm cho chó mèo sẽ là lựa chọn sáng suốt dành cho các Boss nhà mình, và tạo được thói quen đi ngủ tốt cho chó mèo.",
+     "anh": "img\/products\/phukien\/sp30.jpg"
+    },
+    {
+     "Id": "pk_31",
+     "ten": "Chuồng Nhựa Láp Ráp Cho Chó Mèo",
+     "gia": "1.800.000",
+     "mota": "Chuồng Nhựa Láp Ráp cho chó mèo phù hợp với tất cả các giống chó nhỏ và mèo.",
+     "anh": "img\/products\/phukien\/sp31.jpg"
+    },
+    {
+     "Id": "pk_32",
+     "ten": "Cũi gỗ cho chó mèo",
+     "gia": "3.500.000",
+     "mota": "Cũi gỗ cho chó mèo là sản phẩm chuồng phù hợp với những giống chó mèo cỡ nhỏ đến trung bình. Nếu bạn đang tìm kiếm một “căn phòng mini” cho thú cưng nhà mình, chắc chắn không nên bỏ qua em chuồng gỗ này.",
+     "anh": "img\/products\/phukien\/sp32.jpg"
+    },
+    {
+     "Id": "pk_33",
+     "ten": "Chuồng Sắt Cho Chó Mèo",
+     "gia": "1.350.000",
+     "size": "size L-M-S-XL",
+     "mota": "Chuồng sắt cho chó mèo chống gỉ gấp gọn được thiết kế với chiều cao và dài rộng hợp lý tùy theo kích thước của mỗi thú cưng. Đi kèm theo sản phẩm là khay nhựa lót sàn thoáng giúp việc đi vệ sinh của thú cưng sạch sẽ hơn cùng khay đựng bát ăn uống tiện lợi.",
+     "anh": "img\/products\/phukien\/sp33.jpg"
+    },
+    {
+     "Id": "pk_34",
+     "ten": "Vòng Cổ Thổ Cẩm Cho Chó & Mèo",
+     "gia": "80.000",
+     "mota": "Vòng cổ thổ cẩm cho chó mèo là một phụ kiện không thể thiếu trong BST của các bé thú cưng. Chiếc vòng không những giúp cho bé thú cưng trở nên thời trang hơn mà còn giúp bạn dễ dàng tìm thấy bé nhờ tiếng lục lạc trên vòng cổ.",
+     "anh": "img\/products\/phukien\/sp34.jpg"
+    },
+    {
+     "Id": "pk_35",
+     "ten": "Thức ăn khô Royal Canin Puppy Mini",
+     "gia": "380.000",
+     "mota": "Đây là loại thức ăn cho chó kích cỡ Mini (cân nặng tối đa 10kg) và đang trong lứa tuổi Puppy từ 2 đến 10 tháng tuổi.",
+     "anh": "img\/products\/phukien\/sp35.jpg"
+    },
+    {
+     "Id": "pk_36",
+     "ten": "Khăn Vệ Sinh Siêu Thấm",
+     "gia": "80.000",
+     "mota": "Khả năng hút nước có thể tương đương với 10 khăn bông thông thường, do vậy tiết kiệm rất nhiều thời gian trong quá trình lau khô cho vật nuôi",
+     "anh": "img\/products\/phukien\/sp36.jpg"
+    },
+    {
+     "Id": "pk_37",
+     "ten": "Lược Chải Ve & Rận",
+     "gia": "30.000",
+     "mota": "Nuôi chó mèo, ai cũng phải gặp những con ác mộng về ve rận trên lông của thú cưng. Những con vật ký sinh khiến thú cưng cảm thấy ngứa ngáy và không cảm thấy thoải mái. Vậy đâu là giải pháp? Chiếc lược chải ve & rận chính là cứu tinh hữu hiệu nhất.",
+     "anh": "img\/products\/phukien\/sp37.jpg"
+    },
+    {
+     "Id": "pk_38",
+     "ten": "Vòng Cổ Hình Dấu Chân",
+     "gia": "30.000",
+     "mota": "Vòng cổ in hình dấu chân là sản phẩm không thể thiếu của các bé thú cưng. Bên cạnh việc khẳng định là “cún đã có chủ”, chiếc vòng cổ còn giúp người chủ dễ dàng tìm thấy các bé nhờ tiếng lục lạc trên vòng.",
+     "anh": "img\/products\/phukien\/sp38.jpg"
+    },
+    {
+     "Id": "pk_39",
+     "ten": "Bình Nước Gắn Chuồng",
+     "gia": "80.000",
+     "mota": "Bình nước gắn chuồng là một phụ kiện không thể thiếu trong lồng thú cưng. Với chất liệu từ nhựa PP chống nhờn, không bám bẩn, đầu vòi inox không rỉ sét cho sự an toàn của thú cưng.",
+     "anh": "img\/products\/phukien\/sp39.jpg"
+    },
+    {
+     "Id": "pk_40",
+     "ten": "Túi Xách Chó Mèo Hình Dấu Chân",
+     "gia": "500.000",
+     "size": "Lớn - nhỏ",
+     "mota": "Túi xách dấu chân là phụ kiện thân thuộc giúp Sen mang Boss đi mọi nơi.",
+     "anh": "img\/products\/phukien\/sp40.jpg"
+    }
+   ]
+}

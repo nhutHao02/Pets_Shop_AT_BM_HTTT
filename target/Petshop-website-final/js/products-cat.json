@@ -1,0 +1,354 @@
+{
+  "Cat":[
+    {
+     "ID": "cat_01",
+     "ten": "Mèo Anh lông ngắn Bicolor Lilac",
+     "gia": "7.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Bicolor Lilac",
+     "cannang": "2kg",
+     "anh": "img\/products\/cat\/sp01.jpg"
+    },
+    {
+     "ID": "cat_02",
+     "ten": "Mèo Anh lông ngắn nâu trắng",
+     "gia": "8.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Nâu trắng",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp02.jpg"
+    },
+    {
+     "ID": "cat_03",
+     "ten": "Mèo Anh lông ngắn nâu xám",
+     "gia": "7.500.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng đen",
+     "cannang": "2kg",
+     "anh": "img\/products\/cat\/sp03.jpg"
+    },
+    {
+     "ID": "cat_04",
+     "ten": "Mèo Anh lông ngắn trắng nâu",
+     "gia": "8.500.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng nâu",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp04.jpg"
+    },
+    {
+     "ID": "cat_05",
+     "ten": "Mèo Anh lông ngắn xám trắng",
+     "gia": "9.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Xám trắng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/cat\/sp05.jpg"
+    },
+    {
+     "ID": "cat_06",
+     "ten": "Mèo Anh lông ngắn trắng mật ong",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "Trắng mật ong",
+     "cannang": "2.2kg",
+     "anh": "img\/products\/cat\/sp06.jpg"
+    },
+    {
+     "ID": "cat_07",
+     "ten": "Mèo Anh lông ngắn xám đen",
+     "gia": "7.700.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "xám đen",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp07.jpg"
+    },
+    {
+     "ID": "cat_08",
+     "ten": "Mèo Anh lông ngắn bông tuyết",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "trắng tuyết",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp08.jpg"
+    },
+    {
+     "ID": "cat_09",
+     "ten": "Mèo Anh lông ngắn đen huyền",
+     "gia": "10.000.000",
+     "mota": "Mèo Anh Lông Ngắn hay còn gọi là British Shorthair có nguồn gốc từ Anh và được ưa chuộng rất nhiều trên thế giới. Bởi lẽ chúng có tính cách rất thân thiện, gần gũi và thông minh.",
+     "giong": "Mèo Anh lông ngắn",
+     "mausac": "đen tuyền",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp09.jpg"
+    },
+    {
+     "ID": "cat_10",
+     "ten": "Mèo Scottish silver",
+     "gia": "13.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/cat\/sp10.jpg"
+    },
+    {
+     "ID": "cat_11",
+     "ten": "Mèo tai cụp mắt xanh tuyền",
+     "gia": "14.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "bạch ",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp11.jpg"
+    },
+    {
+     "ID": "cat_12",
+     "ten": "Mèo tai cụp vàng nhạt",
+     "gia": "13.500.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "vàng nhạt",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp12.jpg"
+    },
+    {
+     "ID": "cat_13",
+     "ten": "Mèo tai cụp golden",
+     "gia": "15.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "golden",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp13.jpg"
+    },
+    {
+     "ID": "cat_14",
+     "ten": "Mèo Bicolor tai cụp",
+     "gia": "14.700.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng nâu ",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/cat\/sp14.jpg"
+    },
+    {
+     "ID": "cat_15",
+     "ten": "Mèo tai cụp trắng ngà ",
+     "gia": "12.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "trắng ngà",
+     "cannang": "1.4kg",
+     "anh": "img\/products\/cat\/sp15.jpg"
+    },
+    {
+     "ID": "cat_16",
+     "ten": "Mèo tai cụp xám trắng ngà mắt xanh navi",
+     "gia": "13.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "xám trắng",
+     "cannang": "1.9kg",
+     "anh": "img\/products\/cat\/sp16.jpg"
+    },
+    {
+     "ID": "cat_17",
+     "ten": "Mèo tai cụp xám mắt xám trắng",
+     "gia": "15.000.000",
+     "mota": "Mèo tai cụp (Scottish Fold) là một giong mèo nhà với sự đột biến sinh học tự nhiên gen lặn gây anh hưởng đến phần sụn toàn thân, khiến cho tai bị \"cụp\", bẻ ra phía trước và xuống phía đầu, từ đó khiến chúng hay được so sánh rằng trông giong cú.",
+     "giong": "Mèo tai cụp",
+     "mausac": "xám trắng",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp17.jpg"
+    },
+    {
+     "ID": "cat_18",
+     "ten": "Mèo chân ngắn xám trắng",
+     "gia": "25.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "xám trắng",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp18.jpg"
+    },
+    {
+     "ID": "cat_19",
+     "ten": "Mèo chân ngắn trắng tinh",
+     "gia": "30.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng ",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp19.jpg"
+    },
+    {
+     "ID": "cat_20",
+     "ten": "Mèo chân ngắn trắng đuôi đen",
+     "gia": "35.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp20.jpg"
+    },
+    {
+     "ID": "cat_21",
+     "ten": "Mèo chân ngắn ngựa vằn",
+     "gia": "32.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng đen",
+     "cannang": "1.7kg",
+     "anh": "img\/products\/cat\/sp21.jpg"
+    },
+    {
+     "ID": "cat_22",
+     "ten": "Mèo Anh lông ngắn đen xám",
+     "gia": "45.000.000",
+     "mota": "Mèo chân ngắn (Munchkin) là một giong mèo nhỏ nhắn, xinh xắn, dễ thương mà bạn sẽ yêu ngay từ cái nhìn đầu tiên. Là một giong mèo đột biến tự nhiên, mèo munchkin có thân hình lùn, nhỏ nhắn và chỉ nặng khoảng 3–4 kg thôi. Cũng vì đặc điểm đó mà rất nhiều người yêu thích và lựa chọn những chú mèo Munchkin này.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "đen xám",
+     "cannang": "3.5kg",
+     "anh": "img\/products\/cat\/sp22.jpg"
+    },
+    {
+     "ID": "cat_23",
+     "ten": "Mèo Anh lông dài Robinhood",
+     "gia": "34.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "trắng đen",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp23.jpg"
+    },
+    {
+     "ID": "cat_24",
+     "ten": "Mèo Anh lông dài đen nâu",
+     "gia": "32.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo chân ngắn",
+     "mausac": "đen nâu",
+     "cannang": "2.1kg",
+     "anh": "img\/products\/cat\/sp24.jpg"
+    },
+    {
+     "ID": "cat_25",
+     "ten": "Mèo Anh lông dài xám trắng mắt cam",
+     "gia": "30.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "xám trắng",
+     "cannang": "3.5kg",
+     "anh": "img\/products\/cat\/sp25.jpg"
+    },
+    {
+     "ID": "cat_26",
+     "ten": "Mèo Anh lông dài tam thể",
+     "gia": "17.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "đen nâu",
+     "cannang": "2.4kg",
+     "anh": "img\/products\/cat\/sp26.jpg"
+    },
+    {
+     "ID": "cat_27",
+     "ten": "Mèo Anh lông dài xám",
+     "gia": "20.200.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "xám",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp27.jpg"
+    },
+    {
+     "ID": "cat_28",
+     "ten": "Mèo Anh lông dài vàng trắng",
+     "gia": "18.800.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "vàng trắng",
+     "cannang": "2.8kg",
+     "anh": "img\/products\/cat\/sp28.jpg"
+    },
+    {
+     "ID": "cat_29",
+     "ten": "Mèo Anh lông dài đen nâu",
+     "gia": "15.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "đen nâu",
+     "cannang": "2.3kg",
+     "anh": "img\/products\/cat\/sp29.jpg"
+    },
+    {
+     "ID": "cat_30",
+     "ten": "Mèo Anh lông dài cam nhạt",
+     "gia": "17.800.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "cam nhạt",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp30.jpg"
+    },
+    {
+     "ID": "cat_31",
+     "ten": "Mèo Anh lông dài nâu đỏ",
+     "gia": "20.000.000",
+     "mota": "Mèo anh lông dài (ten Tiếng Anh là British Longhair Cat), viết tắt là mèo ald. Ắc hẳn khi nói đến hai từ lông dài mọi người đều có thể nghĩ ngay đến một bé mào diễm lệ lông dài mềm mượt thướt tha hiện ra trước mắt nhỉ. vâng đó là hình ành đầu quyến rũ mà những loài mèo lông dài mang lại dốn bao con tim ánh mắt người nhìn.",
+     "giong": "Mèo Anh lông dài",
+     "mausac": "nâu đỏ",
+     "cannang": "2.2kg",
+     "anh": "img\/products\/cat\/sp31.jpg"
+    },
+    {
+     "ID": "cat_32",
+     "ten": "Mèo Sphinx mun",
+     "gia": "55.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "đen",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/cat\/sp32.jpg"
+    },
+    {
+     "ID": "cat_33",
+     "ten": "Mèo Sphinx mắt xanh",
+     "gia": "45.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "1.7kg",
+     "anh": "img\/products\/cat\/sp33.jpg"
+    },
+    {
+     "ID": "cat_34",
+     "ten": "Mèo Sphinx trắng đốm",
+     "gia": "60.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "2.0kg",
+     "anh": "img\/products\/cat\/sp34.jpg"
+    },
+    {
+     "ID": "cat_35",
+     "ten": "Mèo Sphinx mắt hai màu",
+     "gia": "145.000.000",
+     "mota": "Mèo Sphinx hay còn gọi là mèo không lông Sphinx hay còn được biết đến là mèo Canada hoặc mèo Mexico không lông (được đặt ten theo hình anh nhân sư Ai Cập nên còn được gọi là mèo Ai Cập hay mèo Nhân sư) là một giong mèo được phát triển vào thập niên 1960 với đặc điểm là thân thể trần trụi, không có sợi lông nào. giong mèo này được coi là một trong những giong mèo xấu nhất thế giới nhưng lại có gia rất đắt.",
+     "giong": "Mèo Sphinx",
+     "mausac": "da",
+     "cannang": "3.0kg",
+     "anh": "img\/products\/cat\/sp35.jpg"
+    }
+   ]
+}

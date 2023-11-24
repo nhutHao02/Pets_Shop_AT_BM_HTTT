@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>tempproduct.dir</param-name>
+    <param-value>Petshop_website_final_war/img/products</param-value>
+  </context-param>
+  <context-param>
+    <param-name>saveproduct.dir</param-name>
+    <param-value>Petshop-website-final/src/main/webapp/img/products</param-value>
+  </context-param>
+  <context-param>
+    <param-name>tempavataruser.dir</param-name>
+    <param-value>Petshop_website_final_war/img/user</param-value>
+  </context-param>
+  <context-param>
+    <param-name>font.dir</param-name>
+    <param-value>Petshop_website_final_war/fonts</param-value>
+  </context-param>
+  <context-param>
+    <param-name>saveavataruser.dir</param-name>
+    <param-value>Petshop-website-final/src/main/webapp/img/user</param-value>
+  </context-param>
+  <context-param>
+    <param-name>tempblog.dir</param-name>
+    <param-value>Petshop_website_final_war/img/blog</param-value>
+  </context-param>
+  <context-param>
+    <param-name>saveblog.dir</param-name>
+    <param-value>Petshop-website-final/src/main/webapp/img/blog</param-value>
+  </context-param>
+</web-app>
