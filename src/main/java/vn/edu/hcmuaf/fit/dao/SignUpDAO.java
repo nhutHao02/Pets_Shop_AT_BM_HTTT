@@ -2,7 +2,15 @@ package vn.edu.hcmuaf.fit.dao;
 
 import vn.edu.hcmuaf.fit.db.JDBIConnector;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -51,20 +59,19 @@ public class SignUpDAO {
     public void insertUserByAcGG() {
 
     }
-
-    public String checkUser(String email, String username){
-        String result=null;
-        String mail=null;
-        String user=null;
+    public String checkUser(String email, String username) {
+        String result = null;
+        String mail = null;
+        String user = null;
         try {
-             mail =JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT email FROM infor_user WHERE email = ?")
-                    .bind(0,email).mapTo(String.class).first());
-        }catch (Exception e){
+            mail = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT email FROM infor_user WHERE email = ?")
+                    .bind(0, email).mapTo(String.class).first());
+        } catch (Exception e) {
         }
         try {
-             user = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT user_name FROM user_account WHERE user_name = ?")
-                    .bind(0,username).mapTo(String.class).first());
-        }catch (Exception e){
+            user = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT user_name FROM user_account WHERE user_name = ?")
+                    .bind(0, username).mapTo(String.class).first());
+        } catch (Exception e) {
         }
         if (mail != null) {
             result = "Email đã liên kết tài khoản khác!";
@@ -84,4 +91,5 @@ public class SignUpDAO {
         if (emails != null) return true;
         else return false;
     }
+
 }

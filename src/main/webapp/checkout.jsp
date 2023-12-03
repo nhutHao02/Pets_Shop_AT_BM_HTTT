@@ -153,6 +153,25 @@
             display: inline-block;
             width: 100px;
         }
+        #myTableCK {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url(img/breadcrumb.jpg);
+            background-position: top right;
+            z-index: 1;
+            border-radius: 10px;
+            border: 1px black;
+            width: 380px;
+        }
+
+        #myTableCK label {
+            display: inline-block;
+            width: 100px;
+        }
 
         .overlayT {
             position: fixed;
@@ -430,7 +449,13 @@
                                 </label>
                             </div>
                             <div id="errorOrder" style="text-align: center; color: red"></div>
-                            <button type="submit" class="site-btn" id="submitck">Mua hàng</button>
+                            <button class="site-btn" id="submitck" onclick="showTableCK()">Mua hàng</button>
+                            <div id="myTableCK">
+                                <label>Ký xác nhận đơn hàng</label>
+                                <br><br>
+                                <div onclick="hideTableCK()" class="bt2">Hủy</div>
+                                <div onclick="" class="bt2">Xác nhận</div>
+                            </div>
                             <input id="getDistrict" value="" type="text" style="display: none">
                             <input id="getWard"  value="" type="text" style="display: none" >
                         </div>
@@ -614,6 +639,24 @@
         document.getElementById("myTable").style.display = "none";
         document.getElementById("overlayT").classList.remove("show");
         document.getElementById("error").innerHTML = "";
+    }
+    function showTableCK() {
+        document.getElementById("myTableCK").style.display = "block";
+        document.getElementById("overlayT").classList.add("show");
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+    }
+    function hideTableOnClickOutside(event) {
+        var myTableCK = document.getElementById("myTableCK");
+
+        // Kiểm tra xem phần tử được click có phải là myTableCK không
+        if (!myTableCK.contains(event.target)) {
+            hideTableCK();
+        }
+    }
+    function hideTableCK() {
+        document.getElementById("myTableCK").style.display = "none";
+        document.getElementById("overlayT").classList.remove("show");
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutside);
     }
 
     var soNha = document.getElementById("soNha").value;
