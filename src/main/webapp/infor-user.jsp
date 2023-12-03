@@ -284,6 +284,27 @@
             opacity: 1;
             visibility: visible;
         }
+        #myTableTK {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url(img/breadcrumb.jpg);
+            background-position: top right;
+            z-index: 1;
+            border-radius: 10px;
+            border: 1px black;
+            width: 380px;
+        }
+        #myTable label {
+            display: inline-block;
+            width: 100px;
+        }
+        .button-container {
+            display: flex;
+        }
     </style>
 
 
@@ -470,7 +491,17 @@
                     <span class="font-weight-bold">Đã xác nhận khóa (*)</span>
                     <%}else {%>
                     <span class="font-weight-bold" style="color: red">Vui lòng xác nhận khóa (*)</span>
-                    <div class="bt1" onclick="showTableK()">Xác nhận</div>
+                    <div class="button-container">
+                        <div class="bt1" onclick="showTableK()" >Xác nhận</div>
+                        <div class="bt1" onclick="createKey()" >Tạo Khóa</div>
+                    </div>
+                    <div id="myTableTK">
+                        <label>Khóa riêng tư (dùng để ký đơn hàng)</label>
+                        <input type="text" id="privateKey"><br>
+                        <label>Vui lòng giữ bảo mật.</label> <br>
+                        <div id="errorTK" style="text-align: center; color: red"></div> <br>
+                        <div onclick="hideTableTK()" class="bt2">Đóng</div>
+                    </div>
                     <div id="myTableK">
                         <label>Khóa công khai</label>
                         <input type="text" id="publicKey"><br>
@@ -605,7 +636,7 @@
 <script src="admin/assets/js/plugins/bootstrap.min.js"></script>
 <script src="js/axios.min.js"></script>
 <script>
-    function updateKey() {
+    function updateKey() { //20130252-Trần Nhựt Hào
         var publicKey = document.getElementById("publicKey").value;
         if (publicKey.trim() === "") {
             document.getElementById("errorK").innerText = "Khóa không được để trống";
@@ -614,7 +645,7 @@
             checkKey(publicKey);
         }
     }
-    function checkKey(publicKey){
+    function checkKey(publicKey){//20130252-Trần Nhựt Hào
         var xmlhttp = new XMLHttpRequest();
 
         // Xác định phương thức và URL của servlet
@@ -644,12 +675,12 @@
         // Gửi yêu cầu đến servlet
         xmlhttp.send(params);
     }
-    function showTableK() {
+    function showTableK() {//20130252-Trần Nhựt Hào
         document.getElementById("myTableK").style.display = "block";
         document.getElementById("overlayT").classList.add("show");
         document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
     }
-    function hideTableOnClickOutside(event) {
+    function hideTableOnClickOutside(event) {//20130252-Trần Nhựt Hào
         var myTableK = document.getElementById("myTableK");
 
         // Kiểm tra xem phần tử được click có phải là myTableCK không
@@ -657,10 +688,44 @@
             hideTableK();
         }
     }
-    function hideTableK() {
+    function hideTableK() {//20130252-Trần Nhựt Hào
         document.getElementById("myTableK").style.display = "none";
         document.getElementById("overlayT").classList.remove("show");
         document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutside);
+    }
+    function createKey(){//20130252-Trần Nhựt Hào
+        // Gửi yêu cầu AJAX đến Servlet
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Xử lý kết quả trả về từ Servlet
+                var privateKey = xhr.responseText;
+                document.getElementById("privateKey").value = privateKey;
+                showTableTK();
+            }
+        };
+
+        xhr.open("GET", "CreateKeyController", true);
+        xhr.send();
+    }
+    function showTableTK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableTK").style.display = "block";
+        document.getElementById("overlayT").classList.add("show");
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+    }
+    function hideTableOnClickOutsideTK(event) {//20130252-Trần Nhựt Hào
+        var myTableTK = document.getElementById("myTableTK");
+        // Kiểm tra xem phần tử được click có phải là myTableTK không
+        if (!myTableTK.contains(event.target)) {
+            hideTableTK();
+            window.location.reload();
+        }
+    }
+    function hideTableTK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableTK").style.display = "none";
+        document.getElementById("overlayT").classList.remove("show");
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutsideTK);
+        window.location.reload();
     }
     function reloadUpLoadFile() {
         $(".input-file").each(function () {

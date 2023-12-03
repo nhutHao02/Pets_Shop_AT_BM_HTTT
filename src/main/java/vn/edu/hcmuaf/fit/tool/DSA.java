@@ -12,7 +12,7 @@ public class DSA {
     private PublicKey publicKey;
 
     // Hàm tạo cặp khóa DSA gồm khóa publice và khóa private
-    private KeyPair generateDSAKeyPair() throws NoSuchAlgorithmException {
+    public KeyPair generateDSAKeyPair() throws NoSuchAlgorithmException {
         KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("DSA");
         keyPairGenerator.initialize(2048);
         return keyPairGenerator.generateKeyPair();
@@ -26,6 +26,14 @@ public class DSA {
     // Hàm xuất khóa dưới dạng chuỗi base64
     private static String exportKey(Key key) {
         byte[] keyEncoded = key.getEncoded();
+        return Base64.getEncoder().encodeToString(keyEncoded);
+    }
+    public String exportPrivateKey() {
+        byte[] keyEncoded = privateKey.getEncoded();
+        return Base64.getEncoder().encodeToString(keyEncoded);
+    }
+    public String exportPublicKey() {
+        byte[] keyEncoded = publicKey.getEncoded();
         return Base64.getEncoder().encodeToString(keyEncoded);
     }
 
