@@ -496,14 +496,14 @@
                         <div class="bt1" onclick="createKey()" >Tạo Khóa</div>
                     </div>
                     <div id="myTableTK">
-                        <label>Khóa riêng tư (dùng để ký đơn hàng)</label>
+                        <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Khóa riêng tư (dùng để ký đơn hàng)</label>
                         <input type="text" id="privateKey"><br>
                         <label>Vui lòng giữ bảo mật.</label> <br>
                         <div id="errorTK" style="text-align: center; color: red"></div> <br>
                         <div onclick="hideTableTK()" class="bt2">Đóng</div>
                     </div>
                     <div id="myTableK">
-                        <label>Khóa công khai</label>
+                        <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Khóa công khai</label>
                         <input type="text" id="publicKey"><br>
                         <div id="errorK" style="text-align: center; color: red"></div> <br>
                         <div onclick="hideTableK()" class="bt2">Hủy</div>

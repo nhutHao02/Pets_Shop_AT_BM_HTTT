@@ -21,10 +21,7 @@ public class KeyDAO {
             // Tạo câu truy vấn SQL với PreparedStatement
             String sql = "SELECT pk.publicKey, pk.expired_at FROM public_key pk WHERE pk.user_id = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-                // Thiết lập giá trị cho tham số trong câu truy vấn
                 preparedStatement.setString(1, userID);
-
-                // Thực hiện truy vấn và lấy kết quả
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
                     // Kiểm tra xem có kết quả hay không
                     while (resultSet.next()) {

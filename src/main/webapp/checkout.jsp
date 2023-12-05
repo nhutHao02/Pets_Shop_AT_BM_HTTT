@@ -166,12 +166,13 @@
             border-radius: 10px;
             border: 1px black;
             width: 380px;
+            text-align: center;
+        }
+        #myTableCK label{
+            text-align: left;
+            min-width: 120px;
         }
 
-        #myTableCK label {
-            display: inline-block;
-            width: 100px;
-        }
 
         .overlayT {
             position: fixed;
@@ -214,7 +215,6 @@
             display: inline-block;
             text-align: center;
             color: white;
-            margin-left: 40px;
         }
     </style>
 </head>
@@ -343,7 +343,6 @@
         </div>
         <div class="checkout__form">
             <h4>Thông tin thanh toán</h4>
-            <form action="CheckoutController" method="post">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="row">
@@ -367,28 +366,28 @@
                                    placeholder="Nhập địa chỉ nhận hàng">
                             <%} else {%>
                             <input type="text" id="address" placeholder="Nhập địa chỉ nhận hàng" class="address"
-                                   name="address" value="<%=user.getAddress()%>" readonly>
+                                   name="address" value="<%=user.getAddress()%>">
                             <%}%>
-                            <div class="bt1" onclick="showTable()" style="margin-top: 10px">Chỉnh sửa địa chỉ</div>
-                            <div id="myTable">
-                                <label>Số nhà:</label>
-                                <input type="text" id="soNha"><br><br>
-                                <label>Tỉnh/TP:</label>
-                                <select id="province" class="pdw">
-                                    <option value="">Tỉnh/Thành phố</option>
-                                </select><br><br>
-                                <label>Quận/Huyện:</label>
-                                <select id="district" class="pdw">
-                                    <option value="">Quận/Huyện</option>
-                                </select><br><br>
-                                <label>Phường/Xã:</label>
-                                <select id="ward" class="pdw">
-                                    <option value="">Phường/xã</option>
-                                </select><br><br>
-                                <div id="error" style="text-align: center; color: red"></div>
-                                <div onclick="hideTable()" class="bt2">Hủy</div>
-                                <div onclick="validateInput()" class="bt2">Cập nhật</div>
-                            </div>
+<%--                            <div class="bt1" onclick="showTable()" style="margin-top: 10px">Chỉnh sửa địa chỉ</div>--%>
+<%--                            <div id="myTable">--%>
+<%--                                <label>Số nhà:</label>--%>
+<%--                                <input type="text" id="soNha"><br><br>--%>
+<%--                                <label>Tỉnh/TP:</label>--%>
+<%--                                <select id="province" class="pdw">--%>
+<%--                                    <option value="">Tỉnh/Thành phố</option>--%>
+<%--                                </select><br><br>--%>
+<%--                                <label>Quận/Huyện:</label>--%>
+<%--                                <select id="district" class="pdw">--%>
+<%--                                    <option value="">Quận/Huyện</option>--%>
+<%--                                </select><br><br>--%>
+<%--                                <label>Phường/Xã:</label>--%>
+<%--                                <select id="ward" class="pdw">--%>
+<%--                                    <option value="">Phường/xã</option>--%>
+<%--                                </select><br><br>--%>
+<%--                                <div id="error" style="text-align: center; color: red"></div>--%>
+<%--                                <div onclick="hideTable()" class="bt2">Hủy</div>--%>
+<%--                                <div onclick="validateInput()" class="bt2">Cập nhật</div>--%>
+<%--                            </div>--%>
                         </div>
                         <div class="checkout__input">
                             <p>Email<span>*</span></p>
@@ -449,19 +448,32 @@
                                 </label>
                             </div>
                             <div id="errorOrder" style="text-align: center; color: red"></div>
-                            <button class="site-btn" id="submitck" onclick="showTableCK()">Mua hàng</button>
+                            <button class="site-btn" id="" onclick="clickShowTableCK()">Mua hàng</button>
                             <div id="myTableCK">
-                                <label>Ký xác nhận đơn hàng</label>
-                                <br><br>
-                                <div onclick="hideTableCK()" class="bt2">Hủy</div>
-                                <div onclick="" class="bt2">Xác nhận</div>
+                                <label style="font-size: 20px; text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Ký xác nhận đơn hàng</label>
+                                <br>
+                                <div style="display: inline-block ">
+                                    <label>Mã code cần ký:</label>
+                                    <input type="text" id="messageHash">
+                                </div>
+                                <div style="display: inline-block ">
+                                    <label>Mã code đã ký:</label>
+                                    <input type="text" id="messageSignedHash">
+                                </div>
+                                <br>
+                                <div id="errorCK" style="text-align: center; color: red"></div>
+                                <br>
+                                <div style="align-content: center">
+                                    <div onclick="hideTableCK()" class="bt2">Hủy</div>
+                                    <div onclick="signed()" class="bt2">Xác nhận</div>
+                                </div>
                             </div>
                             <input id="getDistrict" value="" type="text" style="display: none">
                             <input id="getWard"  value="" type="text" style="display: none" >
                         </div>
                     </div>
                 </div>
-            </form>
+
         </div>
     </div>
 </section>
@@ -484,72 +496,7 @@
 <script src="admin/assets/js/plugins/bootstrap.min.js"></script>
 <script src="js/axios.min.js"></script>
 <%--<script src="js/API.js"></script>--%>
-<script>
-    $("#submitck").click(function (e) {
-        e.preventDefault();
-        const fullname = $(".fullname").val();
-        const phone = $(".phone").val();
-        const address = $(".address").val();
-        console.log(address);
-        const email = $(".email").val();
-        const notice = $(".notice").val();
-        const error = document.getElementById("errorOrder");
-        const getWard = $("#getWard").val();
-        const getDistrict = $("#getDistrict").val();
-        if (fullname == "" || phone == "" || address == "" || email == "") {
-            error.innerHTML = "Vui lòng điền và chọn đủ cái thông tin!";
-        } else {
-            axios.post('http://140.238.54.136/api/auth/login', {
-                email: EMAIL,
-                password: PASSWORD
-            })
-                .then(response => {
-                    register(response.data.access_token);
-                });
 
-            function register(token) {
-                url = "http://140.238.54.136/api/registerTransport"
-                body = {
-                    from_district_id: DISTRICT,
-                    from_ward_id: WARD,
-                    to_district_id: getDistrict,
-                    to_ward_id: getWard,
-                    height: "100",
-                    length: "100",
-                    width: "100",
-                    weight: "100",
-                    token: token
-                }
-                axios.post(url, body).then(response => {
-                    const idT = response.data.Transport.id;
-                    $.ajax({
-                        type: 'post',
-                        url: '/Petshop_website_final_war/CheckoutController',
-                        data: {
-                            idT: idT,
-                            fullname: fullname,
-                            phone: phone,
-                            address: address,
-                            email: email,
-                            notice: notice
-                        },
-                        success: function (data) {
-                            if (data.length > 0){
-                                window.location.href = "./my-orders.jsp"
-                                alert("Đã đặt hàng thành công! Mã đơn hàng của bạn là " + data)
-                            } else {
-                                window.location.href = "./shoping-cart.jsp"
-                                alert("Số lượng tồn kho của sản phẩm không đáp ứng đủ!")
-                            }
-
-                        }
-                    })
-                })
-            }
-        }
-    })
-
-</script>
 <script>
     const EMAIL = "20130266@st.hcmuaf.edu.vn";
     const PASSWORD = "123456";
@@ -639,6 +586,68 @@
         document.getElementById("myTable").style.display = "none";
         document.getElementById("overlayT").classList.remove("show");
         document.getElementById("error").innerHTML = "";
+    }
+    function signed(){
+        var signedHashMessage = document.getElementById("messageSignedHash").value;
+        if (signedHashMessage.trim() === "") {
+            document.getElementById("errorCK").innerText = "(*)Khóa không được để trống";
+        } else {
+            document.getElementById("errorK").innerText = ""; // Xóa thông báo lỗi nếu có
+            // Lấy dữ liệu từ các input và textarea
+            var fullName = document.querySelector('.fullname').value;
+            var phone = document.querySelector('.phone').value;
+            var address = document.querySelector('.address').value;
+            var email = document.querySelector('.email').value;
+            var notice = document.querySelector('.notice').value;
+
+            // Gửi dữ liệu đến Servlet sử dụng Ajax
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "SaveOrderController", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Xử lý phản hồi từ Servlet và gán giá trị vào input
+                    hideTableCK();
+                    window.location.href = '/Petshop_website_final_war/index.jsp'
+                }
+            };
+            // Chuẩn bị dữ liệu để gửi
+            var data = "fullName=" + fullName + "&phone=" + phone + "&address=" + address + "&email=" + email + "&notice=" + notice+ "&message="+signedHashMessage;
+            xhr.send(data);
+        }
+
+
+    }
+    function clickShowTableCK() {
+        // Lấy dữ liệu từ các input và textarea
+        var fullName = document.querySelector('.fullname').value;
+        var phone = document.querySelector('.phone').value;
+        var address = document.querySelector('.address').value;
+        var email = document.querySelector('.email').value;
+        var notice = document.querySelector('.notice').value;
+
+        // Gửi dữ liệu đến Servlet sử dụng Ajax
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "CheckoutController", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Xử lý phản hồi từ Servlet và gán giá trị vào input
+                console.log(xhr.responseText);
+
+                if (xhr.responseText === "failure") {
+                    window.location.href = '/Petshop_website_final_war/infor-user.jsp'
+                }else {
+                    document.getElementById("messageHash").value = xhr.responseText;
+                    showTableCK();
+                }
+
+            }
+        };
+
+        // Chuẩn bị dữ liệu để gửi
+        var data = "fullName=" + fullName + "&phone=" + phone + "&address=" + address + "&email=" + email + "&notice=" + notice;
+        xhr.send(data);
     }
     function showTableCK() {
         document.getElementById("myTableCK").style.display = "block";
