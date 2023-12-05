@@ -3,12 +3,13 @@ package vn.edu.hcmuaf.fit.beans;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class Cart implements Serializable {
-    HashMap<String, Product> data;
+    TreeMap<String, Product> data;
 
     public Cart() {
-        this.data = new HashMap<>();
+        this.data = new TreeMap<>();
     }
 
     public Product get(String id) {
@@ -42,7 +43,7 @@ public class Cart implements Serializable {
         return data.values();
     }
 
-    public HashMap<String, Product> getData() {
+    public TreeMap<String, Product> getData() {
         return data;
     }
 
