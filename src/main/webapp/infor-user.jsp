@@ -1,7 +1,10 @@
 <%@ page import="java.util.List" %>
 <%@ page import="vn.edu.hcmuaf.fit.services.ProductService" %>
 <%@ page import="vn.edu.hcmuaf.fit.beans.UserAccount" %>
+<%@ page import="vn.edu.hcmuaf.fit.dao.KeyDAO" %>
+<%@ page import="vn.edu.hcmuaf.fit.tool.DSA" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <head lang="zxx">
     <head>
@@ -30,7 +33,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <style type="text/css">@font-face {
             font-family: Roboto;
-            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+            /*src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");*/
         }</style>
     </head>
     <style>
@@ -248,6 +251,60 @@
             color: white;
             margin-left: 40px;
         }
+        #myTableK {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url(img/breadcrumb.jpg);
+            background-position: top right;
+            z-index: 1;
+            border-radius: 10px;
+            border: 1px black;
+            width: 380px;
+        }
+
+
+        .overlayT {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .overlayT.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        #myTableTK {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url(img/breadcrumb.jpg);
+            background-position: top right;
+            z-index: 1;
+            border-radius: 10px;
+            border: 1px black;
+            width: 380px;
+        }
+        #myTable label {
+            display: inline-block;
+            width: 100px;
+        }
+        .button-container {
+            display: flex;
+        }
     </style>
 
 
@@ -370,7 +427,7 @@
 
 <!-- Breadcrumb Section Begin -->
 <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg"
-         style="background-image: url(&quot;img/breadcrumb.jpg&quot;);">
+         style="">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -388,9 +445,13 @@
 <!-- Breadcrumb Section End -->
 <%
     UserAccount user = (UserAccount) request.getSession().getAttribute("user");
+    boolean isValidKey=true;
     if (user == null) {
         response.sendRedirect("login.jsp");
+    }else {
+        isValidKey=new KeyDAO().isValidKey(user.getId());
     }
+
 %>
 <!-- Shoping Cart Section Begin -->
 <div class="container rounded bg-white mt-5 mb-5">
@@ -415,14 +476,7 @@
                         </div>
                     </div>
                     <%} else {%>
-                    <%--<div class="image-container">
-                        <div id="container<%=i%>">
-                            <div class="avatar-wrapper">
-                                <img class="img-avt-review profile-pic"
-                                     src="http://localhost:8080/Petshop_website_final_war/img/user.png"/>
-                            </div>
-                        </div>
-                    </div>--%>
+
                     <div class="image-container">
                         <div id="container<%=i%>">
                             <input type="file" id="image<%=i%>" name="files" class="input-file" accept="image/*"/>
@@ -432,6 +486,31 @@
                     <input type="text" id="deletedFile" value="" style="display: none">
                     <span class="font-weight-bold"><%=user.getName()%></span>
                     <span class="text-black-50"><%=user.getEmail()%></span><span> </span>
+                    <%--   20130252-Trần Nhựt Hào     --%>
+                    <%if(isValidKey){%>
+                    <span class="font-weight-bold">Đã xác nhận khóa (*)</span>
+                    <%}else {%>
+                    <span class="font-weight-bold" style="color: red">Vui lòng xác nhận khóa (*)</span>
+                    <div class="button-container">
+                        <div class="bt1" onclick="showTableK()" >Xác nhận</div>
+                        <div class="bt1" onclick="createKey()" >Tạo Khóa</div>
+                    </div>
+                    <div id="myTableTK">
+                        <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Khóa riêng tư (dùng để ký đơn hàng)</label>
+                        <input type="text" id="privateKey"><br>
+                        <label>Vui lòng giữ bảo mật.</label> <br>
+                        <div id="errorTK" style="text-align: center; color: red"></div> <br>
+                        <div onclick="hideTableTK()" class="bt2">Đóng</div>
+                    </div>
+                    <div id="myTableK">
+                        <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Khóa công khai</label>
+                        <input type="text" id="publicKey"><br>
+                        <div id="errorK" style="text-align: center; color: red"></div> <br>
+                        <div onclick="hideTableK()" class="bt2">Hủy</div>
+                        <div onclick="updateKey()" class="bt2">Cập nhật</div>
+                    </div>
+                    <%}%>
+                    <%--   20130252-Trần Nhựt Hào     --%>
                 </div>
             </div>
             <div class="col-md-5 border-right">
@@ -557,6 +636,97 @@
 <script src="admin/assets/js/plugins/bootstrap.min.js"></script>
 <script src="js/axios.min.js"></script>
 <script>
+    function updateKey() { //20130252-Trần Nhựt Hào
+        var publicKey = document.getElementById("publicKey").value;
+        if (publicKey.trim() === "") {
+            document.getElementById("errorK").innerText = "Khóa không được để trống";
+        } else {
+            document.getElementById("errorK").innerText = ""; // Xóa thông báo lỗi nếu có
+            checkKey(publicKey);
+        }
+    }
+    function checkKey(publicKey){//20130252-Trần Nhựt Hào
+        var xmlhttp = new XMLHttpRequest();
+
+        // Xác định phương thức và URL của servlet
+        var url = "ImportKeyController";
+        var params = "publicKey=" + encodeURIComponent(publicKey);
+
+        xmlhttp.open("POST", url, true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        // Xử lý sự kiện khi yêu cầu đã được gửi
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                // Xử lý phản hồi từ Servlet (nếu cần)
+                var response = JSON.parse(xmlhttp.responseText);
+                console.log(response);
+
+                if (response.result === "success") {
+                    hideTableK();
+                    window.location.reload();
+                } else {
+                    // Key không hợp lệ, hiển thị thông báo hoặc xử lý tùy thuộc vào yêu cầu
+                    document.getElementById("errorK").innerText = "Key không hợp lệ";
+                }
+            }
+        };
+
+        // Gửi yêu cầu đến servlet
+        xmlhttp.send(params);
+    }
+    function showTableK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableK").style.display = "block";
+        document.getElementById("overlayT").classList.add("show");
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+    }
+    function hideTableOnClickOutside(event) {//20130252-Trần Nhựt Hào
+        var myTableK = document.getElementById("myTableK");
+
+        // Kiểm tra xem phần tử được click có phải là myTableCK không
+        if (!myTableK.contains(event.target)) {
+            hideTableK();
+        }
+    }
+    function hideTableK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableK").style.display = "none";
+        document.getElementById("overlayT").classList.remove("show");
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutside);
+    }
+    function createKey(){//20130252-Trần Nhựt Hào
+        // Gửi yêu cầu AJAX đến Servlet
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Xử lý kết quả trả về từ Servlet
+                var privateKey = xhr.responseText;
+                document.getElementById("privateKey").value = privateKey;
+                showTableTK();
+            }
+        };
+
+        xhr.open("GET", "CreateKeyController", true);
+        xhr.send();
+    }
+    function showTableTK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableTK").style.display = "block";
+        document.getElementById("overlayT").classList.add("show");
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+    }
+    function hideTableOnClickOutsideTK(event) {//20130252-Trần Nhựt Hào
+        var myTableTK = document.getElementById("myTableTK");
+        // Kiểm tra xem phần tử được click có phải là myTableTK không
+        if (!myTableTK.contains(event.target)) {
+            hideTableTK();
+            window.location.reload();
+        }
+    }
+    function hideTableTK() {//20130252-Trần Nhựt Hào
+        document.getElementById("myTableTK").style.display = "none";
+        document.getElementById("overlayT").classList.remove("show");
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutsideTK);
+        window.location.reload();
+    }
     function reloadUpLoadFile() {
         $(".input-file").each(function () {
             $(this).on('change', function (e) {
