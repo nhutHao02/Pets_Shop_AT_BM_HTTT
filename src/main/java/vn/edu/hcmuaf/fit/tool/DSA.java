@@ -97,7 +97,6 @@ public class DSA {
             // Xử lý trường hợp khóa không phải là privatekey DSA
             throw new InvalidKeyException("Not a DSA private key");
         }
-
         Signature signature = Signature.getInstance("SHA256withDSA");
         signature.initSign(privateKey);
         signature.update(message.getBytes());
