@@ -54,7 +54,7 @@ JPannelControlInput
         jTextAreaInputString.setLineWrap(true);
 
         jScrollPaneInput = new JScrollPane(jTextAreaInputString);
-        TitledBorder titledBorder = new TitledBorder("Input here");
+        TitledBorder titledBorder = new TitledBorder("nhập dữ liệu cần ký");
         jScrollPaneInput.setBorder(titledBorder);
 
         jPanelControlInput.add(jScrollPaneInput);
@@ -149,7 +149,7 @@ jPanelcopyright
         jPanelcopyright = new JPanel();
 
         jPanelcopyright.setBackground(Color.LIGHT_GRAY);
-        JLabel copyrightLabel = new JLabel("PetsShop Electronic Signature Version 1.0 (C) 2023 . All rights reserved.");
+        JLabel copyrightLabel = new JLabel("PetsShop Chữ ký điện tử Version 1.0 (C) 2023 . All rights reserved.");
         jPanelcopyright.add(copyrightLabel);
         add(jPanelcopyright, BorderLayout.SOUTH);
 /*
@@ -157,7 +157,7 @@ jPanelcopyright
  /*
      set frame
   */
-        setTitle("PetsShop Electronic Signature Version 1.0");
+        setTitle("PetsShop Chữ ký điện tử Version 1.0");
         setSize(840, 500);
         setIconImage(logoIcon.getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -178,7 +178,7 @@ jPanelcopyright
         if (key == null || key.trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "key null", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        String text=dsa.bytesToBase64(dsa.sign(input,dsa.importKey(key,"DSA")));
+        String text=dsa.sign(input,dsa.importKey(key,"DSA"));
         jTextAreaViewResult.setText(text);
     }
 
