@@ -7,17 +7,14 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 
 public class GUI extends JFrame {
-    private final JLabel jLabelIputString;
     private Color backgroundColorHex = Color.decode("#222222");//#222222
     private GUI gui;
     private JPanel jPanelControl, jPanelControlInput, jPanelKey, jPanelResult, JPanelBtnResult, JPanelViewResult, jPanelcopyright;
     private JLabel jLabelKey;
-    private JTextArea jTextFieldKey, inputString, jTextAreaViewResult;
-    private JScrollPane jScrollPaneKey,jScrollPaneInput;
+    private JTextArea jTextAreaKey, jTextAreaInputString, jTextAreaViewResult;
+    private JScrollPane jScrollPaneKey, jScrollPaneInput;
     private JButton jButtonSign;
 
 
@@ -43,24 +40,25 @@ JPannelControlInput
  */
         jPanelControlInput = new JPanel();
         jPanelControlInput.setLayout(new BoxLayout(jPanelControlInput, BoxLayout.X_AXIS));
-        jPanelControlInput.setBorder(new EmptyBorder(5, 10, 5, 10));
+        jPanelControlInput.setBorder(new EmptyBorder(5, 0, 10, 0));
         jPanelControlInput.setBackground(backgroundColorHex);
-        jPanelControl.add(jPanelControlInput);
         jPanelControlInput.setPreferredSize(new Dimension(500, 200));
+        jPanelControlInput.setMinimumSize(new Dimension(500, 200));
         jPanelControlInput.setMaximumSize(new Dimension(500, 200));
 
-        // tạo jLabelIputString
-        jLabelIputString = new JLabel("Input string");
-        jLabelIputString.setBorder(new EmptyBorder(0, 0, 0, 50));
+        // tạo  jTextAreaInputString
+        jTextAreaInputString = new JTextArea();
 
-        // tạo  inputString
-        inputString = new JTextArea();
+        jTextAreaInputString.setRows(50); // Đặt số hàng xuống dòng mà bạn muốn hiển thị
+        jTextAreaInputString.setWrapStyleWord(true);
+        jTextAreaInputString.setLineWrap(true);
 
-        jScrollPaneInput = new JScrollPane(inputString);
+        jScrollPaneInput = new JScrollPane(jTextAreaInputString);
         TitledBorder titledBorder = new TitledBorder("Input here");
         jScrollPaneInput.setBorder(titledBorder);
 
         jPanelControlInput.add(jScrollPaneInput);
+        jPanelControl.add(jPanelControlInput);
 /*
 tạo jpannel key
  */
@@ -71,23 +69,20 @@ tạo jpannel key
         jPanelKey.setMinimumSize(new Dimension(500, 150));
         jPanelKey.setMaximumSize(new Dimension(500, 150));
 
-        jLabelKey = new JLabel("Key");
-//        jLabelKey.setForeground(Color.WHITE);
-        jLabelKey.setBorder(new EmptyBorder(5, 0, 5, 100));
-        jTextFieldKey = new JTextArea();
-        jTextFieldKey.setBorder(new EmptyBorder(10, 20, 10, 20));
 
-        jTextFieldKey.setRows(10); // Đặt số hàng xuống dòng mà bạn muốn hiển thị
-        jTextFieldKey.setWrapStyleWord(true);
-        jTextFieldKey.setLineWrap(true);
+        jTextAreaKey = new JTextArea();
+//        jTextAreaKey.setBorder(new EmptyBorder(10, 20, 10, 20));
 
-        jScrollPaneKey = new JScrollPane(jTextFieldKey);
+        jTextAreaKey.setRows(50); // Đặt số hàng xuống dòng mà bạn muốn hiển thị
+        jTextAreaKey.setWrapStyleWord(true);
+        jTextAreaKey.setLineWrap(true);
+
+        jScrollPaneKey = new JScrollPane(jTextAreaKey);
         TitledBorder titledBorder1 = new TitledBorder("KEY");
         jScrollPaneKey.setBorder(titledBorder1);
 //        jScrollPaneKey.setBorder(new EmptyBorder(5, 10, 5, 10));
 //        jPanelKey.add(jLabelKey);
         jPanelKey.add(jScrollPaneKey);
-
         jPanelControl.add(jPanelKey);
 
 /*
@@ -111,7 +106,17 @@ tạo jPanelViewOfBtn
         JPanelBtnResult.setBackground(backgroundColorHex);
 
 
-        jButtonSign = new JButton("Very");
+        jButtonSign = new JButton("Sign");
+        jButtonSign.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    sign();
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
         //
         jPanelResult.add(jButtonSign);
         //
@@ -152,12 +157,25 @@ jPanelcopyright
  /*
      set frame
   */
+        setTitle("PetsShop Electronic Signature Version 1.0");
         setSize(840, 500);
         setIconImage(logoIcon.getImage());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+    }
+
+    public void sign() throws Exception {
+        String input = jTextAreaInputString.getText();
+        System.out.println(input);
+        String key = jTextAreaKey.getText();
+        DSA dsa = new DSA();
+        if (input == null || input.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "input null", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        String text=dsa.bytesToBase64(dsa.sign(input,dsa.importKey(key,"DSA")));
+        jTextAreaViewResult.setText(text);
     }
 
     public static void main(String[] args) {
