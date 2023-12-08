@@ -173,6 +173,10 @@ jPanelcopyright
         DSA dsa = new DSA();
         if (input == null || input.trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "input null", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if (key == null || key.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "key null", "Error", JOptionPane.ERROR_MESSAGE);
         }
         String text=dsa.bytesToBase64(dsa.sign(input,dsa.importKey(key,"DSA")));
         jTextAreaViewResult.setText(text);

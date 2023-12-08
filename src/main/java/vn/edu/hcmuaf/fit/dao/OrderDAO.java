@@ -29,11 +29,13 @@ public class OrderDAO {
         else return stringBuilder.toString();
     }
 
-    public String insertOrder(String CustomerID,String fullname, String phone, String address, String email, String notice, Cart cart, String idT){
+    public String insertOrder(String CustomerID,String fullname, String phone, String address, String email, String notice, Cart cart,String hashMessage){
         String id = taoOrderID();
-        String date = java.time.LocalDate.now().toString();
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String date = currentDateTime.format(formatter);
         JDBIConnector.get().withHandle(handle -> {
-            handle.createUpdate("INSERT INTO orders (OrderID, OrderDate,`Status`,Delivered,CustomerID,Notice,Price,RecipientName,Email,Phone,Address,IdTransport) VALUES(?,?,1,0,?,?,?,?,?,?,?,?)")
+            handle.createUpdate("INSERT INTO orders (OrderID, OrderDate,`Status`,Delivered,CustomerID,Notice,Price,RecipientName,Email,Phone,Address,hashMessage) VALUES(?,?,1,0,?,?,?,?,?,?,?,?)")
                     .bind(0,id)
                     .bind(1,date)
                     .bind(2,CustomerID)
@@ -43,20 +45,21 @@ public class OrderDAO {
                     .bind(6,email)
                     .bind(7,phone)
                     .bind(8,address)
-                    .bind(9,idT)
+                    .bind(9,hashMessage)
                     .execute();
-            for (String idp: cart.getData().keySet()) {
-                Product p = ProductDAO.getProductById(idp);
-                handle.createUpdate("INSERT INTO orderdetail (OrderID,ProductID,ProductName,Price,Quantity) VALUES(?,?,?,?,?)")
+            for (Map.Entry key:cart.getData().entrySet()){
+                Product p= (Product) key.getValue();
+                handle.createUpdate("INSERT INTO orderdetail (OrderID,ProductID,ProductName,Price,Quantity,PricePromotional) VALUES(?,?,?,?,?,?)")
                         .bind(0,id)
                         .bind(1,p.getProductId())
                         .bind(2,p.getProductName())
-                        .bind(3,cart.getData().get(idp).getQuantityCart() * cart.getData().get(idp).getPrice())
-                        .bind(4,cart.getData().get(idp).getQuantityCart())
+                        .bind(3,p.getQuantityCart() * p.getPrice())
+                        .bind(4,p.getQuantityCart())
+                        .bind(5,p.getPromotionalPrice())
                         .execute();
                 handle.createUpdate("UPDATE warehouse set quantity=quantity-? where idProduct = ?")
-                        .bind(0,cart.getData().get(idp).getQuantityCart())
-                        .bind(1,idp)
+                        .bind(0,p.getQuantityCart())
+                        .bind(1,(String) key.getKey())
                         .execute();
             }
             return null;
@@ -266,9 +269,7 @@ public class OrderDAO {
     }
 
     public static void main(String[] args) {
-        System.out.println(new OrderDAO().MonthlyChart());
-
-//        System.out.println(new OrderDAO().getOrdersByUser("1101"));
+        System.out.println(new OrderDAO().insertOrder("1101","HÀOOOOOOOOO","11111111","HCMMMMM","mail@GMAI","",new Cart(),"AAAAAAAAAA"));
 
     }
 }

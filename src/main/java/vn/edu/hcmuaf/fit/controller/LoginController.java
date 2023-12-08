@@ -3,6 +3,8 @@ package vn.edu.hcmuaf.fit.controller;
 import vn.edu.hcmuaf.fit.beans.Cart;
 import vn.edu.hcmuaf.fit.beans.UserAccount;
 import vn.edu.hcmuaf.fit.beans.Wishlist;
+import vn.edu.hcmuaf.fit.dao.KeyDAO;
+import vn.edu.hcmuaf.fit.dao.SignUpDAO;
 import vn.edu.hcmuaf.fit.services.LogService;
 import vn.edu.hcmuaf.fit.services.LoginService;
 
@@ -24,7 +26,7 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String pass = request.getParameter("password");
-
+        KeyDAO dao=new KeyDAO();
         UserAccount account = LoginService.getInstance().getAccountCustomer(username, pass);
         if (account != null) {
             if(account.isAdmin()){
@@ -41,8 +43,11 @@ public class LoginController extends HttpServlet {
                 session.setAttribute("user", account);
                 session.setAttribute("cart", new Cart());
                 session.setAttribute("wishlist", new Wishlist());
-                response.sendRedirect("index.jsp");
-
+                if(dao.isValidKey(account.getId())){
+                    response.sendRedirect("index.jsp");
+                }else {
+                    response.sendRedirect("infor-user.jsp");
+                }
                 LogService logService= new LogService();
                 UserAccount user = (UserAccount) request.getSession().getAttribute("user");
                 logService.createUserLog(user.getId(), "INFOR", "Người dùng "+user.getUsername()+" đăng nhập vào hệ thống");
