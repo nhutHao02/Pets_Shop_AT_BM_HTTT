@@ -20,10 +20,11 @@ public class LoginController extends HttpServlet {
         doPost(request, response);
     }
     /*
-        Chức năng đăng nhập - Nguyễn Ngọc Huy 20130281
+
     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         String username = request.getParameter("username");
         String pass = request.getParameter("password");
         KeyDAO dao=new KeyDAO();

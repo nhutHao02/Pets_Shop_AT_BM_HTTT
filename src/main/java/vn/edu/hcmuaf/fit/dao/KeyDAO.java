@@ -10,7 +10,7 @@ public class KeyDAO {
     private Connection connectDB() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb", "root", "Haomqst01");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb", "root", "");
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             throw new SQLException("Unable to connect to the database.", e);
         }
@@ -49,6 +49,23 @@ public class KeyDAO {
                 // Thiết lập giá trị cho tham số trong câu truy vấn
                 preparedStatement.setString(1, userID);
                 preparedStatement.setString(2, publicKey);
+                preparedStatement.executeUpdate();
+            }catch (Exception e){
+                return false;
+            }
+        } catch (SQLException e) {
+            return false;
+//            throw new RuntimeException(e);
+        }
+        return true;
+    }
+    public boolean reportKey(String userID){  //20130230-trần trung đông
+        try (Connection connection = connectDB()) {
+            // Tạo câu truy vấn SQL với PreparedStatement
+            String sql = "UPDATE public_key SET expired_at =CURRENT_TIMESTAMP WHERE public_key.user_id=? AND public_key.expired_at='9999-12-31 00:00:00'";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                // Thiết lập giá trị cho tham số trong câu truy vấn
+                preparedStatement.setString(1, userID);
                 preparedStatement.executeUpdate();
             }catch (Exception e){
                 return false;

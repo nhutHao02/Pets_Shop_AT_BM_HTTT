@@ -31,6 +31,8 @@
                         <li><a href="#">Danh mục phụ kiện</a></li>
                         <li><a href="#">Tin tức</a></li>
                         <li><a href="#">Liên hệ</a></li>
+                        <li><a href="Download" >Tải File Ký</a></li>
+
                     </ul>
                 </div>
             </div>
