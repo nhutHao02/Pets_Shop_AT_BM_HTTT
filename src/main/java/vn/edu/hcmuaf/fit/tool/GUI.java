@@ -78,7 +78,7 @@ tạo jpannel key
         jTextAreaKey.setLineWrap(true);
 
         jScrollPaneKey = new JScrollPane(jTextAreaKey);
-        TitledBorder titledBorder1 = new TitledBorder("KEY");
+        TitledBorder titledBorder1 = new TitledBorder("nhâp private key");
         jScrollPaneKey.setBorder(titledBorder1);
 //        jScrollPaneKey.setBorder(new EmptyBorder(5, 10, 5, 10));
 //        jPanelKey.add(jLabelKey);
@@ -106,7 +106,7 @@ tạo jPanelViewOfBtn
         JPanelBtnResult.setBackground(backgroundColorHex);
 
 
-        jButtonSign = new JButton("Sign");
+        jButtonSign = new JButton("Ký");
         jButtonSign.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -128,7 +128,7 @@ tạo jPanelViewresult
         JPanelViewResult = new JPanel();
         JPanelViewResult.setPreferredSize(new Dimension(300, 388));
 
-        jTextAreaViewResult = new JTextArea("frame displays the results");
+        jTextAreaViewResult = new JTextArea("kết quả hiển thị");
         Font customFont = new Font("Times New Roman", Font.BOLD, 14);
         jTextAreaViewResult.setFont(customFont);
         jTextAreaViewResult.setPreferredSize(new Dimension(280, 378));
