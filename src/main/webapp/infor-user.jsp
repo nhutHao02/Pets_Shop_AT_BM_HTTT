@@ -265,6 +265,20 @@
             border: 1px black;
             width: 380px;
         }
+        #myTablerb {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url(img/breadcrumb.jpg);
+            background-position: top right;
+            z-index: 1;
+            border-radius: 10px;
+            border: 1px black;
+            width: 380px;
+        }
 
 
         .overlayT {
@@ -489,6 +503,12 @@
                     <%--   20130252-Trần Nhựt Hào     --%>
                     <%if(isValidKey){%>
                     <span class="font-weight-bold">Đã xác nhận khóa (*)</span>
+                    <span class="font-weight-bold" style="color: red; background-color: yellow;" onclick="showTablerb()"> Báo cáo khóa đã bị lộ (*)</span>
+                    <div id="myTablerb">
+                        <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Xác nhận khóa của bạn đã bị lộ</label>
+                        <div id="errorrb" style="text-align: center; color: red"></div> <br>
+                        <div onclick="hideTablerb()" class="bt2">Xác nhận</div>
+                    </div>
                     <%}else {%>
                     <span class="font-weight-bold" style="color: red">Vui lòng xác nhận khóa (*)</span>
                     <div class="button-container">
@@ -674,6 +694,38 @@
 
         // Gửi yêu cầu đến servlet
         xmlhttp.send(params);
+    }
+    function showTablerb(){//20130230-Trần trung đông
+        document.getElementById("myTablerb").style.display = "block";
+        document.getElementById("overlayT").classList.add("show");
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+    }
+    function hideTablerb() {//20130230-Trần trung đông
+        document.getElementById("myTablerb").style.display = "none";
+        document.getElementById("overlayT").classList.remove("show");
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutsideTK);
+        window.location.reload();
+        reportKey();
+    }
+    function reportKey() {//20130230-Trần trung đông
+        // Tạo đối tượng XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+
+        // Định nghĩa hàm xử lý khi nhận được phản hồi từ Servlet
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Xử lý phản hồi từ Servlet (nếu cần)
+                console.log(xhr.responseText);
+                // Reload trang sau khi nhận được phản hồi
+                window.location.reload();
+            }
+        };
+
+        // Thiết lập phương thức và URL cho yêu cầu AJAX
+        xhr.open("GET", "ReportKey", true);
+
+        // Gửi yêu cầu
+        xhr.send();
     }
     function showTableK() {//20130252-Trần Nhựt Hào
         document.getElementById("myTableK").style.display = "block";

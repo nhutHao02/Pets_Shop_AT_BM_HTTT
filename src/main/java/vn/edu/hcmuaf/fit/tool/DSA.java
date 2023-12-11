@@ -1,10 +1,13 @@
 package vn.edu.hcmuaf.fit.tool;
 
+import javax.swing.*;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.interfaces.DSAPrivateKey;
 import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
+import java.sql.SQLOutput;
 import java.util.Base64;
 
 public class DSA {
@@ -24,7 +27,7 @@ public class DSA {
     }
 
     // Hàm xuất khóa dưới dạng chuỗi base64
-    private static String exportKey(Key key) {
+    public static String exportKey(Key key) {
         byte[] keyEncoded = key.getEncoded();
         return Base64.getEncoder().encodeToString(keyEncoded);
     }
@@ -38,9 +41,10 @@ public class DSA {
     }
 
     // Hàm nhập khóa từ chuỗi base64
-    private Key importKey(String keyString, String algorithm) {
+    public PrivateKey importKey(String keyString, String algorithm) {
         if (!isBase64(keyString)) {
-            System.out.println("key không đúng định dạng base64");
+            JOptionPane.showMessageDialog(null, "Key is not base64", "Error", JOptionPane.ERROR_MESSAGE);
+            System.out.println("Key không đúng định dạng base64");
             return null;
         }
         try {
@@ -51,13 +55,30 @@ public class DSA {
             System.out.println("Key String: " + keyString);
 
             if (algorithm.equals("DSA")) {
-                return keyFactory.generatePublic(new X509EncodedKeySpec(keyBytes));
+                try {
+                    PrivateKey privateKey1 = keyFactory.generatePrivate(new PKCS8EncodedKeySpec(keyBytes));
+                    // Kiểm tra kiểu của khóa
+                    if (privateKey1 instanceof PrivateKey) {
+                        System.out.println("Private key is valid.");
+                        return privateKey1;
+                    } else {
+                        System.out.println("Private key is not valid DSA private key.");
+                        JOptionPane.showMessageDialog(null, "Key is not valid", "Error", JOptionPane.ERROR_MESSAGE);
+                        return null;
+                    }
+                } catch (InvalidKeySpecException e) {
+                    // Xử lý ngoại lệ
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Invalid key format", "Error", JOptionPane.ERROR_MESSAGE);
+                    return null;
+                }
             } else {
-                // Handle other key types if needed
+                // Xử lý các loại khác nếu cần
                 return null;
             }
-        } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
+        } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Algorithm not supported", "Error", JOptionPane.ERROR_MESSAGE);
             return null;
         }
     }
@@ -92,7 +113,7 @@ public class DSA {
     }
 
     // Hàm ký số
-    private byte[] sign(String message, PrivateKey privateKey) throws Exception {
+    public String sign(String message, PrivateKey privateKey) throws Exception {
         if (!(privateKey instanceof DSAPrivateKey)) {
             // Xử lý trường hợp khóa không phải là privatekey DSA
             throw new InvalidKeyException("Not a DSA private key");
@@ -100,18 +121,22 @@ public class DSA {
         Signature signature = Signature.getInstance("SHA256withDSA");
         signature.initSign(privateKey);
         signature.update(message.getBytes());
-        return signature.sign();
+        // Chuyển đổi mảng byte thành chuỗi Base64
+        byte[] signatureBytes = signature.sign();
+        return Base64.getEncoder().encodeToString(signatureBytes);
     }
 
     // Hàm xác minh chữ ký
-    private boolean verify(String message, byte[] signature, PublicKey publicKey) throws Exception {
+    public boolean verify(String messagehash, String signature, PublicKey publicKey) throws Exception {
+        // Chuyển đổi chuỗi Base64 thành mảng byte
+        byte[] signatureBytes = Base64.getDecoder().decode(signature);
         Signature sig = Signature.getInstance("SHA256withDSA");
         sig.initVerify(publicKey);
-        sig.update(message.getBytes());
-        return sig.verify(signature);
+        sig.update(messagehash.getBytes());
+        return sig.verify(signatureBytes);
     }
 
-    private boolean isBase64(String str) {
+    public boolean isBase64(String str) {
         try {
             Base64.getDecoder().decode(str);
             return true;
@@ -119,13 +144,42 @@ public class DSA {
             return false;
         }
     }
-
+    public String bytesToBase64(byte[] inputBytes) {
+        byte[] base64Bytes = Base64.getEncoder().encode(inputBytes);
+        return new String(base64Bytes, StandardCharsets.UTF_8);
+    }
     public static void main(String[] args) throws NoSuchAlgorithmException {
         DSA dsa = new DSA();
-        String key="MIIDQzCCAjUGByqGSM44BAEwggIoAoIBAQCPeTXZuarpv6vtiHrPSVG28y7FnjuvNxjo6sSWHz79NgbnQ1GpxBgzObgJ58KuHFObp0dbhdARrbi0eYd1SYRpXKwOjxSzNggooi/6JxEKPWKpk0U0CaD+aWxGWPhL3SCBnDcJoBBXsZWtzQAjPbpUhLYpH51kjviDRIZ3l5zsBLQ0pqwudemYXeI9sCkvwRGMn/qdgYHnM423krcw17njSVkvaAmYchU5Feo9a4tGU8YzRY+AOzKkwuDycpAlbk4/ijsIOKHEUOThjBopo33fXqFD3ktm/wSQPtXPFiPhWNSHxgjpfyEc2B3KI8tuOAdl+CLjQr5ITAV2OTlgHNZnAh0AuvaWpoV499/e5/pnyXfHhe8ysjO65YDAvNVpXQKCAQAWplxYIEhQcE51AqOXVwQNNNo6NHjBVNTkpcAtJC7gT5bmHkvQkEq9rI837rHgnzGC0jyQQ8tkL4gAQWDt+coJsyB2p5wypifyRz6Rh5uixOdEvSCBVEy1W4AsNo0fqD7UielOD6BojjJCilx4xHjGjQUntxyaOrsLC+EsRGiWOefTznTbEBplqiuH9kxoJts+xy9LVZmDS7TtsC98kOmkltOlXVNb6/xF1PYZ9j897buHOSXC8iTgdzEpbaiH7B5HSPh++1/et1SEMWsiMt7lU92vAhErDR8C2jCXMiT+J67ai51LKSLZuovjntnhA6Y8UoELxoi34u1DFuHvF9veA4IBBgACggEBAIdqogluJSr/oujPSLYjJN4s8QwFj2CU/4u5sYGgX17nqTt+mV0Fmh1Jvp4Xxj8RhyYnmIGy2oWpjXYJ9K0qvJlqkNdGiximOEv2zHbjDWBls3YSpZiLsIeD0KsyA6aXOLGeKlmE9zsAU6DkkSYGAiCguHrlcYdX6Zy1zEvTuvHJvotyIea6I8TVKG21bXtjLxdtpMe7t9STmBGaJJvwthTNvk4WVW7n0e8b0e4qEnILf1RNtNCqt3iZM7EdECgayTJKfgEojM4Ki8NKJf8OYDQV1nxptazl2o6aRHhjVVnImf/hlZFLvD7d507l4T8R4TGZAKA3oWcmg4yueEpqCUc=";
+        // Tạo cặp khóa DSA
+        dsa.generatekey(dsa.generateDSAKeyPair());
+        try {
+            // Xuất khóa công khai và riêng
+            String publicKeyString = exportKey(dsa.publicKey);
+            String privateKeyString = exportKey(dsa.privateKey);
 
-        System.out.println(dsa.isImportKey(key));
+            // In khóa công khai và riêng
+            System.out.println("Public Key: " + publicKeyString);
+            System.out.println("Private Key: " + privateKeyString);
 
+            // Tạo khóa từ chuỗi
+            PrivateKey importPrivatekey = dsa.importKey(privateKeyString, "DSA");
+
+            // Chuỗi cần ký
+            String message = "Hello, DSA!";
+
+            // Ký số chuỗi
+            String signature = dsa.sign(message,importPrivatekey);
+            System.out.println(signature);
+            // Xác minh chữ ký
+            boolean verified = dsa.verify(message, signature,dsa.publicKey);
+
+
+            // In kết quả
+            System.out.println("Original Message: " + message);
+            System.out.println("Signature Verified: " + verified);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
