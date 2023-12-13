@@ -259,6 +259,7 @@
                                             <th>Ngày mua</th>
                                             <th>Tình trạng</th>
                                             <th>Ngày giao</th>
+                                            <th>Xác thực</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -282,6 +283,7 @@
                                                                             <div style="color: #35ff00; font-weight: bold">Hoàn thành</div>
                                                                     <%}%>
                                                             <%}%>
+
                                                     </td>
                                                     <%if (od.getDeliveryDate() == null){%>
                                                         <td>Chưa giao</td>
@@ -289,7 +291,26 @@
                                                         <td><%=od.getDeliveryDate()%></td>
                                                     <%}%>
 
-                                                    <td><a class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">Chi tiết</a></td>
+                                                    <td>
+                                                        <%if (od.getVerify() == 0){%>
+                                                        <div style="color: #00BFFF; font-weight: bold">Chưa xác thực</div>
+                                                        <%} else {%>
+                                                        <%}%>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">Chi tiết</a>
+                                                        <%if (od.getVerify() == 0){%>
+                                                        <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">
+                                                            Xác thực</a>
+                                                        <%} else if (od.getVerify() == 1){%>
+                                                        <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">
+                                                            Đã xác thực</a>
+                                                        <%} else {%>
+                                                        <a style="background-color:red;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">
+                                                            Hủy đơn</a>
+                                                        <%}%>
+
+                                                    </td>
 
 
 

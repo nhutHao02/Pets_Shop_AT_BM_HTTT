@@ -68,7 +68,7 @@ public class OrderDAO {
     }
 
     public List<Orders> ordersList (){
-        List<Orders> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT OrderID, OrderDate, `Status`, Delivered, DeliveryDate, CustomerID, Discount, Notice, Price, RecipientName, Email, Phone, Address, idTransport FROM orders")
+        List<Orders> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT * FROM orders")
                 .mapToBean(Orders.class).stream().collect(Collectors.toList()));
         return  list;
     }
@@ -269,7 +269,7 @@ public class OrderDAO {
     }
 
     public static void main(String[] args) {
-        System.out.println(new OrderDAO().insertOrder("1101","HÀOOOOOOOOO","11111111","HCMMMMM","mail@GMAI","",new Cart(),"AAAAAAAAAA"));
-
+//        System.out.println(new OrderDAO().insertOrder("1101","Hiếu","11111111","HCMMMMM","mail@GMAI","",new Cart(),"AAAAAAAAAA"));
+        System.out.println(new OrderDAO().ordersList());
     }
 }

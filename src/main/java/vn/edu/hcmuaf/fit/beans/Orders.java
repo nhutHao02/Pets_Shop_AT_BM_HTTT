@@ -17,10 +17,30 @@ public class Orders implements Serializable {
     private String Phone;
     private String Address;
     private String idTransport;
+    private String hashMessage;
+    private int verify;
 
     public Orders() {
     }
 
+    public Orders(String orderID, String orderDate, int status, int delivered, String deliveryDate, String customerID, double discount, String notice, double price, String recipientName, String email, String phone, String address, String idTransport, String hashMessage, int verify) {
+        OrderID = orderID;
+        OrderDate = orderDate;
+        Status = status;
+        Delivered = delivered;
+        DeliveryDate = deliveryDate;
+        CustomerID = customerID;
+        Discount = discount;
+        Notice = notice;
+        Price = price;
+        RecipientName = recipientName;
+        Email = email;
+        Phone = phone;
+        Address = address;
+        this.idTransport = idTransport;
+        this.hashMessage = hashMessage;
+        this.verify = verify;
+    }
 
     public Orders(String orderID, String orderDate, int status, int delivered, String deliveryDate, String customerID, double discount, String notice, double price, String recipientName, String email, String phone, String address, String idTransport) {
         OrderID = orderID;
@@ -37,6 +57,22 @@ public class Orders implements Serializable {
         Phone = phone;
         Address = address;
         this.idTransport = idTransport;
+    }
+
+    public String getHashMessage() {
+        return hashMessage;
+    }
+
+    public void setHashMessage(String hashMessage) {
+        this.hashMessage = hashMessage;
+    }
+
+    public int getVerify() {
+        return verify;
+    }
+
+    public void setVerify(int verify) {
+        this.verify = verify;
     }
 
     public double getPrice() {
@@ -168,6 +204,8 @@ public class Orders implements Serializable {
                 ", Phone='" + Phone + '\'' +
                 ", Address='" + Address + '\'' +
                 ", idTransport='" + idTransport + '\'' +
-                '}';
+                ", hashMessage='" + hashMessage + '\'' +
+                ", verify=" + verify +
+                "}\n";
     }
 }
