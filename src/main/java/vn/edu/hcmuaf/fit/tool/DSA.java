@@ -148,38 +148,28 @@ public class DSA {
         byte[] base64Bytes = Base64.getEncoder().encode(inputBytes);
         return new String(base64Bytes, StandardCharsets.UTF_8);
     }
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    public PrivateKey convertStringToPrivateKey(String privateKeyString) throws Exception {
+        byte[] keyBytes = Base64.getDecoder().decode(privateKeyString);
+
+        // Sử dụng PKCS8EncodedKeySpec để tạo đối tượng PrivateKey từ mảng byte
+        PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(keyBytes);
+        KeyFactory keyFactory = KeyFactory.getInstance("DSA");
+        return keyFactory.generatePrivate(keySpec);
+    }
+    public PublicKey convertStringToPublicKey(String publicKeyString) throws Exception {
+        byte[] keyBytes = Base64.getDecoder().decode(publicKeyString);
+
+        // Sử dụng X509EncodedKeySpec để tạo đối tượng PublicKey từ mảng byte
+        X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
+        KeyFactory keyFactory = KeyFactory.getInstance("DSA");
+        return keyFactory.generatePublic(keySpec);
+    }
+    public static void main(String[] args) throws Exception {
         DSA dsa = new DSA();
-        // Tạo cặp khóa DSA
-        dsa.generatekey(dsa.generateDSAKeyPair());
-        try {
-            // Xuất khóa công khai và riêng
-            String publicKeyString = exportKey(dsa.publicKey);
-            String privateKeyString = exportKey(dsa.privateKey);
+        System.out.println(dsa.verify("8ac0ae5fef7c0c16e7e9ccab29bf9c4a",
+                "MDwCHGT9kyAV9SKltrmXKv4Nq 7d3H2dtJuuISXEuOkCHAdXzq34DxtcaoMTnvk07YaI1iMhuom2CYKJ4b0=",
+                dsa.convertStringToPublicKey("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")));
 
-            // In khóa công khai và riêng
-            System.out.println("Public Key: " + publicKeyString);
-            System.out.println("Private Key: " + privateKeyString);
-
-            // Tạo khóa từ chuỗi
-            PrivateKey importPrivatekey = dsa.importKey(privateKeyString, "DSA");
-
-            // Chuỗi cần ký
-            String message = "Hello, DSA!";
-
-            // Ký số chuỗi
-            String signature = dsa.sign(message,importPrivatekey);
-            System.out.println(signature);
-            // Xác minh chữ ký
-            boolean verified = dsa.verify(message, signature,dsa.publicKey);
-
-
-            // In kết quả
-            System.out.println("Original Message: " + message);
-            System.out.println("Signature Verified: " + verified);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 }

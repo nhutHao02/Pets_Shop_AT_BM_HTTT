@@ -74,11 +74,19 @@ public class OrderDAO {
     }
 
     public List<OrderDetail> getOrderDetailsById (String id){
-        List<OrderDetail> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT o.idTransport, od.OrderID, od.ProductID, od.ProductName, od.Price, od.Quantity FROM orderdetail od INNER JOIN orders o ON o.OrderID = od.OrderID WHERE o.OrderID = ?")
+        List<OrderDetail> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT o.idTransport, od.OrderID, od.ProductID, od.ProductName, od.Price, od.Quantity, od.PricePromotional FROM orderdetail od INNER JOIN orders o ON o.OrderID = od.OrderID WHERE o.OrderID = ?")
                 .bind(0,id)
                 .mapToBean(OrderDetail.class).stream().collect(Collectors.toList())
         );
         return list;
+    }
+    public void changeStatusVerify(String orderId, int verify) { //20130260-Hoàng Trung Hiếu
+        JDBIConnector.get().withHandle(handle -> handle
+                .createUpdate("UPDATE orders SET verify = ? WHERE OrderID = ?")
+                .bind(0, verify)
+                .bind(1, orderId)
+                .execute());
+
     }
 
     public void updateDelivery(String orderId, int delivery){
@@ -97,7 +105,6 @@ public class OrderDAO {
                 .execute()
             );
     }
-
     public List<Orders> getOrdersByUser(String id){
         List<Orders> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT OrderID, OrderDate, `Status`, Delivered, DeliveryDate, CustomerID, Discount, Notice, Price, RecipientName, Email, Phone, Address, idTransport FROM orders WHERE CustomerID=?")
                 .bind(0,id)
@@ -107,7 +114,7 @@ public class OrderDAO {
     }
 
     public Orders getOrderByIdOrder(String id){
-        return JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT OrderID, OrderDate, `Status`, Delivered, DeliveryDate, CustomerID, Discount, Notice, Price, RecipientName, Email, Phone, Address, idTransport FROM orders WHERE OrderID=?")
+        return JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT * FROM orders WHERE OrderID=?")
                 .bind(0,id)
                 .mapToBean(Orders.class).first());
     }
@@ -269,7 +276,8 @@ public class OrderDAO {
     }
 
     public static void main(String[] args) {
-//        System.out.println(new OrderDAO().insertOrder("1101","Hiếu","11111111","HCMMMMM","mail@GMAI","",new Cart(),"AAAAAAAAAA"));
-        System.out.println(new OrderDAO().ordersList());
+//        System.out.println(new OrderDAO().insertOrder("1101","Hiếu","123678","HCM","mail@GMAI","",new Cart(),"OKKE"));
+//        System.out.println(new OrderDAO().ordersList());
+        System.out.println(new OrderDAO().getOrderDetailsById("O816"));
     }
 }

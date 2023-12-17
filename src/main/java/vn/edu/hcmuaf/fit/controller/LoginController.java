@@ -24,7 +24,6 @@ public class LoginController extends HttpServlet {
     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         String username = request.getParameter("username");
         String pass = request.getParameter("password");
         KeyDAO dao=new KeyDAO();

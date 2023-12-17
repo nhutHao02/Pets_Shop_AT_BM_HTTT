@@ -34,7 +34,5 @@ public class SaveOrderController extends HttpServlet {
         request.getSession().setAttribute("cart", new Cart());
         response.setStatus(HttpServletResponse.SC_OK);
         response.sendRedirect("index.jsp");
-
-
     }
 }
