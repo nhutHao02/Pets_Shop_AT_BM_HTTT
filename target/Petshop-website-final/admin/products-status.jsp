@@ -309,10 +309,10 @@
                                                         <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="/Petshop_website_final_war/VerifyOrderController?orderId=<%=od.getOrderID()%>">
                                                             Xác thực</a>
                                                         <%} else if (od.getVerify() == 1){%>
-                                                        <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">
-                                                            Đã xác thực</a>
+<%--                                                        <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">--%>
+<%--                                                            Đã xác thực</a>--%>
                                                         <%} else {%>
-                                                        <a style="background-color:red;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">
+                                                        <a style="background-color:red;" class="btn_2 edit btn btn-primary" type="submit" href="/Petshop_website_final_war/CancelOrderController?orderId=<%=od.getOrderID()%>">
                                                             Hủy đơn</a>
                                                         <%}%>
                                                     </td>
