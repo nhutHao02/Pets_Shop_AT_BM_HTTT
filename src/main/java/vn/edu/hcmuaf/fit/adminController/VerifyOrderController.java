@@ -32,10 +32,11 @@ public class VerifyOrderController extends HttpServlet {
             OrderDetail orderDetail = list.get(i);
             // đưa kiểu decimal trong db thành kiểu long
             BigDecimal decimalValue = BigDecimal.valueOf(orderDetail.getPrice());
-            long longValue = decimalValue.longValueExact();
+            long longValue = decimalValue.longValueExact() / orderDetail.getQuantity();
             hashMessage += orderDetail.getProductID()+orderDetail.getProductName()
                     +longValue+orderDetail.getPricePromotional()+orderDetail.getQuantity();
         }
+        System.out.println(hashMessage);
         DSA dsa = new DSA();
         PublicKey publicKey = new KeyDAO().getPublicKey(orders.getCustomerID(), orders.getOrderDate());
         String hash = new Hash().hashString(hashMessage);
