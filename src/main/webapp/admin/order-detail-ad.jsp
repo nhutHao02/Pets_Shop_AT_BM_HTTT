@@ -144,7 +144,8 @@
                 </li>
                 <li class="pc-item">
                     <a href="import.jsp" class="pc-link "><span class="pc-micon"><i
-                            class="material-icons-two-tone">home</i></span><span class="pc-mtext">Nhập sản phẩm</span></a>
+                            class="material-icons-two-tone">home</i></span><span
+                            class="pc-mtext">Nhập sản phẩm</span></a>
                 </li>
                 <li class="pc-item">
                     <a href="products-status.jsp" class="pc-link "><span class="pc-micon"><i
@@ -215,7 +216,8 @@
                     <label>Quản lý liên hệ</label>
                 </li>
                 <li class="pc-item">
-                    <a href="list-contact.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span class="pc-mtext">Liên hệ</span></a>
+                    <a href="list-contact.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span
+                            class="pc-mtext">Liên hệ</span></a>
                 </li>
             </ul>
         </div>
@@ -284,7 +286,8 @@
                                             </thead>
                                             <tbody class="list" id="table-latest-review-body">
                                             <%for (OrderDetail od : listOd) {%>
-                                            <input id="idTransport" value="<%=od.getIdTransport()%>" style="display: none">
+                                            <input id="idTransport" value="<%=od.getIdTransport()%>"
+                                                   style="display: none">
                                             <tr class="hover-actions-trigger btn-reveal-trigger position-static">
                                                 <td class="fs--1 align-middle ps-0 py-3"><%=od.getProductID()%>
                                                 </td>
@@ -293,12 +296,14 @@
                                                 <td class="email align-middle white-space-nowrap pe-5"
                                                     style="text-align: center;"><%=od.getQuantity()%>
                                                 </td>
-                                                <%if(ProductService.getInstance().getProductDetail(od.getProductID()).getPromotional() == 1){%>
-                                                <td class="email align-middle white-space-nowrap pe-5" style="text-align: right;">
+                                                <%if (ProductService.getInstance().getProductDetail(od.getProductID()).getPromotional() == 1) {%>
+                                                <td class="email align-middle white-space-nowrap pe-5"
+                                                    style="text-align: right;">
                                                     <%=format.format(od.getQuantity() * (ProductService.getInstance().getProductDetail(od.getProductID()).getPrice() - (ProductService.getInstance().getProductDetail(od.getProductID()).getPrice() * ProductService.getInstance().getProductDetail(od.getProductID()).getPromotionalPrice() / 100)))%>
                                                 </td>
-                                                <%}else {%>
-                                                <td class="email align-middle white-space-nowrap pe-5" style="text-align: right;">
+                                                <%} else {%>
+                                                <td class="email align-middle white-space-nowrap pe-5"
+                                                    style="text-align: right;">
                                                     <%=format.format(od.getPrice())%>
                                                 </td>
                                                 <%}%>
@@ -332,7 +337,8 @@
                                                 </td>
                                             </tr>
                                             <tr style="font-size: 18px; color: #1c1c1c; font-weight: 700;">
-                                                <input value="<%=order.getPrice()%>" id="provisional" style="display: none">
+                                                <input value="<%=order.getPrice()%>" id="provisional"
+                                                       style="display: none">
                                                 <td style="text-align: left">Tổng tiền</td>
                                                 <td></td>
                                                 <td></td>
@@ -375,11 +381,17 @@
                                                 </select>
                                                 <%}%>
                                                 <%}%>
+                                                <%if (order.getVerify() == 0){%>
+                                                <div class="alert alert-danger" role="alert">
+                                                    Vui lòng xác thực đơn hàng!
+                                                </div>
+                                                <%} else {%>
                                                 <% for (AdminRole role : admin.getRole()) {
                                                     if (role.getTableName().equals("order") && role.getPermission() == 2) {
                                                 %>
-                                                    <button class="btn_2 edit btn btn-primary" type="submit">Lưu</button>
+                                                <button class="btn_2 edit btn btn-primary" type="submit">Lưu</button>
                                                 <%
+                                                            }
                                                         }
                                                     }
                                                 %>
@@ -429,7 +441,8 @@
     axios.post('http://140.238.54.136/api/auth/login', {
         email: EMAIL,
         password: PASSWORD
-    }).then(response => { console.log(response.data.access_token);
+    }).then(response => {
+        console.log(response.data.access_token);
         console.log(response.data.access_token);
         getOrder(response.data.access_token);
     })
@@ -439,7 +452,7 @@
             id: idTransport,
             token: token
         }
-        axios.post(url,body).then(response => {
+        axios.post(url, body).then(response => {
             var data = response.data;
             var content = data.data[0];
             var fee = parseInt(content.fee);

@@ -8,18 +8,20 @@ public class OrderDetail implements Serializable {
     private String ProductName;
     private double Price;
     private int Quantity;
+    private int PricePromotional;
 
     private String idTransport;
 
     public OrderDetail() {
     }
 
-    public OrderDetail(String orderID, String productID, String productName, double price, int quantity, String idTransport) {
+    public OrderDetail(String orderID, String productID, String productName, double price, int quantity, int pricePromotional, String idTransport) {
         OrderID = orderID;
         ProductID = productID;
         ProductName = productName;
         Price = price;
         Quantity = quantity;
+        PricePromotional = pricePromotional;
         this.idTransport = idTransport;
     }
 
@@ -63,6 +65,14 @@ public class OrderDetail implements Serializable {
         Quantity = quantity;
     }
 
+    public int getPricePromotional() {
+        return PricePromotional;
+    }
+
+    public void setPricePromotional(int pricePromotional) {
+        PricePromotional = pricePromotional;
+    }
+
     public String getIdTransport() {
         return idTransport;
     }
@@ -79,7 +89,8 @@ public class OrderDetail implements Serializable {
                 ", ProductName='" + ProductName + '\'' +
                 ", Price=" + Price +
                 ", Quantity=" + Quantity +
+                ", PricePromotional=" + PricePromotional +
                 ", idTransport='" + idTransport + '\'' +
-                '}';
+                "}\n";
     }
 }

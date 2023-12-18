@@ -1,4 +1,4 @@
-<%@ page import="java.util.List" %>
+    <%@ page import="java.util.List" %>
 <%@ page import="vn.edu.hcmuaf.fit.services.ProductService" %>
 <%@ page import="vn.edu.hcmuaf.fit.beans.Cart" %>
 <%@ page import="vn.edu.hcmuaf.fit.beans.Product" %>
@@ -592,7 +592,7 @@
         if (signedHashMessage.trim() === "") {
             document.getElementById("errorCK").innerText = "(*)Khóa không được để trống";
         } else {
-            document.getElementById("errorK").innerText = ""; // Xóa thông báo lỗi nếu có
+            document.getElementById("errorCK").innerText = ""; // Xóa thông báo lỗi nếu có
             // Lấy dữ liệu từ các input và textarea
             var fullName = document.querySelector('.fullname').value;
             var phone = document.querySelector('.phone').value;
