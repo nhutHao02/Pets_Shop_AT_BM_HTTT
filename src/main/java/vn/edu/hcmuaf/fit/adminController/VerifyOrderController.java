@@ -48,7 +48,8 @@ public class VerifyOrderController extends HttpServlet {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        response.sendRedirect("/Petshop_website_final_war/admin/products-status.jsp");
+//        response.sendRedirect("/Petshop_website_final_war/admin/products-status.jsp");
+        response.sendRedirect("/Petshop_website_final_war/ajax/admin-ajax-loadOrder.jsp");
     }
 
     @Override

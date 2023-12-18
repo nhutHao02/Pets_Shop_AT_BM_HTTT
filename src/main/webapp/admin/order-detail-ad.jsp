@@ -381,7 +381,20 @@
                                                 </select>
                                                 <%}%>
                                                 <%}%>
-
+                                                <%if (order.getVerify() == 0){%>
+                                                <div class="alert alert-danger" role="alert">
+                                                    Vui lòng xác thực đơn hàng!
+                                                </div>
+                                                <%} else {%>
+                                                <% for (AdminRole role : admin.getRole()) {
+                                                    if (role.getTableName().equals("order") && role.getPermission() == 2) {
+                                                %>
+                                                <button class="btn_2 edit btn btn-primary" type="submit">Lưu</button>
+                                                <%
+                                                            }
+                                                        }
+                                                    }
+                                                %>
                                                 <a class="fw-semi-bold text-1100" href="products-status.jsp">Trở lại</a>
                                             </div>
                                         </form>
