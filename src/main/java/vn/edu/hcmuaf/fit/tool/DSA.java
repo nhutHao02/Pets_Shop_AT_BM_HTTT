@@ -31,10 +31,12 @@ public class DSA {
         byte[] keyEncoded = key.getEncoded();
         return Base64.getEncoder().encodeToString(keyEncoded);
     }
+
     public String exportPrivateKey() {
         byte[] keyEncoded = privateKey.getEncoded();
         return Base64.getEncoder().encodeToString(keyEncoded);
     }
+
     public String exportPublicKey() {
         byte[] keyEncoded = publicKey.getEncoded();
         return Base64.getEncoder().encodeToString(keyEncoded);
@@ -144,10 +146,12 @@ public class DSA {
             return false;
         }
     }
+
     public String bytesToBase64(byte[] inputBytes) {
         byte[] base64Bytes = Base64.getEncoder().encode(inputBytes);
         return new String(base64Bytes, StandardCharsets.UTF_8);
     }
+
     // 20130260-Hoàng Trung Hiếu
     public PrivateKey convertStringToPrivateKey(String privateKeyString) throws Exception {
         byte[] keyBytes = Base64.getDecoder().decode(privateKeyString);
@@ -157,6 +161,7 @@ public class DSA {
         KeyFactory keyFactory = KeyFactory.getInstance("DSA");
         return keyFactory.generatePrivate(keySpec);
     }
+
     // 20130260-Hoàng Trung Hiếu
     public PublicKey convertStringToPublicKey(String publicKeyString) throws Exception {
         byte[] keyBytes = Base64.getDecoder().decode(publicKeyString);
@@ -166,6 +171,7 @@ public class DSA {
         KeyFactory keyFactory = KeyFactory.getInstance("DSA");
         return keyFactory.generatePublic(keySpec);
     }
+
     public static void main(String[] args) throws Exception {
         DSA dsa = new DSA();
         dsa.generatekey(dsa.generateDSAKeyPair());
