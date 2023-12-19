@@ -1,0 +1,404 @@
+{
+  "Dog":[
+    {
+     "Id": "dog_01",
+     "ten": "ALASKA Hồng Phấn",
+     "gia": "18.000.000",
+     "mota": "Chó Alaska hay còn gọi là chó Alaska Malamute là tổ tiên giống chó sói tuyết hoang, được thuần hoá bởi tộc Malamute để trở thành vật nuôi. Tuy nhiên, trước khi trở thành thú nuôi phổ biến trong nhà, chó Alaska cũng đã phải trải qua một quá trình đầy gian nan, thử thách.",
+     "giong": "ALASKA",
+     "mausac": "Hồng Phấn",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp1.jpg"
+    },
+    {
+     "Id": "dog_02",
+     "ten": "ALASKA Nâu Đực Đẹp Trai",
+     "gia": "20.000.000",
+     "mota": "Chó Alaska hay còn gọi là chó Alaska Malamute là tổ tiên giống chó sói tuyết hoang, được thuần hoá bởi tộc Malamute để trở thành vật nuôi. Tuy nhiên, trước khi trở thành thú nuôi phổ biến trong nhà, chó Alaska cũng đã phải trải qua một quá trình đầy gian nan, thử thách.",
+     "giong": "ALASKA",
+     "mausac": "Nâu",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp2.jpg"
+    },
+    {
+     "Id": "dog_03",
+     "ten": "Chó Corgi Pembroke",
+     "gia": "18.000.000",
+     "mota": "Không khác gì các chú chó khác, Corgi khỏe mạnh luôn là mong muốn của các bạn chủ. Nhưng để nuôi dưỡng một chú chó Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi",
+     "mausac": "Trắng Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp3.png"
+    },
+    {
+     "Id": "dog_04",
+     "ten": "Chó Corgi Pembroke",
+     "gia": "15.000.000",
+     "mota": "Không khác gì các chú chó khác, Corgi khỏe mạnh luôn là mong muốn của các bạn chủ. Nhưng để nuôi dưỡng một chú chó Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi",
+     "mausac": "Trắng Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp4.png"
+    },
+    {
+     "Id": "dog_05",
+     "ten": "Chó Corgi Fluffy",
+     "gia": "10.000.000",
+     "mota": "Chó Corgi Fluffy có ngoại hình nhỏ bé và ngộ nghĩnh, đáng yêu. Chúng cũng rất năng động và thông minh nên được nhiều người ưa thích và mong muốn sở hữu.",
+     "giong": "Corgi Fluffy",
+     "mausac": "Tricolor",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp5.png"
+    },
+    {
+     "Id": "dog_06",
+     "ten": "Chó Corgi Fluffy",
+     "gia": "10.000.000",
+     "mota": "Chó Corgi Fluffy có ngoại hình nhỏ bé và ngộ nghĩnh, đáng yêu. Chúng cũng rất năng động và thông minh nên được nhiều người ưa thích và mong muốn sở hữu.",
+     "giong": "Corgi Fluffy",
+     "mausac": "Vàng & Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp6.png"
+    },
+    {
+     "Id": "dog_07",
+     "ten": "Chó Corgi Cardigan Welsh",
+     "gia": "12.000.000",
+     "mota": "Trong họ Corgi, dựa vào màu sắc màu lông có thể chia thành nhiều tên khác nhau Cardigan Corgi là giống chó đẹp được ưa chuộng hiện nay. Để nuôi dưỡng một chú chó Cardigan Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi Cardigan Welsh",
+     "mausac": "Vện",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp7.png"
+    },
+    {
+     "Id": "dog_08",
+     "ten": "Chó Corgi Cardigan Welsh",
+     "gia": "12.000.000",
+     "mota": "Trong họ Corgi, dựa vào màu sắc màu lông có thể chia thành nhiều tên khác nhau Cardigan Corgi là giống chó đẹp được ưa chuộng hiện nay. Để nuôi dưỡng một chú chó Cardigan Corgi khỏe mạnh tại Việt Nam không phải là dễ dàng. Điều đó bắt buộc các bạn chủ phải hiểu thật kỹ về đặc điểm của giống cho này.",
+     "giong": "Corgi Cardigan Welsh",
+     "mausac": "Meler",
+     "cannang": "1.8kg",
+     "anh": "img\/products\/dog\/sp8.png"
+    },
+    {
+     "Id": "dog_09",
+     "ten": "Chó Pomeranian Parti",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Parti",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp9.png"
+    },
+    {
+     "Id": "dog_10",
+     "ten": "Chó Pomeranian Trắng",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp10.png"
+    },
+    {
+     "Id": "dog_11",
+     "ten": "Chó Pomeranian Vàng",
+     "gia": "16.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Vàng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp11.png"
+    },
+    {
+     "Id": "dog_12",
+     "ten": "Chó Pomeranian Black",
+     "gia": "18.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Đen ",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp12.png"
+    },
+    {
+     "Id": "dog_13",
+     "ten": "Chó Pomeranian Panda",
+     "gia": "18.000.000",
+     "mota": "Chó Pomeranian thuần chủng (Pom đáng yêu) hay còn gọi là Phốc Sóc thuần chủng có nguồn gốc từ loài Spitz cổ. Cái tên Pomeranian được lấy từ một địa danh cùng tên thuộc vùng Trung Âu, tức miền Tây Bắc Ba Lan và Đông Bắc Đức ngày nay.",
+     "giong": "Pomeranian – Phốc Sóc",
+     "mausac": "Trắng-Đen",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp13.png"
+    },
+    {
+     "Id": "dog_14",
+     "ten": "Chó Poodle Trắng",
+     "gia": "10.000.000",
+     "mota": "Poodle Trắng với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle Trắng, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp14.png"
+    },
+    {
+     "Id": "dog_15",
+     "ten": "Chó Poodle Socola",
+     "gia": "7.000.000",
+     "mota": "Poodle Chocolate với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle Chocolate, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Socola",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp15.png"
+    },
+    {
+     "Id": "dog_16",
+     "ten": "Chó Poodle Vàng Mơ",
+     "gia": "7.000.000",
+     "mota": "Poodle vàng mơ với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle vàng mơ, chúng ta rất dễ phối đồ cho chúng. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Vàng Mơ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp16.png"
+    },
+    {
+     "Id": "dog_17",
+     "ten": "Chó Poodle Bò Mơ",
+     "gia": "7.000.000",
+     "mota": "Poodle Bò Sữa là một giống Poodle với màu lông đặc biệt được săn đón và ưa chuộng nhất hiện nay. Với những đặc điểm về ngoại hình, chúng được mệnh danh là siêu phẩm với độ cute vô đối.",
+     "giong": "Poodle",
+     "mausac": "Bò Mơ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp17.png"
+    },
+    {
+     "Id": "dog_18",
+     "ten": "Chó Poodle Nâu Đỏ",
+     "gia": "7.000.000",
+     "mota": "Poodle được cho là có nguồn gốc từ Đức. Tại đó, chúng được gọi là Pudel, có nghĩa là “một kẻ đáng chú ý trong nước“. Điều này chứng tỏ Poodle là một tay bơi cừ khôi dưới nước.",
+     "giong": "Poodle",
+     "mausac": "Nâu Đỏ",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp18.png"
+    },
+    {
+     "Id": "dog_19",
+     "ten": "Chó Poodle Trắng Kem",
+     "gia": "7.000.000",
+     "mota": "Poodle trắng kem với màu sắc của sự trang nhã và sang trọng. Đã và đang là màu được giới trẻ ưa chuộng nhất hiện nay. Với Poodle kem, chúng ta rất dễ phối đồ cho chún. Chúng có thể cân hết các loại màu nổi bật mà không sợ bé Boss nhà mình kén như: màu đỏ, hồng đậm, xanh,…Sẽ khiến cho Poodle nhà mình trở nên cực kì nổi bật thu hút ánh nhìn giữa đám đông.",
+     "giong": "Poodle",
+     "mausac": "Trắng Kem",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp19.png"
+    },
+    {
+     "Id": "dog_20",
+     "ten": "Chó Poodle Phantom",
+     "gia": "12.000.000",
+     "mota": "Những bé Poodle hai màu này đang nhận được sự quan tâm từ nhiều khách hàng khác nhau. Màu bò sữa vốn là màu không có trong bảng thuần chủng của chúng.Đây thực chất là màu được lai tạo từ Poodle đen và Poodle trắng. Sự lai phối này tạo ra một giống chó màu lông đẹp hoàn hảo, đặc biệt được nhiều người yêu thích. Sự kết hợp hài hòa giữa hai màu đen trắng tạo nên ngoại hình hoàn chỉnh cho Poodle.",
+     "giong": "Poodle",
+     "mausac": "Phantom",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp20.png"
+    },
+    {
+     "Id": "dog_21",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp21.png"
+    },
+    {
+     "Id": "dog_22",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp22.png"
+    },
+    {
+     "Id": "dog_23",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Vàng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp23.png"
+    },
+    {
+     "Id": "dog_24",
+     "ten": "Chó Chowchow",
+     "gia": "8.000.000",
+     "mota": "Nhìn chung thì Chow chow có ngoại hình khá giống với mẫu chó đá hóa thạch được biết đến ở Trung Quốc khoảng 2.000 năm trước. Thời xa xưa, Chow Chow được coi là giống chó bình dân và sử dụng để làm việc, săn bắt, canh gác hay thậm chí là kéo xe.",
+     "giong": "Chowchow",
+     "mausac": "Kem",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp24.png"
+    },
+    {
+     "Id": "dog_25",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Bò Sữa",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp25.png"
+    },
+    {
+     "Id": "dog_26",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Bò Sữa",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp26.png"
+    },
+    {
+     "Id": "dog_27",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp27.png"
+    },
+    {
+     "Id": "dog_28",
+     "ten": "Chó French Bulldog",
+     "gia": "12.000.000",
+     "mota": "Chó Bull Pháp hay còn có tên tiếng anh là French Bulldog, một giống chó có nguồn gốc từ Pháp. Bull Pháp được nuôi dạy để làm bạn với con người và là thú cưng của mọi nhà.",
+     "giong": "French Bulldog",
+     "mausac": "Vàng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp28.png"
+    },
+    {
+     "Id": "dog_29",
+     "ten": "BEAGLE ĐỰC SIÊU XINH",
+     "gia": "9.500.000",
+     "mota": "Chó săn thỏ là một giống chó nhỏ trong các chó săn và chuyên dùng để săn thỏ, chúng dễ nhận biết bởi bộ lông tam thể mềm mượt đặc trưng. Chúng rất dễ nuôi, thân thiện và đáng yêu với con người, có thể vừa trông nhà, vừa chơi đùa cùng trẻ con trong nhà.",
+     "giong": "Beagle",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp29.jpg"
+    },
+    {
+     "Id": "dog_30",
+     "ten": "BEAGLE – CHÓ SĂN THỎ",
+     "gia": "9.500.000",
+     "mota": "Chó săn thỏ là một giống chó nhỏ trong các chó săn và chuyên dùng để săn thỏ, chúng dễ nhận biết bởi bộ lông tam thể mềm mượt đặc trưng. Chúng rất dễ nuôi, thân thiện và đáng yêu với con người, có thể vừa trông nhà, vừa chơi đùa cùng trẻ con trong nhà.",
+     "giong": "Beagle",
+     "mausac": "Trắng",
+     "cannang": "2kg",
+     "anh": "img\/products\/dog\/sp30.jpg"
+    },
+    {
+     "Id": "dog_31",
+     "ten": "PUG MẶT THỘN",
+     "gia": "10.000.000",
+     "mota": "Pug, hay thường được gọi là chó mặt xệ, là giống chó thuộc nhóm chó cảnh có nguồn gốc từ Trung Quốc, chúng có một khuôn mặt nhăn, mõm ngắn, và đuôi xoăn. Giống chó này có bộ lông mịn, bóng, có nhiều màu sắc nhưng phổ biến nhất là màu đen và nâu vàng. Cơ thể của Pug nhỏ gọn hình vuông với các cơ bắp rất phát triển.",
+     "giong": "Pug",
+     "mausac": "Vàng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/dog\/sp31.jpg"
+    },
+    {
+     "Id": "dog_32",
+     "ten": "EM PUG BÉO Ú NU",
+     "gia": "8.500.000",
+     "mota": "Pug, hay thường được gọi là chó mặt xệ, là giống chó thuộc nhóm chó cảnh có nguồn gốc từ Trung Quốc, chúng có một khuôn mặt nhăn, mõm ngắn, và đuôi xoăn. Giống chó này có bộ lông mịn, bóng, có nhiều màu sắc nhưng phổ biến nhất là màu đen và nâu vàng. Cơ thể của Pug nhỏ gọn hình vuông với các cơ bắp rất phát triển.",
+     "giong": "Pug",
+     "mausac": "Vàng",
+     "cannang": "2.5kg",
+     "anh": "img\/products\/dog\/sp32.jpg"
+    },
+    {
+     "Id": "dog_33",
+     "ten": "SAMOYED SIÊU CUTE",
+     "gia": "12.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp33.jpg"
+    },
+    {
+     "Id": "dog_34",
+     "ten": "SAM SAM ĐÁNG YÊU",
+     "gia": "13.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp34.jpg"
+    },
+    {
+     "Id": "dog_35",
+     "ten": "SAMOYED SIÊU CƯNG",
+     "gia": "14.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "4kg",
+     "anh": "img\/products\/dog\/sp35.jpeg"
+    },
+    {
+     "Id": "dog_36",
+     "ten": "SAMOYED TRẮNG",
+     "gia": "15.000.000",
+     "mota": "Samoyed là một giống chó săn có nguồn gốc từ vùng Siberia, đây là giống chó có bộ lông trắng tinh như tuyết cùng tính cách mang nhiều đặc điểm của chó sói là những đặc trưng nổi bật của giống chó này. Samoyed có nghĩa là giống chó có khả năng tự tìm ra thức ăn.",
+     "giong": "SAMOYED",
+     "mausac": "Trắng",
+     "cannang": "4kg",
+     "anh": "img\/products\/dog\/sp36.jpg"
+    },
+    {
+     "Id": "dog_37",
+     "ten": "BICHON TRẮNG ĐỰC YÊU YÊU",
+     "gia": "35.000.000",
+     "mota": "Bichon Frise là là một loại chó nhỏ thuộc giống chó Bichon. The Bichon Frise là một thành viên của giống chó trong nhóm phi thể thao tại Mỹ, và thành viên thuộc nhóm chó cảnh tại Anh.",
+     "giong": "BICHON",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp37.jpg"
+    },
+    {
+     "Id": "dog_38",
+     "ten": "EM BICHON TRẮNG SIÊU YÊU",
+     "gia": "90.000.000",
+     "mota": "Bichon Frise là là một loại chó nhỏ thuộc giống chó Bichon. The Bichon Frise là một thành viên của giống chó trong nhóm phi thể thao tại Mỹ, và thành viên thuộc nhóm chó cảnh tại Anh.",
+     "giong": "BICHON",
+     "mausac": "Trắng",
+     "cannang": "1.5kg",
+     "anh": "img\/products\/dog\/sp38.jpg"
+    },
+    {
+     "Id": "dog_39",
+     "ten": "GOLDEN BÉO Ú NU",
+     "gia": "13.000.000",
+     "mota": "Golden Retriever, còn gọi là chó săn lông vàng hoặc chó tha mồi, là giống chó có kích thước trung bình. Thuộc họ nhà chó ưa hoạt động, chơi đùa, chúng rất trung thành và thông minh.",
+     "giong": "GOLDEN RETRIEVER",
+     "mausac": "Vàng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp39.jpeg"
+    },
+    {
+     "Id": "dog_40",
+     "ten": "GOLDEN DỄ THƯƠNG",
+     "gia": "16.000.000",
+     "mota": "Golden Retriever, còn gọi là chó săn lông vàng hoặc chó tha mồi, là giống chó có kích thước trung bình. Thuộc họ nhà chó ưa hoạt động, chơi đùa, chúng rất trung thành và thông minh.",
+     "giong": "GOLDEN RETRIEVER",
+     "mausac": "Vàng",
+     "cannang": "3kg",
+     "anh": "img\/products\/dog\/sp40.jpg"
+    }
+   ]
+}
