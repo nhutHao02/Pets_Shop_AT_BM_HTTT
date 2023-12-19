@@ -15,15 +15,17 @@
     <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 11]>
-    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    	<![endif]-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="DashboardKit is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
-    <meta name="keywords" content="DashboardKit, Dashboard Kit, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Free Bootstrap Admin Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description"
+          content="DashboardKit is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+    <meta name="keywords"
+          content="DashboardKit, Dashboard Kit, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Free Bootstrap Admin Template">
     <meta name="author" content="DashboardKit ">
 
 
@@ -60,160 +62,162 @@
 <% } else {
 %>
 <body class="">
-	<!-- [ Pre-loader ] start -->
-	<div class="loader-bg">
-		<div class="loader-track">
-			<div class="loader-fill"></div>
-		</div>
-	</div>
-	<!-- [ Pre-loader ] End -->
-	<!-- [ Mobile header ] start -->
-	<div class="pc-mob-header pc-header">
-		<div class="pcm-logo">
-			<img src="assets/images/logo.svg" alt="" class="logo logo-lg">
-		</div>
-		<div class="pcm-toolbar">
-			<a href="#!" class="pc-head-link" id="mobile-collapse">
-				<div class="hamburger hamburger--arrowturn">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</div>
-			</a>
-			<a href="#!" class="pc-head-link" id="headerdrp-collapse">
-				<i data-feather="align-right"></i>
-			</a>
-			<a href="#!" class="pc-head-link" id="header-collapse">
-				<i data-feather="more-vertical"></i>
-			</a>
-		</div>
-	</div>
-	<!-- [ Mobile header ] End -->
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+    <div class="loader-track">
+        <div class="loader-fill"></div>
+    </div>
+</div>
+<!-- [ Pre-loader ] End -->
+<!-- [ Mobile header ] start -->
+<div class="pc-mob-header pc-header">
+    <div class="pcm-logo">
+        <img src="assets/images/logo.svg" alt="" class="logo logo-lg">
+    </div>
+    <div class="pcm-toolbar">
+        <a href="#!" class="pc-head-link" id="mobile-collapse">
+            <div class="hamburger hamburger--arrowturn">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </a>
+        <a href="#!" class="pc-head-link" id="headerdrp-collapse">
+            <i data-feather="align-right"></i>
+        </a>
+        <a href="#!" class="pc-head-link" id="header-collapse">
+            <i data-feather="more-vertical"></i>
+        </a>
+    </div>
+</div>
+<!-- [ Mobile header ] End -->
 
-	<!-- [ navigation menu ] start -->
-    <nav class="pc-sidebar ">
-        <div class="navbar-wrapper">
-            <div class="m-header">
-                <a href="index.jsp" class="b-brand">
-                    <!-- ========   change your logo hear   ============ -->
-                    <img src="assets/images/logo.png" alt="" class="logo logo-lg">
-                    <img src="assets/images/logo-sm.svg" alt="" class="logo logo-sm">
-                </a>
-            </div>
-            <div class="navbar-content">
-                <ul class="pc-navbar">
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý</label>
-                    </li>
-                    <li class="pc-item">
-                        <a href="index.jsp" class="pc-link "><span class="pc-micon"><i
-                                class="material-icons-two-tone">home</i></span><span
-                                class="pc-mtext">Quản lý chung</span></a>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý sản phẩm</label>
-                        <!-- <span>UI Components</span> -->
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i
-                                data-feather="github">business_center</i></span><span class="pc-mtext">Thú cưng</span><span
-                                class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="list-products">Danh sách thú cưng</a></li>
-                            <li class="pc-item"><a class="pc-link" href="edit-product.jsp">Thêm thú cưng</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span
-                                class="pc-mtext">Phụ kiện</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="list-accessory">Danh sách phụ kiện</a></li>
-                            <li class="pc-item"><a class="pc-link" href="edit-accessory.jsp">Thêm phụ kiện</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item">
-                        <a href="import.jsp" class="pc-link "><span class="pc-micon"><i
-                                class="material-icons-two-tone">home</i></span><span class="pc-mtext">Nhập sản phẩm</span></a>
-                    </li>
-                    <li class="pc-item">
-                        <a href="products-status.jsp" class="pc-link "><span class="pc-micon"><i
-                                class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Tình trạng đơn hàng</span></a>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý tin tức</label>
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
-                                                                                data-feather="file-minus"></i></span><span
-                                class="pc-mtext">Tin tức</span><span class="pc-arrow"><i
-                                data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="list-blog.jsp">Danh sách tin tức</a></li>
-                            <li class="pc-item"><a class="pc-link" href="add-blog.jsp">Thêm tin tức</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý danh mục</label>
-                    </li>
-                    <li class="pc-item">
-                        <a href="list-category.jsp" class="pc-link "><span class="pc-micon"><i
-                                class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Danh sách danh mục</span></a>
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
-                                                                                data-feather="file-minus"></i></span><span
-                                class="pc-mtext">Thêm danh mục</span><span class="pc-arrow"><i
-                                data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="add-category-product.jsp">Danh mục sản phẩm</a>
-                            </li>
-                            <li class="pc-item"><a class="pc-link" href="add-category-blog.jsp">Danh mục tin tức</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Tài khoản</label>
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
-                                                                                data-feather="cpu"></i></span><span
-                                class="pc-mtext">Admin</span><span class="pc-arrow"><i
-                                data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="list-admin.jsp">Danh sách admin</a></li>
-                            <li class="pc-item"><a class="pc-link" href="add-admin.jsp">Thêm admin</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item pc-hasmenu">
-                        <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
-                                                                                data-feather="user"></i></span><span
-                                class="pc-mtext">Người dùng</span><span class="pc-arrow"><i
-                                data-feather="chevron-right"></i></span></a>
-                        <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="list-user.jsp">Danh sách người dùng</a></li>
-                            <li class="pc-item"><a class="pc-link" href="add-user.jsp">Thêm người dùng</a></li>
-                        </ul>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý bình luận</label>
-                    </li>
-                    <li class="pc-item">
-                        <a href="list-comment.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span
-                                class="pc-mtext">Bình luận</span></a>
-                    </li>
-                    <li class="pc-item pc-caption">
-                        <label>Quản lý liên hệ</label>
-                    </li>
-                    <li class="pc-item">
-                        <a href="list-contact.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span class="pc-mtext">Liên hệ</span></a>
-                    </li>
-                </ul>
-            </div>
+<!-- [ navigation menu ] start -->
+<nav class="pc-sidebar ">
+    <div class="navbar-wrapper">
+        <div class="m-header">
+            <a href="index.jsp" class="b-brand">
+                <!-- ========   change your logo hear   ============ -->
+                <img src="assets/images/logo.png" alt="" class="logo logo-lg">
+                <img src="assets/images/logo-sm.svg" alt="" class="logo logo-sm">
+            </a>
         </div>
-    </nav>
-	<!-- [ navigation menu ] end -->
-	<!-- [ Header ] start -->
-    <jsp:include page="layout-admin/header-admin.jsp"></jsp:include>
-	<!-- [ Header ] end -->
+        <div class="navbar-content">
+            <ul class="pc-navbar">
+                <li class="pc-item pc-caption">
+                    <label>Quản lý</label>
+                </li>
+                <li class="pc-item">
+                    <a href="index.jsp" class="pc-link "><span class="pc-micon"><i
+                            class="material-icons-two-tone">home</i></span><span
+                            class="pc-mtext">Quản lý chung</span></a>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Quản lý sản phẩm</label>
+                    <!-- <span>UI Components</span> -->
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i
+                            data-feather="github">business_center</i></span><span class="pc-mtext">Thú cưng</span><span
+                            class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="list-products">Danh sách thú cưng</a></li>
+                        <li class="pc-item"><a class="pc-link" href="edit-product.jsp">Thêm thú cưng</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span
+                            class="pc-mtext">Phụ kiện</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="list-accessory">Danh sách phụ kiện</a></li>
+                        <li class="pc-item"><a class="pc-link" href="edit-accessory.jsp">Thêm phụ kiện</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item">
+                    <a href="import.jsp" class="pc-link "><span class="pc-micon"><i
+                            class="material-icons-two-tone">home</i></span><span
+                            class="pc-mtext">Nhập sản phẩm</span></a>
+                </li>
+                <li class="pc-item">
+                    <a href="products-status.jsp" class="pc-link "><span class="pc-micon"><i
+                            class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Tình trạng đơn hàng</span></a>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Quản lý tin tức</label>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
+                                                                            data-feather="file-minus"></i></span><span
+                            class="pc-mtext">Tin tức</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="list-blog.jsp">Danh sách tin tức</a></li>
+                        <li class="pc-item"><a class="pc-link" href="add-blog.jsp">Thêm tin tức</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Quản lý danh mục</label>
+                </li>
+                <li class="pc-item">
+                    <a href="list-category.jsp" class="pc-link "><span class="pc-micon"><i
+                            class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Danh sách danh mục</span></a>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
+                                                                            data-feather="file-minus"></i></span><span
+                            class="pc-mtext">Thêm danh mục</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="add-category-product.jsp">Danh mục sản phẩm</a>
+                        </li>
+                        <li class="pc-item"><a class="pc-link" href="add-category-blog.jsp">Danh mục tin tức</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Tài khoản</label>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
+                                                                            data-feather="cpu"></i></span><span
+                            class="pc-mtext">Admin</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="list-admin.jsp">Danh sách admin</a></li>
+                        <li class="pc-item"><a class="pc-link" href="add-admin.jsp">Thêm admin</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone"
+                                                                            data-feather="user"></i></span><span
+                            class="pc-mtext">Người dùng</span><span class="pc-arrow"><i
+                            data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="list-user.jsp">Danh sách người dùng</a></li>
+                        <li class="pc-item"><a class="pc-link" href="add-user.jsp">Thêm người dùng</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Quản lý bình luận</label>
+                </li>
+                <li class="pc-item">
+                    <a href="list-comment.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span
+                            class="pc-mtext">Bình luận</span></a>
+                </li>
+                <li class="pc-item pc-caption">
+                    <label>Quản lý liên hệ</label>
+                </li>
+                <li class="pc-item">
+                    <a href="list-contact.jsp" class="pc-link "><span class="pc-micon"><i data-feather="message-circle">history_edu</i></span><span
+                            class="pc-mtext">Liên hệ</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- [ navigation menu ] end -->
+<!-- [ Header ] start -->
+<jsp:include page="layout-admin/header-admin.jsp"></jsp:include>
+<!-- [ Header ] end -->
 
 <!-- [ Main Content ] start -->
 <div class="pc-container">
@@ -240,91 +244,184 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body text-center">
-<%--                        <div class="col-md-6">--%>
-<%--                                <div class="form-group">--%>
-<%--                                    <div class="input-group">--%>
-<%--                                        <span class="input-group-text">Tìm kiếm đơn hàng</span>--%>
-<%--                                        <input type="text" class="form-control" placeholder="Tìm kiếm...">--%>
-<%--                                    </div>--%>
-<%--           --%>
-<%--                                </div>--%>
-<%--                        </div>--%>
-                                <div class="tab-pane fade show active" id="nav-week1" role="tabpanel" aria-labelledby="nav-week1-tab">
-                                    <table class="table">
-                                        <thead>
-                                        <tr>
-                                            <th data-toggle="tooltip">Mã đơn hàng</th>
-                                            <th data-toggle="tooltip">Người mua</th>
-                                            <th>Giá</th>
-                                            <th>Ngày mua</th>
-                                            <th>Tình trạng</th>
-                                            <th>Ngày giao</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <% NumberFormat format = NumberFormat.getInstance(new Locale("vn", "VN"));%>
-                                    <%List<Orders> listod = OrderService.getInstance().ordersList();
-                                        for (Orders od: listod) {%>
-                                            <form action="" method="post">
-                                                <tr>
-                                                    <td scope="row"><%=od.getOrderID()%></td>
-                                                    <td><%=UserService.getInstance().getUserDetail(od.getCustomerID()).getName()%></td>
-                                                    <td><%=format.format(od.getPrice())%></td>
-                                                    <td><%=od.getOrderDate()%></td>
-                                                    <td>
-                                                            <%if(od.getStatus()==0){%>
-                                                                    <div style="color: red; font-weight: bold">Đã hủy</div>
-                                                            <%}else{%>
-                                                                    <%if(od.getDelivered()==0){%>
-                                                                            <div  style="color: #00BFFF; font-weight: bold">Đang xử lý</div>
-                                                                    <%}else{%>
-                                                                            <div style="color: #35ff00; font-weight: bold">Hoàn thành</div>
-                                                                    <%}%>
-                                                            <%}%>
-                                                    </td>
-                                                    <%if (od.getDeliveryDate() == null){%>
-                                                        <td>Chưa giao</td>
-                                                    <%}else{%>
-                                                        <td><%=od.getDeliveryDate()%></td>
-                                                    <%}%>
+                        <%--                        <div class="col-md-6">--%>
+                        <%--                                <div class="form-group">--%>
+                        <%--                                    <div class="input-group">--%>
+                        <%--                                        <span class="input-group-text">Tìm kiếm đơn hàng</span>--%>
+                        <%--                                        <input type="text" class="form-control" placeholder="Tìm kiếm...">--%>
+                        <%--                                    </div>--%>
+                        <%--           --%>
+                        <%--                                </div>--%>
+                        <%--                        </div>--%>
+                        <div class="tab-pane fade show active" id="nav-week1" role="tabpanel"
+                             aria-labelledby="nav-week1-tab">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th data-toggle="tooltip">Mã đơn hàng</th>
+                                    <th data-toggle="tooltip">Người mua</th>
+                                    <th>Giá</th>
+                                    <th>Ngày mua</th>
+                                    <th>Tình trạng</th>
+                                    <th>Ngày giao</th>
+                                    <th>Xác thực</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>d
+                                </thead>
+                                <tbody>
+                                <% NumberFormat format = NumberFormat.getInstance(new Locale("vn", "VN"));%>
+                                <%
+                                    List<Orders> listod = OrderService.getInstance().ordersList();
+                                    for (Orders od : listod) {
+                                %>
+                                <form action="" method="post">
+                                    <tr>
+                                        <td scope="row"><%=od.getOrderID()%>
+                                        </td>
+                                        <td><%=UserService.getInstance().getUserDetail(od.getCustomerID()).getName()%>
+                                        </td>
+                                        <td><%=format.format(od.getPrice())%>
+                                        </td>
+                                        <td><%=od.getOrderDate()%>
+                                        </td>
+                                        <td>
+                                            <%if (od.getStatus() == 0) {%>
+                                            <div style="color: red; font-weight: bold">Đã hủy</div>
+                                            <%} else {%>
+                                            <%if (od.getDelivered() == 0) {%>
+                                            <div style="color: #00BFFF; font-weight: bold">Đang xử lý</div>
+                                            <%} else {%>
+                                            <div style="color: #35ff00; font-weight: bold">Hoàn thành</div>
+                                            <%}%>
+                                            <%}%>
 
-                                                    <td><a class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">Chi tiết</a></td>
-
-
-
-                                                </tr>
-                                            </form>
+                                        </td>
+                                        <%if (od.getDeliveryDate() == null) {%>
+                                        <td>Chưa giao</td>
+                                        <%} else {%>
+                                        <td><%=od.getDeliveryDate()%>
+                                        </td>
                                         <%}%>
-                                    </tbody>
-                                    </table>
-                                </div>
-                            </div>
+
+                                        <td>
+                                            <%if (od.getVerify() == 0) {%>
+                                            <div style="color: #00BFFF; font-weight: bold">Chưa xác thực</div>
+                                            <%} else if (od.getVerify() == 1) {%>
+                                            <div style="color: #35ff00; font-weight: bold">Đã xác thực</div>
+                                            <%} else {%>
+                                            <div style="color: red; font-weight: bold">Lỗi đơn</div>
+                                            <%}%>
+                                        </td>
+                                        <td>
+                                            <a class="btn_2 edit btn btn-primary" type="submit"
+                                               href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">Chi tiết</a>
+                                        </td>
+                                        <td>
+                                            <%if (od.getVerify() == 0) {%>
+                                            <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary verify"
+                                               type="submit"
+<%--                                               href="/Petshop_website_final_war/VerifyOrderController?orderId=<%=od.getOrderID()%>"--%>
+                                               id="orderId=<%=od.getOrderID()%>">
+                                                Xác thực</a>
+                                            <%} else if (od.getVerify() == 1) {%>
+                                            <%--                                                        <a style="background-color:#35ff00;" class="btn_2 edit btn btn-primary" type="submit" href="order-detail-ad.jsp?orderId=<%=od.getOrderID()%>">--%>
+                                            <%--                                                            Đã xác thực</a>--%>
+                                            <%} else {%>
+                                            <a style="background-color:red;" class="btn_2 edit btn btn-primary cancel-order"
+                                               type="submit"
+<%--                                               href="/Petshop_website_final_war/CancelOrderController?orderId=<%=od.getOrderID()%>"--%>
+                                                id="orderId=<%=od.getOrderID()%>">
+                                                Hủy đơn</a>
+                                            <%}%>
+                                        </td>
+
+
+                                    </tr>
+                                </form>
+                                <%}%>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- [ Main Content ] end -->
+        </div>
     </div>
+    <!-- [ Main Content ] end -->
 </div>
-    <%
-            }
+</div>
+<%
         }
-    %>
-    <!-- Required Js -->
-    <script src="assets/js/vendor-all.min.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/feather.min.js"></script>
-    <script src="assets/js/pcoded.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="assets/js/plugins/clipboard.min.js"></script>
-    <script src="assets/js/uikit.min.js"></script>
-    <script src="assets/css/status/bootstrap.min.js"></script>
+    }
+%>
+<!-- Required Js -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="assets/js/vendor-all.min.js"></script>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/plugins/feather.min.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/css/status/bootstrap.min.js"></script>
 
 <!-- Apex Chart -->
 <script src="assets/js/plugins/apexcharts.min.js"></script>
 <!-- custom-chart js -->
 <script src="assets/js/pages/dashboard-sale.js"></script>
+<script>
+    $(document).ready(function () {
+        verify()
+        cancelOrder()
+    })
+    function verify() {
+        $(".verify").each(function () {
+            $(this).click(function () {
+                let orderId = $(this).attr("id").substring(8)
+                $.ajax({
+                    url: '/Petshop_website_final_war/VerifyOrderController',
+                    type: 'GET',
+                    data: {
+                        orderId : orderId
+                    },
+                    success: function (data) {
+                        $('.table tbody').html(data)
+                        verify()
+                        cancelOrder()
+                    }, error: function () {
+                        alert("Lỗi")
+                    }
+                })
+            })
+        })
+    }
+    function cancelOrder() {
+        $(".cancel-order").each(function () {
+            $(this).click(function () {
+                let orderId = $(this).attr("id").substring(8)
+                $.ajax({
+                    url: '/Petshop_website_final_war/CancelOrderController',
+                    type: 'GET',
+                    data: {
+                        orderId : orderId
+                    },
+                    success: function (data) {
+                        $('.table tbody').html(data)
+                        verify()
+                        cancelOrder()
+                    }, error: function () {
+                        alert("Lỗi")
+                    }
+                })
+            })
+        })
+    }
+</script>
 </body>
 
 </html>

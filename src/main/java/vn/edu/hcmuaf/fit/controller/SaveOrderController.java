@@ -20,21 +20,19 @@ import java.util.Map;
 public class SaveOrderController extends HttpServlet {
     //20130252_Trần Nhựt Hào
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("SAVE");
         String fullName = request.getParameter("fullName");
         String phone = request.getParameter("phone");
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String notice = request.getParameter("notice");
         String signedHashMessage = request.getParameter("message");
+        String signedHashMessageReplace = signedHashMessage.replaceAll(" ", "+");
         UserAccount userAccount = (UserAccount) request.getSession().getAttribute("user");
         Cart cart = (Cart) request.getSession().getAttribute("cart");
         OrderDAO dao = new OrderDAO();
-        String result = dao.insertOrder(userAccount.getId(), fullName, phone, address, email, notice, cart, signedHashMessage);
+        String result = dao.insertOrder(userAccount.getId(), fullName, phone, address, email, notice, cart, signedHashMessageReplace);
         request.getSession().setAttribute("cart", new Cart());
         response.setStatus(HttpServletResponse.SC_OK);
         response.sendRedirect("index.jsp");
-
-
     }
 }

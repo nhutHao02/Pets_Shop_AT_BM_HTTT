@@ -249,7 +249,7 @@
             display: inline-block;
             text-align: center;
             color: white;
-            margin-left: 40px;
+           
         }
         #myTableK {
             display: none;
@@ -698,14 +698,22 @@
     function showTablerb(){//20130230-Trần trung đông
         document.getElementById("myTablerb").style.display = "block";
         document.getElementById("overlayT").classList.add("show");
-        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutsiderb);
     }
     function hideTablerb() {//20130230-Trần trung đông
         document.getElementById("myTablerb").style.display = "none";
         document.getElementById("overlayT").classList.remove("show");
-        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutsideTK);
+        document.getElementById("overlayT").removeEventListener("click", hideTableOnClickOutsiderb);
         window.location.reload();
         reportKey();
+    }
+    function hideTableOnClickOutsiderb(event) {//20130230-Trần trung đông
+        var myTablerb = document.getElementById("myTablerb");
+        // Kiểm tra xem phần tử được click có phải là myTablerb không
+        if (!myTablerb.contains(event.target)) {
+            hideTablerb();
+            window.location.reload();
+        }
     }
     function reportKey() {//20130230-Trần trung đông
         // Tạo đối tượng XMLHttpRequest

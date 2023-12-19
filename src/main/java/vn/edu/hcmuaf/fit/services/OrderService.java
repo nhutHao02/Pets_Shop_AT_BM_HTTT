@@ -32,6 +32,9 @@ public class OrderService {
     public List<OrderDetail> getOrderDetailsById(String id) {
         return new OrderDAO().getOrderDetailsById(id);
     }
+    public void changeStatusVerify(String orderId, int verify){
+        new OrderDAO().changeStatusVerify(orderId, verify);
+    }
 
     public void updateDelivery(String orderId, int delivery) {
         new OrderDAO().updateDelivery(orderId, delivery);

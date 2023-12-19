@@ -49,7 +49,7 @@ public class CheckoutController extends HttpServlet {
         }
         String mesageHash=new Hash().hashString(valueString);
 //        System.out.println(mesageHash);
-//        System.out.println(valueString);
+        System.out.println(valueString);
         response.getWriter().write(mesageHash);
 
     }
