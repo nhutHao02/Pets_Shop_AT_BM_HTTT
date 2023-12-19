@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 @WebServlet(name = "ReportKey", value = "/ReportKey")
 public class ReportKey extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { //20130230-Trần Trung đông
         UserAccount user= (UserAccount) request.getSession().getAttribute("user");
         new KeyDAO().reportKey(user.getId());
     }
