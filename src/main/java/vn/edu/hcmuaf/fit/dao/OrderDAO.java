@@ -3,6 +3,7 @@ package vn.edu.hcmuaf.fit.dao;
 import vn.edu.hcmuaf.fit.beans.*;
 import vn.edu.hcmuaf.fit.db.JDBIConnector;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -10,6 +11,20 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class OrderDAO {
+    public String createHashMessageWithOrder(Orders orders) {
+        String hashMessage = orders.getRecipientName()+orders.getPhone()+orders.getAddress()
+                +orders.getEmail()+orders.getNotice()+orders.getPrice();
+        List<OrderDetail> list = getOrderDetailsById(orders.getOrderID());
+        for (int i = 0; i < list.size(); i++) {
+            OrderDetail orderDetail = list.get(i);
+            // đưa kiểu decimal trong db thành kiểu long
+            BigDecimal decimalValue = BigDecimal.valueOf(orderDetail.getPrice());
+            long longValue = decimalValue.longValueExact() / orderDetail.getQuantity();
+            hashMessage += orderDetail.getProductID()+orderDetail.getProductName()
+                    +longValue+orderDetail.getPricePromotional()+orderDetail.getQuantity();
+        }
+        return hashMessage;
+    }
     public String taoOrderID() {
         String numbers = "0123456789";
         StringBuilder stringBuilder = new StringBuilder("O");

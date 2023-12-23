@@ -249,7 +249,7 @@
             display: inline-block;
             text-align: center;
             color: white;
-           
+
         }
         #myTableK {
             display: none;

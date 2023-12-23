@@ -20,6 +20,9 @@ public class OrderService {
         }
         return orderService;
     }
+    public String createHashMessageWithOrder(Orders orders) {
+        return new OrderDAO().createHashMessageWithOrder(orders);
+    }
 
     public String insertOrder(String CustomerID, String fullname, String phone, String address, String email, String notice, Cart cart,String idT) {
       return   new OrderDAO().insertOrder(CustomerID, fullname, phone, address, email, notice, cart, idT);
