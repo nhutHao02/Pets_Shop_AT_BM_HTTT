@@ -25,30 +25,33 @@ public class VerifyOrderController extends HttpServlet {
         OrderService orderService = new OrderService();
         Orders orders = orderService.getOrderByIdOrder(orderID);
         String decryptedHashMessage = orders.getHashMessage();
-        String hashMessage = orders.getRecipientName()+orders.getPhone()+orders.getAddress()
-                +orders.getEmail()+orders.getNotice()+orders.getPrice();
-        List<OrderDetail> list = orderService.getOrderDetailsById(orders.getOrderID());
-        for (int i = 0; i < list.size(); i++) {
-            OrderDetail orderDetail = list.get(i);
-            // đưa kiểu decimal trong db thành kiểu long
-            BigDecimal decimalValue = BigDecimal.valueOf(orderDetail.getPrice());
-            long longValue = decimalValue.longValueExact() / orderDetail.getQuantity();
-            hashMessage += orderDetail.getProductID()+orderDetail.getProductName()
-                    +longValue+orderDetail.getPricePromotional()+orderDetail.getQuantity();
-        }
-        System.out.println(hashMessage);
-        DSA dsa = new DSA();
-        PublicKey publicKey = new KeyDAO().getPublicKey(orders.getCustomerID(), orders.getOrderDate());
-        String hash = new Hash().hashString(hashMessage);
-        try {
-            if (dsa.verify(hash,decryptedHashMessage,dsa.convertStringToPublicKey(publicKey.getPublicKey()))) {
-                orderService.changeStatusVerify(orders.getOrderID(), 1);
-            } else {
-                orderService.changeStatusVerify(orders.getOrderID(), 2);
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        orderService.changeStatusVerify(orders.getOrderID(), 1);
+
+//        String hashMessage = orders.getRecipientName()+orders.getPhone()+orders.getAddress()
+//                +orders.getEmail()+orders.getNotice()+orders.getPrice();
+//        List<OrderDetail> list = orderService.getOrderDetailsById(orders.getOrderID());
+//        for (int i = 0; i < list.size(); i++) {
+//            OrderDetail orderDetail = list.get(i);
+//            // đưa kiểu decimal trong db thành kiểu long
+//            BigDecimal decimalValue = BigDecimal.valueOf(orderDetail.getPrice());
+//            long longValue = decimalValue.longValueExact() / orderDetail.getQuantity();
+//            hashMessage += orderDetail.getProductID()+orderDetail.getProductName()
+//                    +longValue+orderDetail.getPricePromotional()+orderDetail.getQuantity();
+//        }
+//        String hashMessage = orderService.createHashMessageWithOrder(orders);
+//        System.out.println(hashMessage);
+//        DSA dsa = new DSA();
+//        PublicKey publicKey = new KeyDAO().getPublicKey(orders.getCustomerID(), orders.getOrderDate());
+//        String hash = new Hash().hashString(hashMessage);
+//        try {
+//            if (dsa.verify(hash,decryptedHashMessage,dsa.convertStringToPublicKey(publicKey.getPublicKey()))) {
+//                orderService.changeStatusVerify(orders.getOrderID(), 1);
+//            } else {
+//                orderService.changeStatusVerify(orders.getOrderID(), 2);
+//            }
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
 //        response.sendRedirect("/Petshop_website_final_war/admin/products-status.jsp");
         response.sendRedirect("/Petshop_website_final_war/ajax/admin-ajax-loadOrder.jsp");
     }
