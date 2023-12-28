@@ -18,9 +18,6 @@ public class AddImportController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Thêm nhập hàng - Nguyễn Ngọc Huy 20130281
-    */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idP = request.getParameter("idP");

@@ -18,9 +18,6 @@ public class ConfirmOTP extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-    /*
-        Xác nhận mã OTP để đổi mật khẩu - Nguyễn Ngọc Huy 20130281
-    */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try (PrintWriter out = response.getWriter()) {

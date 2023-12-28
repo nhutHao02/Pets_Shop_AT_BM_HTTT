@@ -16,9 +16,7 @@ public class NewPassword extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
-    /*
-        Đổi mật khẩu người dùng - Nguyễn Ngọc Huy 20130281
-    */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String newPass = request.getParameter("newpass");

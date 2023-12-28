@@ -18,9 +18,7 @@ public class IncDecQuantityController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
     }
-    /*
-         Tăng giảm số lượng sản phẩm trong giỏ hàng - Nguyễn Ngọc Huy 20130281
-     */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idUpdate = request.getParameter("idUpdate");

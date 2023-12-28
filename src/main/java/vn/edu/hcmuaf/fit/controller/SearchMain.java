@@ -18,9 +18,7 @@ public class SearchMain extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Tạo khung tìm kiếm thú cưng sử dụng ajax - Nguyễn Sĩ Hoàng 20130267
-    */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String txtSearch = request.getParameter("txt");

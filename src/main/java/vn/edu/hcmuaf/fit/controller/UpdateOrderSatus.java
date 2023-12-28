@@ -12,9 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "UpdateOrderSatus", value = "/UpdateOrderSatus")
 public class UpdateOrderSatus extends HttpServlet {
-    /*
-        Chỉnh sửa trạng thái đơn hàng - Nguyễn Ngọc Huy 20130281
-    */
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("orderId");

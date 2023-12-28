@@ -12,9 +12,7 @@ import java.util.List;
 
 @WebServlet(name = "FilterBlog", value = "/FilterBlog")
 public class FilterBlog extends HttpServlet {
-    /*
-        Lọc tin tức sử dụng ajax - Nguyễn Huy Hoàng 20130266
-    */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

@@ -12,9 +12,7 @@ import java.io.IOException;
 
 @WebServlet(name = "DeleteUser", value = "/admin/delete-user")
 public class DeleteUser extends HttpServlet {
-    /*
-        Xóa người dùng - Nguyễn Sĩ Hoàng 20130267
-    */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

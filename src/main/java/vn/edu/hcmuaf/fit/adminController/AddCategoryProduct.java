@@ -15,9 +15,6 @@ public class AddCategoryProduct extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     doPost(request,response);
     }
-    /*
-         Thêm danh mục sản phẩm - Nguyễn Ngọc Huy 20130281
-     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String CateName = request.getParameter("catename");
