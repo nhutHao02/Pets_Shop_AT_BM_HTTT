@@ -129,13 +129,19 @@ public class DSA {
     }
 
     // Hàm xác minh chữ ký
-    public boolean verify(String messagehash, String signature, PublicKey publicKey) throws Exception {
+    public boolean verify(String messagehash, String signature, PublicKey publicKey) {
         // Chuyển đổi chuỗi Base64 thành mảng byte
         byte[] signatureBytes = Base64.getDecoder().decode(signature);
-        Signature sig = Signature.getInstance("SHA256withDSA");
-        sig.initVerify(publicKey);
-        sig.update(messagehash.getBytes());
-        return sig.verify(signatureBytes);
+        Signature sig = null;
+        try {
+            sig = Signature.getInstance("SHA256withDSA");
+            sig.initVerify(publicKey);
+            sig.update(messagehash.getBytes());
+            return sig.verify(signatureBytes);
+        } catch (Exception e) {
+            return false;
+        }
+
     }
 
     public boolean isBase64(String str) {
