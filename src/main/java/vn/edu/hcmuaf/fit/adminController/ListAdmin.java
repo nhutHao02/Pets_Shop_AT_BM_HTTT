@@ -11,9 +11,6 @@ import java.util.List;
 
 @WebServlet(name = "ListAdmin", value = "/ListAdmin")
 public class ListAdmin extends HttpServlet {
-    /*
-        Danh sách admin - Nguyễn Huy Hoàng 20130266
-    */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<UserAccount> listC = new CustomerUserDAO().ListAdmin();

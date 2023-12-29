@@ -17,9 +17,6 @@ import java.util.List;
 
 @WebServlet(name = "SearchBlogController", value = "/SearchBlogController")
 public class SearchBlogController extends HttpServlet {
-        /*
-            Tìm kiếm tin tức - Nguyễn Huy Hoàng 20130266
-        */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

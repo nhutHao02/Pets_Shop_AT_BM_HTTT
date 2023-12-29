@@ -12,9 +12,6 @@ import java.util.List;
 
 @WebServlet(name = "AllProduct", value = "/all-product")
 public class AllProduct extends HttpServlet{
-    /*
-        Hiển thị sản phẩm - Nguyễn Huy Hoàng 20130266, Nguyễn Sĩ Hoàng 20130267
-    */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProductDAO dao = new ProductDAO();

@@ -17,9 +17,7 @@ public class VerifyCode extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Gửi mã xác nhận qua mail - Nguyễn Ngọc Huy 20130281
-    */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try (PrintWriter out = response.getWriter()) {

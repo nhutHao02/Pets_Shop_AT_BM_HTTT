@@ -11,9 +11,6 @@ import java.util.List;
 
 @WebServlet(name = "LoadMoreController", value = "/loadMore")
 public class LoadMoreController extends HttpServlet {
-    /*
-        Chức năng loadmore cho trang danh sách sản phẩm - Nguyễn Ngọc Huy 20130281, Nguyễn Huy Hoàng 20130266
-    */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

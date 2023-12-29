@@ -15,9 +15,6 @@ import java.util.Arrays;
 
 @WebServlet(name = "EditProductController", value = "/admin/edit-product")
 public class EditProductController extends HttpServlet {
-    /*
-        Thêm và chỉnh sửa sản phẩm thú cưng - Nguyễn Sĩ Hoàng 20130267
-    */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

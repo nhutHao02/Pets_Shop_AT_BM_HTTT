@@ -20,9 +20,6 @@ public class UpdateInforAdminController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-          Chỉnh sửa thông tin của admin đang đăng nhập - Nguyễn Sĩ Hoàng 20130267
-    */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String fullname = request.getParameter("fullname");

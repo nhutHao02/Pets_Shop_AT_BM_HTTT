@@ -11,9 +11,7 @@ import java.io.IOException;
 
 @WebServlet(name = "DeleteProductController", value = "/admin/delete-product")
 public class DeleteProductController extends HttpServlet {
-    /*
-        Xóa sản phẩm thú cưng - Nguyễn Sĩ Hoàng 20130267
-    */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

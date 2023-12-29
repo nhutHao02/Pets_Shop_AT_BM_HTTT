@@ -15,9 +15,7 @@ import java.security.Provider;
 @WebServlet(name = "DeleteBlog", value = "/admin/DeleteBlog")
 
 public class DeleteBlog extends HttpServlet {
-    /*
-        Xóa tin tức - Nguyễn Huy Hoàng 20130266
-    */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

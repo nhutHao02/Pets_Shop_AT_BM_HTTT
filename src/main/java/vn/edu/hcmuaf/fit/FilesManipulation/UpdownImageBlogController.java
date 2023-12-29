@@ -19,9 +19,8 @@ public class UpdownImageBlogController extends HttpServlet {
     @Serial
     private static final long serialVersionUID = 1L;
     private ServletFileUpload uploader = null;
-    /*
-             Thêm hình ảnh tin tức vào war - Nguyễn Sĩ Hoàng 20130267
-     */
+
+
     public void init() throws ServletException {
         DiskFileItemFactory fileFactory = new DiskFileItemFactory();
         File filesDir = (File) getServletContext().getAttribute("FILES_DIR_TEMPBLOG");

@@ -19,9 +19,7 @@ public class UpdateInforController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Chỉnh sửa thông tin người dùng - Nguyễn Sĩ Hoàng 20130267, Nguyễn Ngọc Huy 20130281
-    */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String fullname = request.getParameter("fullname");

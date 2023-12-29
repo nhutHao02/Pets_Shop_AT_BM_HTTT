@@ -11,9 +11,7 @@ import java.io.IOException;
 
 @WebServlet(name = "DeleteAccessController", value = "/admin/delete-accessory")
 public class DeleteAccessController extends HttpServlet {
-    /*
-        Xóa sản phẩm phụ kiện - Nguyễn Sĩ Hoàng 20130267
-    */
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

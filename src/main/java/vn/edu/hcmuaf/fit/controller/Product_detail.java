@@ -13,9 +13,7 @@ import java.io.IOException;
 
 @WebServlet(name = "Detail", value = "/Detail")
 public class Product_detail extends HttpServlet {
-    /*
-        Chi tiết sản phẩm - Nguyễn Huy Hoàng 20130266
-    */
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProductDAO dao = new ProductDAO();

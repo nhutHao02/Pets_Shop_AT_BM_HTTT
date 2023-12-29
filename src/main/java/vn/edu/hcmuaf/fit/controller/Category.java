@@ -13,9 +13,7 @@ import java.util.List;
 
 @WebServlet(name = "Category", value = "/Category")
 public class Category extends HttpServlet {
-    /*
-        Hiển thị danh mục sản phẩm - Nguyễn Huy Hoàng 20130266
-    */
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DetailDAO dao = new DetailDAO();

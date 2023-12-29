@@ -19,10 +19,6 @@ public class UpdateStatusOrder extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        /*
-         Chức năng hiển thị danh sách đơn hàng và cập nhật trạng thái đơn hàng
-         Nguyễn Ngọc Huy - 20130281
-         */
         String orderId = request.getParameter("orderId");
         int status = Integer.parseInt(request.getParameter("status"));
         int delivery = Integer.parseInt(request.getParameter("delivery"));

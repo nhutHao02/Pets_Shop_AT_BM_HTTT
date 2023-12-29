@@ -1,6 +1,7 @@
 package vn.edu.hcmuaf.fit.dao;
 
 import vn.edu.hcmuaf.fit.beans.PublicKey;
+import vn.edu.hcmuaf.fit.db.DBProperties;
 
 import java.sql.*;
 import java.util.HashMap;
@@ -12,7 +13,8 @@ public class KeyDAO {
     private Connection connectDB() throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb", "root", "");
+//            return DriverManager.getConnection("jdbc:mysql://localhost:3306/petshopdb", "root", "");
+            return DriverManager.getConnection("jdbc:mysql://"+ DBProperties.getDbHost() +":" + DBProperties.getDbPort() + "/"+DBProperties.getDbName(), DBProperties.getUsername(), DBProperties.getPassword());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             throw new SQLException("Unable to connect to the database.", e);
         }

@@ -20,9 +20,6 @@ public class AddToCartController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Thêm sản phẩm vào giỏ hàng sử dụng ajax - Nguyễn Ngọc Huy 20130281
-    */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("idAdd").substring(8);

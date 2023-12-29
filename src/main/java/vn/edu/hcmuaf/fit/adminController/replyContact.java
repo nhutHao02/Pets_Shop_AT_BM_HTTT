@@ -21,10 +21,6 @@ public class replyContact extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        /*
-        Chức năng phản hồi liên hệ của khách hàng bằng email cho admin
-        Create by Nguyễn Ngọc Huy - 20130281
-         */
         String id= request.getParameter("id");
         String name= request.getParameter("name");
         String email= request.getParameter("email");

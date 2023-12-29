@@ -12,9 +12,6 @@ import java.util.List;
 
 @WebServlet(name = "ListAccessory", value = "/admin/list-accessory")
 public class ListAccessory extends HttpServlet {
-    /*
-        Danh sách sản phẩm phụ kiện trong admin - Nguyễn Sĩ Hoàng 20130267
-    */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProductDAO dao = new ProductDAO();

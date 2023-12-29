@@ -17,9 +17,7 @@ public class AddToWishlistController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }
-    /*
-        Thêm sản phẩm vào yêu thích sử dụng ajax - Nguyễn Sĩ Hoàng 20130267
-    */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("idAdd").substring(12);

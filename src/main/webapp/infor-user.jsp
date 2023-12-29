@@ -227,6 +227,7 @@
             opacity: 1;
             visibility: visible;
         }
+
         select.pdw {
             min-width: 200px;
             height: 30px;
@@ -771,7 +772,7 @@
     function showTableTK() {//20130252-Trần Nhựt Hào
         document.getElementById("myTableTK").style.display = "block";
         document.getElementById("overlayT").classList.add("show");
-        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutside);
+        document.getElementById("overlayT").addEventListener("click", hideTableOnClickOutsideTK);
     }
     function hideTableOnClickOutsideTK(event) {//20130252-Trần Nhựt Hào
         var myTableTK = document.getElementById("myTableTK");
