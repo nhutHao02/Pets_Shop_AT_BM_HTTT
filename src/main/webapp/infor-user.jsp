@@ -320,6 +320,10 @@
         .button-container {
             display: flex;
         }
+        #copyIcon {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -518,7 +522,10 @@
                     </div>
                     <div id="myTableTK">
                         <label style="text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white">Khóa riêng tư (dùng để ký đơn hàng)</label>
-                        <input type="text" id="privateKey"><br>
+                        <div>
+                            <input type="text" id="privateKey">
+                            <span id="copyIcon" onclick="copyToClipboard()">📋</span>
+                        </div>
                         <label>Vui lòng giữ bảo mật.</label> <br>
                         <div id="errorTK" style="text-align: center; color: red"></div> <br>
                         <div onclick="hideTableTK()" class="bt2">Đóng</div>
@@ -657,6 +664,19 @@
 <script src="admin/assets/js/plugins/bootstrap.min.js"></script>
 <script src="js/axios.min.js"></script>
 <script>
+    function copyToClipboard() {
+        // Lấy giá trị từ input
+        var privateKeyInput = document.getElementById("privateKey");
+        privateKeyInput.select();
+        navigator.clipboard.writeText(privateKeyInput.value)
+            .then(function() {
+                var errorTK = document.getElementById("errorTK");
+                errorTK.innerHTML = "Đã sao chép vào clipboard!";
+            })
+            .catch(function(err) {
+                console.error('Failed to copy text: ', err);
+            });
+    }
     function updateKey() { //20130252-Trần Nhựt Hào
         var publicKey = document.getElementById("publicKey").value;
         if (publicKey.trim() === "") {

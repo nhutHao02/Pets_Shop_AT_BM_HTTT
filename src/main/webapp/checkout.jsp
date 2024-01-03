@@ -165,7 +165,7 @@
             z-index: 1;
             border-radius: 10px;
             border: 1px black;
-            width: 380px;
+            width: 410px;
             text-align: center;
         }
         #myTableCK label{
@@ -231,6 +231,10 @@
             display: inline-block;
             text-align: center;
             color: white;
+        }
+        #copyIcon {
+            font-size: 1.5em;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -463,8 +467,9 @@
                                 <div style="display: inline-block ">
                                     <label>Mã code cần ký:</label>
                                     <input type="text" id="messageHash">
+                                    <span id="copyIcon" onclick="copyToClipboard()">📋</span>
                                 </div>
-                                <div style="display: inline-block ;align-items: center">
+                                <div style="display: inline-block ;align-items: center; padding-right: 37px">
                                     <label>Mã code đã ký:</label>
                                     <input type="text" id="messageSignedHash">
                                 </div>
@@ -583,6 +588,20 @@
             document.querySelector("#" + select).innerHTML = row
         }
     })
+
+    function copyToClipboard() {
+        // Lấy giá trị từ input
+        var messHash = document.getElementById("messageHash");
+        messHash.select();
+        navigator.clipboard.writeText(messHash.value)
+            .then(function() {
+                var errorTK = document.getElementById("errorTK");
+                errorTK.innerHTML = "Đã sao chép vào clipboard!";
+            })
+            .catch(function(err) {
+                console.error('Failed to copy text: ', err);
+            });
+    }
 
     function showTable() {
         document.getElementById("myTable").style.display = "block";
