@@ -448,6 +448,7 @@ public class ProductDAO {
     }
 
 
+
     public Product getProductDetail(String id) {
         Optional<Product> detail = JDBIConnector.get().withHandle(handle -> handle.createQuery("select p.productId, p.ProductName, p.Image, p.Price, p.Description, p.Dital, p.Quantity,p.Warranty, p.CreateBy, p.CreateDate, p.giong, p.mausac, p.cannang, p.`Status`, p.PromotionalPrice,p.Promotional, p.size, p.ViewCount from product p where p.productId = ?")
                 .bind(0, id)

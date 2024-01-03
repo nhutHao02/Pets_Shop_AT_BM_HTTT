@@ -83,7 +83,7 @@ public class OrderDAO {
     }
 
     public List<Orders> ordersList (){
-        List<Orders> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT * FROM orders")
+        List<Orders> list = JDBIConnector.get().withHandle(handle -> handle.createQuery("SELECT * FROM orders order by orders.OrderDate desc")
                 .mapToBean(Orders.class).stream().collect(Collectors.toList()));
         return  list;
     }
